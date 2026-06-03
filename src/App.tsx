@@ -5,6 +5,7 @@ import { Home } from './pages/home';
 import { Aboutus } from './pages/aboutus';
 import { Contactus } from './pages/contact-us';
 import { Navbar } from './components/navbar';
+import { Footer } from './components/footer';
 import WhatsAppButton from './components/whatsAppButton';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/contact-us" element={<Contactus />} />
       </Routes>
+      <Footer />
       <WhatsAppButton />
     </BrowserRouter>
   );
