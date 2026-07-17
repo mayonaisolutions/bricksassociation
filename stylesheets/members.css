@@ -12,7 +12,7 @@
   position: relative;
   width: 100%;
   padding: 120px 0 80px 0;
-  background-image: linear-gradient(rgba(6, 40, 30, 0.8), rgba(6, 25, 20, 0.9)), url('/paver_banner.png');
+  background-image: linear-gradient(rgba(6, 40, 30, 0.8), rgba(6, 25, 20, 0.9)), url('../paver_banner.png');
   background-size: cover;
   background-position: center;
   color: #ffffff;
