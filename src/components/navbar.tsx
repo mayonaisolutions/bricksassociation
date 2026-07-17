@@ -18,7 +18,7 @@ export const Navbar: React.FC = () => {
       <div className="navbar-container">
         {/* Logo and Brand */}
         <Link to="/" className="navbar-logo-link" onClick={closeMenu}>
-          <img src="/logo.png" alt="Use Flyash Bricks Environment Logo" className="navbar-logo-img" />
+          <img src={process.env.PUBLIC_URL + "/logo.png"} alt="Use Flyash Bricks Environment Logo" className="navbar-logo-img" />
         </Link>
 
         {/* Mobile Toggle Button */}
