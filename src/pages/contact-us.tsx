@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { MemberCard } from '../components/MemberCard';
 
 export const Contactus = () => {
     useEffect(() => {
@@ -197,6 +198,55 @@ export const Contactus = () => {
                             Submit Enquiry
                         </button>
                     </form>
+                </div>
+            </div>
+
+            {/* Zone Coordinators Section */}
+            <div className="zone-representatives-section">
+                <div className="section-header">
+                    <span className="contact-badge">Zone Coordinators</span>
+                    <h2>Find Your Nearest Representative</h2>
+                    <p className="section-desc">
+                        Get in touch with our regional coordinators for localized support, bulk pricing, and manufacturer coordination across Tamil Nadu.
+                    </p>
+                </div>
+                
+                <div className="zones-grid">
+                    {/* Chennai Zone */}
+                    <div id="chennai-zone" className="zone-column">
+                        <h3 className="zone-title">Chennai Zone</h3>
+                        <MemberCard 
+                            name="K. Rajasekar"
+                            zone="Chennai Zone"
+                            company="Sri Balaji Fly Ash Bricks"
+                            phone="98401 23456"
+                            location="Chennai"
+                        />
+                    </div>
+
+                    {/* Mettur Zone */}
+                    <div id="mettur-zone" className="zone-column">
+                        <h3 className="zone-title">Mettur Zone</h3>
+                        <MemberCard 
+                            name="Dileep Aswanth"
+                            zone="Mettur Zone"
+                            company="Sivaaji Flyash Bricks"
+                            phone="9994092998"
+                            location="Erode"
+                        />
+                    </div>
+
+                    {/* Tuticorin Zone */}
+                    <div id="tuticorin-zone" className="zone-column">
+                        <h3 className="zone-title">Tuticorin Zone</h3>
+                        <MemberCard 
+                            name="S. Murugan"
+                            zone="Tuticorin Zone"
+                            company="Nellai Fly Ash Bricks"
+                            phone="94431 98765"
+                            location="Tuticorin"
+                        />
+                    </div>
                 </div>
             </div>
         </div>

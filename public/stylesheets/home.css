@@ -119,6 +119,181 @@
   box-sizing: border-box;
 }
 
+/* Intro Section: Unity and Growth */
+.home-intro-section {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 100px;
+  padding: 40px 0;
+}
+
+.home-intro-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.intro-image-wrapper {
+  position: relative;
+  max-width: 460px;
+  width: 100%;
+}
+
+.intro-main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  display: block;
+}
+
+.since-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: #0d8a72;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  box-shadow: 0 8px 24px rgba(13, 138, 114, 0.25);
+  transform: rotate(-10deg);
+  z-index: 10;
+}
+
+.since-title {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+  line-height: 1.1;
+}
+
+.since-year {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.home-intro-right {
+  flex: 1.2;
+}
+
+.intro-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.subtitle-line {
+  display: inline-block;
+  width: 32px;
+  height: 3px;
+  background-color: #0d8a72;
+  border-radius: 2px;
+}
+
+.subtitle-text {
+  font-size: 14px;
+  font-weight: 800;
+  color: #0d8a72;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.intro-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #061914;
+  line-height: 1.15;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.02em;
+  font-family: 'Outfit', sans-serif;
+}
+
+.intro-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4b5563;
+  margin: 0 0 32px 0;
+}
+
+/* Progress bar styling */
+.intro-progress-container {
+  width: 100%;
+  margin-bottom: 35px;
+  max-width: 500px;
+}
+
+.progress-bar-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.progress-percent {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0d8a72;
+}
+
+.progress-bar-track {
+  width: 100%;
+  height: 6px;
+  background-color: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 100%;
+  background-color: #0d8a72;
+  border-radius: 3px;
+}
+
+/* Seal Badge styling */
+.intro-seal-badge {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.seal-svg-container {
+  flex-shrink: 0;
+}
+
+.env-badge-svg-elem {
+  filter: drop-shadow(0 6px 12px rgba(16, 185, 129, 0.15));
+}
+
+.seal-text-container h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 4px 0;
+  letter-spacing: 0.02em;
+}
+
+.seal-text-container p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  margin: 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 /* Area Expertise Section */
 .area-expertise {
   margin-bottom: 80px;
@@ -228,6 +403,107 @@
   margin: 0 auto;
   line-height: 1.6;
 }
+/* Regional Zones Cards Section */
+.home-zones-section {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.home-zones-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.home-zone-card {
+  background: #ffffff;
+  border: 1.5px solid #0d8a72;
+  border-radius: 12px;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100%;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.home-zone-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(13, 138, 114, 0.12);
+}
+
+.zone-card-image-wrapper {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.zone-card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.zone-card-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #061914;
+  margin: 0 0 12px 0;
+  letter-spacing: 0.02em;
+  font-family: 'Outfit', sans-serif;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zone-card-divider {
+  width: 50px;
+  height: 3px;
+  background-color: #0d8a72;
+  border-radius: 2px;
+  margin: 0 auto 18px auto;
+  flex-shrink: 0;
+}
+
+.zone-card-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0 0 28px 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.zone-card-btn {
+  display: inline-block;
+  border: 1.5px solid #0d8a72;
+  color: #0d8a72;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  background: transparent;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.zone-card-btn:hover {
+  background-color: #0d8a72;
+  color: #ffffff;
+}
 
 /* Keyframe animations */
 @keyframes fadeIn {
@@ -241,6 +517,30 @@
 
 /* Responsive adjustments */
 @media (max-width: 992px) {
+  .home-zones-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .home-intro-section {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 20px 0;
+  }
+  .intro-subtitle {
+    justify-content: center;
+  }
+  .intro-title {
+    font-size: 34px;
+  }
+  .intro-progress-container {
+    margin: 0 auto 35px;
+  }
+  .intro-seal-badge {
+    justify-content: center;
+    text-align: left;
+  }
   .expertise-grid {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -254,6 +554,12 @@
 }
 
 @media (max-width: 768px) {
+  .home-zones-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 400px;
+    margin: 0 auto 40px auto;
+  }
   .home-content-container {
     padding: 0 16px 60px;
   }
@@ -282,5 +588,19 @@
   }
   .home-cta-banner h3 {
     font-size: 22px;
+  }
+  .intro-title {
+    font-size: 28px;
+  }
+  .since-badge {
+    width: 85px;
+    height: 85px;
+    border-width: 3px;
+  }
+  .since-year {
+    font-size: 22px;
+  }
+  .since-title {
+    font-size: 11px;
   }
 }

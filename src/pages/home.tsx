@@ -17,14 +17,78 @@ export const Home = () => {
                         Engineered to withstand heavy traffic, resist weathering, and elevate the aesthetics of any outdoor space. Discover M40+ grade interlocking concrete blocks manufactured with high-quality standards across Tamil Nadu.
                     </p>
                     <div className="home-hero-ctas">
-                        <Link to="/aboutus" className="btn-primary">Explore Paver Designs</Link>
-                        <Link to="/contact-us" className="btn-secondary">Request a Quote</Link>
+                        <Link to="/contact-us" className="btn-secondary">Contact Us</Link>
                     </div>
                 </div>
             </div>
 
             {/* Main Page Content */}
             <div className="home-content-container">
+                {/* Intro Section with Partnership & Growth */}
+                <div className="home-intro-section">
+                    <div className="home-intro-left">
+                        <div className="intro-image-wrapper">
+                            <img src="/unity_community.png" alt="Tamilnadu Flyash Bricks Association Unity & Community" className="intro-main-image" />
+                            <div className="since-badge">
+                                <span className="since-title">Since</span>
+                                <span className="since-year">2014</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="home-intro-right">
+                        <div className="intro-subtitle">
+                            <span className="subtitle-line"></span>
+                            <span className="subtitle-text">TAMILNADU FLYASH BRICKS ASSOCIATION</span>
+                        </div>
+                        <h2 className="intro-title">Unity in Purpose, Growth in Community</h2>
+                        <p className="intro-description">
+                            Welcome to the Tamilnadu Fly Ash Bricks Association, a dynamic community dedicated to revolutionizing the construction landscape through sustainable practices and innovative solutions.
+                        </p>
+
+                        <div className="intro-progress-container">
+                            <div className="progress-bar-header">
+                                <span className="progress-percent">100%</span>
+                            </div>
+                            <div className="progress-bar-track">
+                                <div className="progress-bar-fill"></div>
+                            </div>
+                        </div>
+
+                        <div className="intro-seal-badge">
+                            <div className="seal-svg-container">
+                                <svg width="72" height="72" viewBox="0 0 100 100" className="env-badge-svg-elem">
+                                    <defs>
+                                        <path id="badgeTextPath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
+                                    </defs>
+                                    <circle cx="50" cy="50" r="48" fill="#10b981" stroke="#047857" strokeWidth="1" />
+                                    <circle cx="50" cy="50" r="45" fill="#ffffff" />
+                                    <circle cx="50" cy="50" r="42" fill="#10b981" />
+                                    <circle cx="50" cy="50" r="33" fill="#ffffff" />
+                                    
+                                    <text fill="#ffffff" fontSize="6.2" fontWeight="bold" letterSpacing="0.6">
+                                        <textPath href="#badgeTextPath" startOffset="50%" textAnchor="middle">
+                                            ENVIRONMENTALLY FRIENDLY •
+                                        </textPath>
+                                    </text>
+                                    
+                                    <g transform="translate(50, 48) scale(0.9)">
+                                        <text x="0" y="-3" fontFamily="Plus Jakarta Sans, sans-serif" fontSize="8.5" fontWeight="900" fill="#047857" textAnchor="middle">FLY ASH</text>
+                                        <text x="0" y="7" fontFamily="Plus Jakarta Sans, sans-serif" fontSize="8.5" fontWeight="900" fill="#047857" textAnchor="middle">BRICKS</text>
+                                    </g>
+                                    <circle cx="50" cy="65" r="2" fill="#047857" />
+                                    <circle cx="43" cy="64" r="1.5" fill="#047857" />
+                                    <circle cx="57" cy="64" r="1.5" fill="#047857" />
+                                </svg>
+                            </div>
+                            <div className="seal-text-container">
+                                <h3>ENVIRONMENT FRIENDLY</h3>
+                                <p>FLYASH BRICKS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="area-expertise">
                     <h2>Check Our Key Areas of Expertise</h2>
                     <p className="area-expertise-subtitle">
@@ -91,6 +155,71 @@ export const Home = () => {
                                 <h3>Eco-Permeable Paving</h3>
                                 <p>Smart storm-water drainage paver configurations designed to facilitate groundwater recharge, minimize puddles, and prevent stormwater pooling in critical flood-prone zones.</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Regional Zones Section */}
+                <div className="home-zones-section">
+                    <div className="zone-section-header" style={{ textAlign: 'center', margin: '0 auto 50px auto' }}>
+                        <span className="home-hero-badge" style={{ background: 'rgba(13, 138, 114, 0.1)', color: '#0d8a72', border: '1px solid rgba(13, 138, 114, 0.2)' }}>Association Zones</span>
+                        <h2 style={{ fontSize: '36px', fontWeight: 800, color: '#111827', margin: '15px 0 10px 0' }}>Explore Our Regional Zones</h2>
+                        <p style={{ fontSize: '16px', color: '#6b7280', margin: '0 auto', maxWidth: '700px', lineHeight: '1.6' }}>
+                            Our association operates across designated regional zones in Tamil Nadu to foster local manufacturing growth and sustainable building.
+                        </p>
+                    </div>
+
+                    <div className="home-zones-grid">
+                        {/* Chennai Zone */}
+                        <div className="home-zone-card" id="chennai-zone">
+                            <div className="zone-card-image-wrapper">
+                                <img src="/chennai_pin.png" alt="Chennai Zone Location Map" className="zone-card-img" />
+                            </div>
+                            <h3 className="zone-card-title">CHENNAI ZONE</h3>
+                            <div className="zone-card-line"></div>
+                            <p className="zone-card-text">
+                                The Chennai Zone Association Members are an integral part of the larger Tamilnadu Fly Ash Bricks Association, contributing to the growth and success of sustainable construction practices within the Chennai region.
+                            </p>
+                            <Link to="/members" className="zone-card-btn">Member Details</Link>
+                        </div>
+
+                        {/* Mettur Zone */}
+                        <div className="home-zone-card" id="mettur-zone">
+                            <div className="zone-card-image-wrapper">
+                                <img src="/mettur_pin.png" alt="Mettur Zone Location Map" className="zone-card-img" />
+                            </div>
+                            <h3 className="zone-card-title">METTUR ZONE</h3>
+                            <div className="zone-card-line"></div>
+                            <p className="zone-card-text">
+                                The Mettur Zone Association Members play a vital role in advancing the goals of the Tamilnadu Fly Ash Bricks Association within the Mettur region.
+                            </p>
+                            <Link to="/members" className="zone-card-btn">Member Details</Link>
+                        </div>
+
+                        {/* Neyveli Zone */}
+                        <div className="home-zone-card" id="neyveli-zone">
+                            <div className="zone-card-image-wrapper">
+                                <img src="/neyveli_pin.png" alt="Neyveli Zone Location Map" className="zone-card-img" />
+                            </div>
+                            <h3 className="zone-card-title">NEYVELI ZONE</h3>
+                            <div className="zone-card-line"></div>
+                            <p className="zone-card-text">
+                                The Neyveli Zone Association Members form an integral part of the Tamilnadu Fly Ash Bricks Association, actively contributing to the promotion of sustainable construction practices in the Neyveli region.
+                            </p>
+                            <Link to="/members" className="zone-card-btn">Member Details</Link>
+                        </div>
+
+                        {/* Tuticorin Zone */}
+                        <div className="home-zone-card" id="tuticorin-zone">
+                            <div className="zone-card-image-wrapper">
+                                <img src="/tuticorin_pin.png" alt="Tuticorin Zone Location Map" className="zone-card-img" />
+                            </div>
+                            <h3 className="zone-card-title">TUTICORIN ZONE</h3>
+                            <div className="zone-card-line"></div>
+                            <p className="zone-card-text">
+                                The Tuticorin Zone Association Members form an integral part of the Tamilnadu Fly Ash Bricks Association, actively contributing to the promotion of sustainable construction practices in the Tuticorin region.
+                            </p>
+                            <Link to="/members" className="zone-card-btn">Member Details</Link>
                         </div>
                     </div>
                 </div>
