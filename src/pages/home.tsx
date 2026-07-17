@@ -176,8 +176,8 @@ export const Home = () => {
                                 <img src="/chennai_pin.png" alt="Chennai Zone Location Map" className="zone-card-img" />
                             </div>
                             <h3 className="zone-card-title">CHENNAI ZONE</h3>
-                            <div className="zone-card-line"></div>
-                            <p className="zone-card-text">
+                            <div className="zone-card-divider"></div>
+                            <p className="zone-card-desc">
                                 The Chennai Zone Association Members are an integral part of the larger Tamilnadu Fly Ash Bricks Association, contributing to the growth and success of sustainable construction practices within the Chennai region.
                             </p>
                             <Link to="/members" className="zone-card-btn">Member Details</Link>
@@ -189,8 +189,8 @@ export const Home = () => {
                                 <img src="/mettur_pin.png" alt="Mettur Zone Location Map" className="zone-card-img" />
                             </div>
                             <h3 className="zone-card-title">METTUR ZONE</h3>
-                            <div className="zone-card-line"></div>
-                            <p className="zone-card-text">
+                            <div className="zone-card-divider"></div>
+                            <p className="zone-card-desc">
                                 The Mettur Zone Association Members play a vital role in advancing the goals of the Tamilnadu Fly Ash Bricks Association within the Mettur region.
                             </p>
                             <Link to="/members" className="zone-card-btn">Member Details</Link>
@@ -202,8 +202,8 @@ export const Home = () => {
                                 <img src="/neyveli_pin.png" alt="Neyveli Zone Location Map" className="zone-card-img" />
                             </div>
                             <h3 className="zone-card-title">NEYVELI ZONE</h3>
-                            <div className="zone-card-line"></div>
-                            <p className="zone-card-text">
+                            <div className="zone-card-divider"></div>
+                            <p className="zone-card-desc">
                                 The Neyveli Zone Association Members form an integral part of the Tamilnadu Fly Ash Bricks Association, actively contributing to the promotion of sustainable construction practices in the Neyveli region.
                             </p>
                             <Link to="/members" className="zone-card-btn">Member Details</Link>
@@ -215,8 +215,8 @@ export const Home = () => {
                                 <img src="/tuticorin_pin.png" alt="Tuticorin Zone Location Map" className="zone-card-img" />
                             </div>
                             <h3 className="zone-card-title">TUTICORIN ZONE</h3>
-                            <div className="zone-card-line"></div>
-                            <p className="zone-card-text">
+                            <div className="zone-card-divider"></div>
+                            <p className="zone-card-desc">
                                 The Tuticorin Zone Association Members form an integral part of the Tamilnadu Fly Ash Bricks Association, actively contributing to the promotion of sustainable construction practices in the Tuticorin region.
                             </p>
                             <Link to="/members" className="zone-card-btn">Member Details</Link>
