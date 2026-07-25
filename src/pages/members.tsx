@@ -141,7 +141,7 @@ export const Members = () => {
                             <div key={member.s_no} className="member-grid-card-item">
                                 <MemberCard 
                                     name={member.owner || "MEMBER"}
-                                    zone={`Mettur Zone - ${member.district}`}
+                                    // zone={`${member.district}`}
                                     company={member.company}
                                     phone={member.mobile || "N/A"}
                                     location={member.district}

@@ -45,7 +45,7 @@ export const MemberCard: React.FC<MemberCardProps> = ({
             
             <div className="member-card-teal-box">
                 <h3 className="member-card-name">{name.toUpperCase()}</h3>
-                <p className="member-card-zone">{zone}</p>
+                {zone && <p className="member-card-zone">{zone}</p>}
             </div>
             
             <div className="member-card-details">

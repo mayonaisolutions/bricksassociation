@@ -180,7 +180,7 @@ export const Home = () => {
                             <p className="zone-card-desc">
                                 The Chennai Zone Association Members are an integral part of the larger Tamilnadu Fly Ash Bricks Association, contributing to the growth and success of sustainable construction practices within the Chennai region.
                             </p>
-                            <Link to="/members" className="zone-card-btn">Member Details</Link>
+                            <Link to="/members?zone=chennai" className="zone-card-btn">Member Details</Link>
                         </div>
 
                         {/* Mettur Zone */}
@@ -193,7 +193,7 @@ export const Home = () => {
                             <p className="zone-card-desc">
                                 The Mettur Zone Association Members play a vital role in advancing the goals of the Tamilnadu Fly Ash Bricks Association within the Mettur region.
                             </p>
-                            <Link to="/members" className="zone-card-btn">Member Details</Link>
+                            <Link to="/members?zone=mettur" className="zone-card-btn">Member Details</Link>
                         </div>
 
                         {/* Neyveli Zone */}
@@ -206,7 +206,7 @@ export const Home = () => {
                             <p className="zone-card-desc">
                                 The Neyveli Zone Association Members form an integral part of the Tamilnadu Fly Ash Bricks Association, actively contributing to the promotion of sustainable construction practices in the Neyveli region.
                             </p>
-                            <Link to="/members" className="zone-card-btn">Member Details</Link>
+                            <Link to="/members?zone=neyveli" className="zone-card-btn">Member Details</Link>
                         </div>
 
                         {/* Tuticorin Zone */}
@@ -219,7 +219,7 @@ export const Home = () => {
                             <p className="zone-card-desc">
                                 The Tuticorin Zone Association Members form an integral part of the Tamilnadu Fly Ash Bricks Association, actively contributing to the promotion of sustainable construction practices in the Tuticorin region.
                             </p>
-                            <Link to="/members" className="zone-card-btn">Member Details</Link>
+                            <Link to="/members?zone=tuticorin" className="zone-card-btn">Member Details</Link>
                         </div>
                     </div>
                 </div>

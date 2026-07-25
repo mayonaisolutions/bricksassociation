@@ -72,13 +72,19 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Column 3: Helps & Support */}
+          {/* Column 3: Zones & Districts */}
           <div className="footer-col">
-            <h3>Helps & Support</h3>
+            <h3>Zones & Districts</h3>
             <ul className="footer-links-list">
-              <li><a href="#chennai-zone" className="footer-link">Chennai Zone</a></li>
-              <li><a href="#mettur-zone" className="footer-link">Mettur Zone</a></li>
-              <li><a href="#tuticorin-zone" className="footer-link">Tuticorin Zone</a></li>
+              <li><Link to="/members?zone=neyveli" className="footer-link" onClick={scrollToTop}>Neyveli Zone</Link></li>
+              <li><Link to="/members?zone=coimbatore" className="footer-link" onClick={scrollToTop}>Coimbatore</Link></li>
+              <li><Link to="/members?zone=erode" className="footer-link" onClick={scrollToTop}>Erode</Link></li>
+              <li><Link to="/members?zone=tirupur" className="footer-link" onClick={scrollToTop}>Tirupur</Link></li>
+              <li><Link to="/members?zone=namakkal" className="footer-link" onClick={scrollToTop}>Namakkal</Link></li>
+              <li><Link to="/members?zone=karur" className="footer-link" onClick={scrollToTop}>Karur</Link></li>
+              <li><Link to="/members?zone=salem" className="footer-link" onClick={scrollToTop}>Salem</Link></li>
+              <li><Link to="/members?zone=dindigul" className="footer-link" onClick={scrollToTop}>Dindigul</Link></li>
+              <li><Link to="/members?zone=dharmapuri" className="footer-link" onClick={scrollToTop}>Dharmapuri</Link></li>
             </ul>
           </div>
 

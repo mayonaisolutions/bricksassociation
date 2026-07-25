@@ -152,6 +152,11 @@
 
   .navbar-mobile-toggle {
     display: flex;
+    margin-left: auto;
+  }
+
+  .navbar-container nav {
+    position: absolute;
   }
 
   .navbar-cta-wrapper {
