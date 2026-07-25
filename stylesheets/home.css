@@ -12,7 +12,7 @@
   width: 100%;
   padding: 140px 0;
   margin-bottom: 80px;
-  background-image: linear-gradient(rgba(6, 40, 30, 0.75), rgba(6, 25, 20, 0.85)), url('../villa_driveway.png');
+  background-image: linear-gradient(rgba(6, 40, 30, 0.75), rgba(6, 25, 20, 0.85)), url('/villa_driveway.png');
   background-size: cover;
   background-position: center;
   color: #ffffff;
