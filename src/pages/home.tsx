@@ -162,64 +162,140 @@ export const Home = () => {
                 {/* Regional Zones Section */}
                 <div className="home-zones-section">
                     <div className="zone-section-header" style={{ textAlign: 'center', margin: '0 auto 50px auto' }}>
-                        <span className="home-hero-badge" style={{ background: 'rgba(13, 138, 114, 0.1)', color: '#0d8a72', border: '1px solid rgba(13, 138, 114, 0.2)' }}>Association Zones</span>
-                        <h2 style={{ fontSize: '36px', fontWeight: 800, color: '#111827', margin: '15px 0 10px 0' }}>Explore Our Regional Zones</h2>
+                        <span className="home-hero-badge" style={{ background: 'rgba(13, 138, 114, 0.1)', color: '#0d8a72', border: '1px solid rgba(13, 138, 114, 0.2)' }}>Manufacturing Districts</span>
+                        <h2 style={{ fontSize: '36px', fontWeight: 800, color: '#111827', margin: '15px 0 10px 0' }}>Explore Our Regional Districts</h2>
                         <p style={{ fontSize: '16px', color: '#6b7280', margin: '0 auto', maxWidth: '700px', lineHeight: '1.6' }}>
-                            Our association operates across designated regional zones in Tamil Nadu to foster local manufacturing growth and sustainable building.
+                            Our association has certified fly ash bricks and paver block manufacturers active across key districts in Tamil Nadu:
                         </p>
                     </div>
 
                     <div className="home-zones-grid">
-                        {/* Chennai Zone */}
-                        <div className="home-zone-card" id="chennai-zone">
+                        {/* Coimbatore District */}
+                        <div className="home-zone-card" id="coimbatore-district">
                             <div className="zone-card-image-wrapper">
-                                <img src="chennai_pin.png" alt="Chennai Zone Location Map" className="zone-card-img" />
+                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
+                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
+                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
+                                </svg>
                             </div>
-                            <h3 className="zone-card-title">CHENNAI ZONE</h3>
+                            <h3 className="zone-card-title">COIMBATORE</h3>
                             <div className="zone-card-divider"></div>
                             <p className="zone-card-desc">
-                                The Chennai Zone Association Members are an integral part of the larger Tamilnadu Fly Ash Bricks Association, contributing to the growth and success of sustainable construction practices within the Chennai region.
+                                Home to 56 certified Fly Ash Bricks & Paver Block manufacturers supplying high-strength concrete products across the Coimbatore region.
                             </p>
-                            <Link to="/members?zone=chennai" className="zone-card-btn">Member Details</Link>
+                            <Link to="/members?zone=coimbatore" className="zone-card-btn">Member Details</Link>
                         </div>
 
-                        {/* Mettur Zone */}
-                        <div className="home-zone-card" id="mettur-zone">
+                        {/* Erode District */}
+                        <div className="home-zone-card" id="erode-district">
                             <div className="zone-card-image-wrapper">
-                                <img src="mettur_pin.png" alt="Mettur Zone Location Map" className="zone-card-img" />
+                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
+                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
+                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
+                                </svg>
                             </div>
-                            <h3 className="zone-card-title">METTUR ZONE</h3>
+                            <h3 className="zone-card-title">ERODE</h3>
                             <div className="zone-card-divider"></div>
                             <p className="zone-card-desc">
-                                The Mettur Zone Association Members play a vital role in advancing the goals of the Tamilnadu Fly Ash Bricks Association within the Mettur region.
+                                Featuring 36 verified manufacturers producing premium paver blocks and sustainable building bricks in the Erode manufacturing hub.
                             </p>
-                            <Link to="/members?zone=mettur" className="zone-card-btn">Member Details</Link>
+                            <Link to="/members?zone=erode" className="zone-card-btn">Member Details</Link>
                         </div>
 
-                        {/* Neyveli Zone */}
-                        <div className="home-zone-card" id="neyveli-zone">
+                        {/* Tirupur District */}
+                        <div className="home-zone-card" id="tirupur-district">
                             <div className="zone-card-image-wrapper">
-                                <img src="neyveli_pin.png" alt="Neyveli Zone Location Map" className="zone-card-img" />
+                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
+                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
+                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
+                                </svg>
                             </div>
-                            <h3 className="zone-card-title">NEYVELI ZONE</h3>
+                            <h3 className="zone-card-title">TIRUPUR</h3>
                             <div className="zone-card-divider"></div>
                             <p className="zone-card-desc">
-                                The Neyveli Zone Association Members form an integral part of the Tamilnadu Fly Ash Bricks Association, actively contributing to the promotion of sustainable construction practices in the Neyveli region.
+                                A major cluster with 33 association members delivering industrial and residential interlocking pavers throughout the Tirupur zone.
                             </p>
-                            <Link to="/members?zone=neyveli" className="zone-card-btn">Member Details</Link>
+                            <Link to="/members?zone=tirupur" className="zone-card-btn">Member Details</Link>
                         </div>
 
-                        {/* Tuticorin Zone */}
-                        <div className="home-zone-card" id="tuticorin-zone">
+                        {/* Salem District */}
+                        <div className="home-zone-card" id="salem-district">
                             <div className="zone-card-image-wrapper">
-                                <img src="tuticorin_pin.png" alt="Tuticorin Zone Location Map" className="zone-card-img" />
+                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
+                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
+                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
+                                </svg>
                             </div>
-                            <h3 className="zone-card-title">TUTICORIN ZONE</h3>
+                            <h3 className="zone-card-title">SALEM</h3>
                             <div className="zone-card-divider"></div>
                             <p className="zone-card-desc">
-                                The Tuticorin Zone Association Members form an integral part of the Tamilnadu Fly Ash Bricks Association, actively contributing to the promotion of sustainable construction practices in the Tuticorin region.
+                                Consists of 22 certified manufacturers offering durable M30/M40 grade pavers and structural fly ash blocks in the Salem area.
                             </p>
-                            <Link to="/members?zone=tuticorin" className="zone-card-btn">Member Details</Link>
+                            <Link to="/members?zone=salem" className="zone-card-btn">Member Details</Link>
+                        </div>
+
+                        {/* Namakkal District */}
+                        <div className="home-zone-card" id="namakkal-district">
+                            <div className="zone-card-image-wrapper">
+                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
+                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
+                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
+                                </svg>
+                            </div>
+                            <h3 className="zone-card-title">NAMAKKAL</h3>
+                            <div className="zone-card-divider"></div>
+                            <p className="zone-card-desc">
+                                Connecting you with 20 leading fly ash brick factories and interlocking concrete block manufacturers in the Namakkal district.
+                            </p>
+                            <Link to="/members?zone=namakkal" className="zone-card-btn">Member Details</Link>
+                        </div>
+
+                        {/* Karur District */}
+                        <div className="home-zone-card" id="karur-district">
+                            <div className="zone-card-image-wrapper">
+                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
+                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
+                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
+                                </svg>
+                            </div>
+                            <h3 className="zone-card-title">KARUR</h3>
+                            <div className="zone-card-divider"></div>
+                            <p className="zone-card-desc">
+                                Hosting 13 active manufacturing units specialized in high-performance eco-friendly concrete brick solutions for the Karur industrial belt.
+                            </p>
+                            <Link to="/members?zone=karur" className="zone-card-btn">Member Details</Link>
+                        </div>
+
+                        {/* Dindigul District */}
+                        <div className="home-zone-card" id="dindigul-district">
+                            <div className="zone-card-image-wrapper">
+                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
+                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
+                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
+                                </svg>
+                            </div>
+                            <h3 className="zone-card-title">DINDIGUL</h3>
+                            <div className="zone-card-divider"></div>
+                            <p className="zone-card-desc">
+                                Represented by 3 verified manufacturers delivering structural fly ash bricks and interlocking pavers in the Dindigul district.
+                            </p>
+                            <Link to="/members?zone=dindigul" className="zone-card-btn">Member Details</Link>
+                        </div>
+
+                        {/* Dharmapuri District */}
+                        <div className="home-zone-card" id="dharmapuri-district">
+                            <div className="zone-card-image-wrapper">
+                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
+                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
+                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
+                                </svg>
+                            </div>
+                            <h3 className="zone-card-title">DHARMAPURI</h3>
+                            <div className="zone-card-divider"></div>
+                            <p className="zone-card-desc">
+                                Featuring verified fly ash block manufacturing supply and local delivery options in the Dharmapuri region.
+                            </p>
+                            <Link to="/members?zone=dharmapuri" className="zone-card-btn">Member Details</Link>
                         </div>
                     </div>
                 </div>

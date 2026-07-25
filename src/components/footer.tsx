@@ -76,7 +76,6 @@ export const Footer: React.FC = () => {
           <div className="footer-col">
             <h3>Zones & Districts</h3>
             <ul className="footer-links-list">
-              <li><Link to="/members?zone=neyveli" className="footer-link" onClick={scrollToTop}>Neyveli Zone</Link></li>
               <li><Link to="/members?zone=coimbatore" className="footer-link" onClick={scrollToTop}>Coimbatore</Link></li>
               <li><Link to="/members?zone=erode" className="footer-link" onClick={scrollToTop}>Erode</Link></li>
               <li><Link to="/members?zone=tirupur" className="footer-link" onClick={scrollToTop}>Tirupur</Link></li>
