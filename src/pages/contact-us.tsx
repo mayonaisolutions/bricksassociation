@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { MemberCard } from '../components/MemberCard';
+
 
 export const Contactus = () => {
     useEffect(() => {
