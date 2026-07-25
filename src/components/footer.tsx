@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
           {/* Column 1: Logo & About */}
           <div className="footer-col">
             <Link to="/" className="footer-logo-link" onClick={scrollToTop}>
-              <img src={process.env.PUBLIC_URL + "/logo.png"} alt="Tamilnadu Fly Ash Bricks Association Logo" className="footer-logo-img" />
+              <img src="logo.png" alt="Tamilnadu Fly Ash Bricks Association Logo" className="footer-logo-img" />
             </Link>
             <p className="footer-about-text">
               Established with a vision to propel the use of fly ash bricks and solid blocks in the building industry, we are committed to shaping a greener, more resilient future for Tamil Nadu.

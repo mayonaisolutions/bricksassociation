@@ -501,10 +501,10 @@
   }
   .member-card-details {
     width: 250px;
-    align-items: center;
+    align-items: flex-start;
   }
   .member-card-info-item {
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 

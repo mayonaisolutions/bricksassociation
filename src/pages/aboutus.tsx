@@ -48,7 +48,7 @@ export const Aboutus = () => {
                     
                     <div className="about-image-right">
                         <img 
-                            src={process.env.PUBLIC_URL + "/concrete_pavers.png"} 
+                            src="concrete_pavers.png" 
                             alt="Eco-friendly interlocking paver blocks" 
                         />
                         <div className="image-badge">Sustainable Foundations</div>
@@ -59,7 +59,7 @@ export const Aboutus = () => {
                 <div className="about-container reverse">
                     <div className="about-image-left">
                         <img 
-                            src={process.env.PUBLIC_URL + "/eco_building.png"} 
+                            src="eco_building.png" 
                             alt="Eco-friendly construction and green building" 
                         />
                         <div className="image-badge">Empowering Sustainable Construction</div>

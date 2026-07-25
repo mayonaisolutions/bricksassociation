@@ -28,7 +28,7 @@ export const Home = () => {
                 <div className="home-intro-section">
                     <div className="home-intro-left">
                         <div className="intro-image-wrapper">
-                            <img src={process.env.PUBLIC_URL + "/unity_community.png"} alt="Tamilnadu Flyash Bricks Association Unity & Community" className="intro-main-image" />
+                            <img src="unity_community.png" alt="Tamilnadu Flyash Bricks Association Unity & Community" className="intro-main-image" />
                             <div className="since-badge">
                                 <span className="since-title">Since</span>
                                 <span className="since-year">2014</span>
@@ -173,7 +173,7 @@ export const Home = () => {
                         {/* Chennai Zone */}
                         <div className="home-zone-card" id="chennai-zone">
                             <div className="zone-card-image-wrapper">
-                                <img src={process.env.PUBLIC_URL + "/chennai_pin.png"} alt="Chennai Zone Location Map" className="zone-card-img" />
+                                <img src="chennai_pin.png" alt="Chennai Zone Location Map" className="zone-card-img" />
                             </div>
                             <h3 className="zone-card-title">CHENNAI ZONE</h3>
                             <div className="zone-card-divider"></div>
@@ -186,7 +186,7 @@ export const Home = () => {
                         {/* Mettur Zone */}
                         <div className="home-zone-card" id="mettur-zone">
                             <div className="zone-card-image-wrapper">
-                                <img src={process.env.PUBLIC_URL + "/mettur_pin.png"} alt="Mettur Zone Location Map" className="zone-card-img" />
+                                <img src="mettur_pin.png" alt="Mettur Zone Location Map" className="zone-card-img" />
                             </div>
                             <h3 className="zone-card-title">METTUR ZONE</h3>
                             <div className="zone-card-divider"></div>
@@ -199,7 +199,7 @@ export const Home = () => {
                         {/* Neyveli Zone */}
                         <div className="home-zone-card" id="neyveli-zone">
                             <div className="zone-card-image-wrapper">
-                                <img src={process.env.PUBLIC_URL + "/neyveli_pin.png"} alt="Neyveli Zone Location Map" className="zone-card-img" />
+                                <img src="neyveli_pin.png" alt="Neyveli Zone Location Map" className="zone-card-img" />
                             </div>
                             <h3 className="zone-card-title">NEYVELI ZONE</h3>
                             <div className="zone-card-divider"></div>
@@ -212,7 +212,7 @@ export const Home = () => {
                         {/* Tuticorin Zone */}
                         <div className="home-zone-card" id="tuticorin-zone">
                             <div className="zone-card-image-wrapper">
-                                <img src={process.env.PUBLIC_URL + "/tuticorin_pin.png"} alt="Tuticorin Zone Location Map" className="zone-card-img" />
+                                <img src="tuticorin_pin.png" alt="Tuticorin Zone Location Map" className="zone-card-img" />
                             </div>
                             <h3 className="zone-card-title">TUTICORIN ZONE</h3>
                             <div className="zone-card-divider"></div>
