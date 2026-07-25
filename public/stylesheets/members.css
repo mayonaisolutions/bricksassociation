@@ -268,6 +268,9 @@
 .member-grid-card-item .member-card-details {
   border-top: 1px solid #f3f4f6;
   background: #ffffff;
+  width: 100% !important;
+  padding: 20px 20px !important;
+  box-sizing: border-box !important;
 }
 
 /* Extra Details box styling */
