@@ -154,6 +154,10 @@
     display: flex;
   }
 
+  .navbar-container nav {
+    position: absolute;
+  }
+
   .navbar-cta-wrapper {
     display: none; /* Hide desktop button on mobile */
   }
