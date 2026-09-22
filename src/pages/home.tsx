@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Home = () => {
     useEffect(() => {
-        document.title = "Home | Tamilnadu Fly Ash Bricks Association";
+        document.title = "Home | TamilNadu Flyash Product Manufacturer Association";
     }, []);
 
     return (
@@ -11,10 +11,10 @@ export const Home = () => {
             {/* Hero Section */}
             <div className="home-hero">
                 <div className="home-hero-inner">
-                    <span className="home-hero-badge">Sustainable & Durable Pavements</span>
-                    <h1>Paving the Future with Premium Concrete Pavers</h1>
+                    <span className="home-hero-badge">Eco-Friendly Construction Solutions</span>
+                    <h1>Building the Future with Premium Eco-Friendly Fly Ash Bricks</h1>
                     <p className="home-hero-text">
-                        Engineered to withstand heavy traffic, resist weathering, and elevate the aesthetics of any outdoor space. Discover M40+ grade interlocking concrete blocks manufactured with high-quality standards across Tamil Nadu.
+                        Engineered to withstand heavy structural loads, resist weathering, and elevate the durability of any construction. Discover high-quality Fly Ash bricks manufactured with premium standards across Tamil Nadu.
                     </p>
                     <div className="home-hero-ctas">
                         <Link to="/contact-us" className="btn-secondary">Contact Us</Link>
@@ -28,7 +28,7 @@ export const Home = () => {
                 <div className="home-intro-section">
                     <div className="home-intro-left">
                         <div className="intro-image-wrapper">
-                            <img src="unity_community.png" alt="Tamilnadu Flyash Bricks Association Unity & Community" className="intro-main-image" />
+                            <img src="unity_community.png" alt="TamilNadu Flyash Product Manufacturer Association Unity & Community" className="intro-main-image" />
                             <div className="since-badge">
                                 <span className="since-title">Since</span>
                                 <span className="since-year">2014</span>
@@ -39,11 +39,11 @@ export const Home = () => {
                     <div className="home-intro-right">
                         <div className="intro-subtitle">
                             <span className="subtitle-line"></span>
-                            <span className="subtitle-text">TAMILNADU FLYASH BRICKS ASSOCIATION</span>
+                            <span className="subtitle-text">TAMILNADU FLYASH PRODUCT MANUFACTURER ASSOCIATION</span>
                         </div>
                         <h2 className="intro-title">Unity in Purpose, Growth in Community</h2>
                         <p className="intro-description">
-                            Welcome to the Tamilnadu Fly Ash Bricks Association, a dynamic community dedicated to revolutionizing the construction landscape through sustainable practices and innovative solutions.
+                            Welcome to the TamilNadu Flyash Product Manufacturer Association, a dynamic community dedicated to revolutionizing the construction landscape through sustainable practices and innovative solutions.
                         </p>
 
                         <div className="intro-progress-container">
@@ -92,11 +92,11 @@ export const Home = () => {
                 <div className="area-expertise">
                     <h2>Check Our Key Areas of Expertise</h2>
                     <p className="area-expertise-subtitle">
-                        Providing specialized, high-performance interlocking concrete paver blocks for residential, commercial, and heavy industrial applications.
+                        Providing specialized, high-performance, and eco-friendly fly ash bricks for structural, commercial, and residential construction applications.
                     </p>
 
                     <div className="expertise-grid">
-                        {/* Area 1: Industrial Yards */}
+                        {/* Area 1: Structural & Load-Bearing Walls */}
                         <div className="expertise-card">
                             <div className="expertise-icon-wrapper">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -108,12 +108,12 @@ export const Home = () => {
                                 </svg>
                             </div>
                             <div className="expertise-info">
-                                <h3>Industrial Yards & Roads</h3>
-                                <p>Heavy-duty, high compressive strength (M40 & M50 grade) interlocking blocks engineered for factories, container terminals, warehouse yards, and heavy-vehicle roads.</p>
+                                <h3>Structural & Load-Bearing Walls</h3>
+                                <p>High-compressive strength fly ash bricks engineered for load-bearing walls in multi-story residential buildings, industrial complexes, and commercial properties.</p>
                             </div>
                         </div>
 
-                        {/* Area 2: Commercial Areas */}
+                        {/* Area 2: Commercial & Infrastructure Projects */}
                         <div className="expertise-card">
                             <div className="expertise-icon-wrapper">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -124,12 +124,12 @@ export const Home = () => {
                                 </svg>
                             </div>
                             <div className="expertise-info">
-                                <h3>Commercial & Public Spaces</h3>
-                                <p>Aesthetic and high-performance paving solutions for shopping plazas, office parking lots, public pathways, walkways, and municipal parks, balancing layout versatility and strength.</p>
+                                <h3>Commercial & Infrastructure</h3>
+                                <p>Eco-friendly, lightweight, and thermal-insulating fly ash bricks optimized for large-scale commercial developments, public infrastructure, and government projects.</p>
                             </div>
                         </div>
 
-                        {/* Area 3: Residential Paving */}
+                        {/* Area 3: Residential Masonry & Partition Walls */}
                         <div className="expertise-card">
                             <div className="expertise-icon-wrapper">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -138,22 +138,30 @@ export const Home = () => {
                                 </svg>
                             </div>
                             <div className="expertise-info">
-                                <h3>Residential Landscaping</h3>
-                                <p>Premium decorative paver blocks for home driveways, backyard patios, garden walkways, and swimming pool decks, available in a variety of design patterns, shapes, and color tones.</p>
+                                <h3>Residential Masonry Walls</h3>
+                                <p>Premium quality, dimensionally uniform fly ash bricks for home partitions, compound walls, and interior masonry work, offering smooth finishes and low plastering costs.</p>
                             </div>
                         </div>
 
-                        {/* Area 4: Permeable Paving */}
+                        {/* Area 4: Fly Ash Bricks */}
                         <div className="expertise-card">
                             <div className="expertise-icon-wrapper">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M12 2v20" />
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                                    <path d="M3 9h18" />
+                                    <path d="M3 15h18" />
+                                    <path d="M9 3v6" />
+                                    <path d="M15 3v6" />
+                                    <path d="M6 9v6" />
+                                    <path d="M12 9v6" />
+                                    <path d="M18 9v6" />
+                                    <path d="M9 15v6" />
+                                    <path d="M15 15v6" />
                                 </svg>
                             </div>
                             <div className="expertise-info">
-                                <h3>Eco-Permeable Paving</h3>
-                                <p>Smart storm-water drainage paver configurations designed to facilitate groundwater recharge, minimize puddles, and prevent stormwater pooling in critical flood-prone zones.</p>
+                                <h3>Eco-Friendly Fly Ash Bricks</h3>
+                                <p>Sustainable, high-strength structural bricks manufactured from fly ash, ideal for load-bearing walls, masonry work, and high-performance, cost-effective buildings.</p>
                             </div>
                         </div>
                     </div>
@@ -165,7 +173,7 @@ export const Home = () => {
                         <span className="home-hero-badge" style={{ background: 'rgba(13, 138, 114, 0.1)', color: '#0d8a72', border: '1px solid rgba(13, 138, 114, 0.2)' }}>Manufacturing Districts</span>
                         <h2 style={{ fontSize: '36px', fontWeight: 800, color: '#111827', margin: '15px 0 10px 0' }}>Explore Our Regional Districts</h2>
                         <p style={{ fontSize: '16px', color: '#6b7280', margin: '0 auto', maxWidth: '700px', lineHeight: '1.6' }}>
-                            Our association has certified fly ash bricks and paver block manufacturers active across key districts in Tamil Nadu:
+                            Our association has certified fly ash bricks manufacturers active across key districts in Tamil Nadu:
                         </p>
                     </div>
 
@@ -181,7 +189,7 @@ export const Home = () => {
                             <h3 className="zone-card-title">COIMBATORE</h3>
                             <div className="zone-card-divider"></div>
                             <p className="zone-card-desc">
-                                Home to 56 certified Fly Ash Bricks & Paver Block manufacturers supplying high-strength concrete products across the Coimbatore region.
+                                Home to 56 certified Fly Ash Bricks manufacturers supplying high-strength building products across the Coimbatore region.
                             </p>
                             <Link to="/members?zone=coimbatore" className="zone-card-btn">Member Details</Link>
                         </div>
@@ -197,7 +205,7 @@ export const Home = () => {
                             <h3 className="zone-card-title">ERODE</h3>
                             <div className="zone-card-divider"></div>
                             <p className="zone-card-desc">
-                                Featuring 36 verified manufacturers producing premium paver blocks and sustainable building bricks in the Erode manufacturing hub.
+                                Featuring 36 verified manufacturers producing premium sustainable fly ash bricks in the Erode manufacturing hub.
                             </p>
                             <Link to="/members?zone=erode" className="zone-card-btn">Member Details</Link>
                         </div>
@@ -213,7 +221,7 @@ export const Home = () => {
                             <h3 className="zone-card-title">TIRUPUR</h3>
                             <div className="zone-card-divider"></div>
                             <p className="zone-card-desc">
-                                A major cluster with 33 association members delivering industrial and residential interlocking pavers throughout the Tirupur zone.
+                                A major cluster with 33 association members delivering eco-friendly masonry bricks throughout the Tirupur zone.
                             </p>
                             <Link to="/members?zone=tirupur" className="zone-card-btn">Member Details</Link>
                         </div>
@@ -229,7 +237,7 @@ export const Home = () => {
                             <h3 className="zone-card-title">SALEM</h3>
                             <div className="zone-card-divider"></div>
                             <p className="zone-card-desc">
-                                Consists of 22 certified manufacturers offering durable M30/M40 grade pavers and structural fly ash blocks in the Salem area.
+                                Consists of 22 certified manufacturers offering durable structural fly ash blocks and bricks in the Salem area.
                             </p>
                             <Link to="/members?zone=salem" className="zone-card-btn">Member Details</Link>
                         </div>
@@ -245,7 +253,7 @@ export const Home = () => {
                             <h3 className="zone-card-title">NAMAKKAL</h3>
                             <div className="zone-card-divider"></div>
                             <p className="zone-card-desc">
-                                Connecting you with 20 leading fly ash brick factories and interlocking concrete block manufacturers in the Namakkal district.
+                                Connecting you with 20 leading fly ash brick factories and manufacturers in the Namakkal district.
                             </p>
                             <Link to="/members?zone=namakkal" className="zone-card-btn">Member Details</Link>
                         </div>
@@ -261,7 +269,7 @@ export const Home = () => {
                             <h3 className="zone-card-title">KARUR</h3>
                             <div className="zone-card-divider"></div>
                             <p className="zone-card-desc">
-                                Hosting 13 active manufacturing units specialized in high-performance eco-friendly concrete brick solutions for the Karur industrial belt.
+                                Hosting 13 active manufacturing units specialized in high-performance eco-friendly fly ash brick solutions for the Karur industrial belt.
                             </p>
                             <Link to="/members?zone=karur" className="zone-card-btn">Member Details</Link>
                         </div>
@@ -277,7 +285,7 @@ export const Home = () => {
                             <h3 className="zone-card-title">DINDIGUL</h3>
                             <div className="zone-card-divider"></div>
                             <p className="zone-card-desc">
-                                Represented by 3 verified manufacturers delivering structural fly ash bricks and interlocking pavers in the Dindigul district.
+                                Represented by 3 verified manufacturers delivering structural fly ash bricks in the Dindigul district.
                             </p>
                             <Link to="/members?zone=dindigul" className="zone-card-btn">Member Details</Link>
                         </div>
@@ -302,8 +310,8 @@ export const Home = () => {
 
                 {/* Call to Action Row */}
                 <div className="home-cta-banner">
-                    <h3>Pave Your Project with the Experts</h3>
-                    <p>Contact the Tamilnadu Fly Ash Bricks Association today to coordinate supply, select interlocking patterns, or consult on compressive strength grades.</p>
+                    <h3>Build Your Project with the Experts</h3>
+                    <p>Contact the TamilNadu Flyash Product Manufacturer Association today to coordinate supply, select brick grades, or consult on compressive strength and thermal specifications.</p>
                     <Link to="/contact-us" className="btn-primary">Get in Touch</Link>
                 </div>
             </div>

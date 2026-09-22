@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 
 export const Aboutus = () => {
     useEffect(() => {
-        document.title = "About Us | Tamilnadu Fly Ash Bricks Association";
+        document.title = "About Us | TamilNadu Flyash Product Manufacturer Association";
         
         // Add or update meta description dynamically
         const metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc) {
-            metaDesc.setAttribute("content", "Learn about the Tamilnadu Fly Ash Bricks Association, our mission for sustainable building practices, and our commitment to eco-friendly fly ash brick manufacturing.");
+            metaDesc.setAttribute("content", "Learn about the TamilNadu Flyash Product Manufacturer Association, our mission for sustainable building practices, and our commitment to eco-friendly fly ash brick manufacturing.");
         }
     }, []);
 
@@ -19,7 +19,7 @@ export const Aboutus = () => {
                     <span className="about-us-badge">Who We Are</span>
                     <h1>Pioneering Sustainable Construction, Brick by Brick</h1>
                     <p className="about-us-text">
-                        Welcome to the Tamilnadu Fly Ash Bricks Association – your gateway to sustainable construction practices and a greener future for Tamil Nadu.
+                        Welcome to the TamilNadu Flyash Product Manufacturer Association – your gateway to sustainable construction practices and a greener future for Tamil Nadu.
                     </p>
                     <div className="about-slogo">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '6px' }}>
@@ -38,7 +38,7 @@ export const Aboutus = () => {
                         <h2 className="about-us-heading">About Us</h2>
                         <div className="about-us-body-text">
                             <p>
-                                Welcome to the Tamilnadu Fly Ash Bricks Association – your gateway to sustainable construction practices and a greener future for Tamil Nadu.
+                                Welcome to the TamilNadu Flyash Product Manufacturer Association – your gateway to sustainable construction practices and a greener future for Tamil Nadu.
                             </p>
                             <p>
                                 Established with a vision to lead the way in sustainable building practices, our association brings together industry professionals, manufacturers, suppliers, builders, and enthusiasts who share a common commitment to transforming the construction sector.
@@ -48,8 +48,8 @@ export const Aboutus = () => {
                     
                     <div className="about-image-right">
                         <img 
-                            src="concrete_pavers.png" 
-                            alt="Eco-friendly interlocking paver blocks" 
+                            src="fly_ash_bricks_about.png" 
+                            alt="Eco-friendly premium fly ash bricks" 
                         />
                         <div className="image-badge">Sustainable Foundations</div>
                     </div>

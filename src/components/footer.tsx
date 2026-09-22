@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
           {/* Column 1: Logo & About */}
           <div className="footer-col">
             <Link to="/" className="footer-logo-link" onClick={scrollToTop}>
-              <img src="logo.png" alt="Tamilnadu Fly Ash Bricks Association Logo" className="footer-logo-img" />
+              <img src="logo.png" alt="TamilNadu Flyash Product Manufacturer Association Logo" className="footer-logo-img" />
             </Link>
             <p className="footer-about-text">
               Established with a vision to propel the use of fly ash bricks and solid blocks in the building industry, we are committed to shaping a greener, more resilient future for Tamil Nadu.
@@ -57,6 +57,12 @@ export const Footer: React.FC = () => {
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </a>
+              {/* X (Twitter) */}
+              <a href="https://x.com/TamilNadu22365" className="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
               </a>
             </div>
@@ -125,7 +131,7 @@ export const Footer: React.FC = () => {
         {/* Footer Bottom Bar */}
         <div className="footer-bottom">
           <div className="footer-bottom-left">
-            <p>© Copyrights Tamilnadu Flyash Bricks Association.</p>
+            <p>© Copyrights TamilNadu Flyash Product Manufacturer Association.</p>
           </div>
           <div className="footer-bottom-right">
             <p>Powered by <a href="https://mayonaisolutions.com" className="footer-brand-highlight" target="_blank" rel="noopener noreferrer">Mayon AI Solutions</a></p>

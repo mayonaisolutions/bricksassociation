@@ -35,7 +35,7 @@ export const Members = () => {
     }, [location]);
 
     useEffect(() => {
-        document.title = "Members Directory | Tamilnadu Fly Ash Bricks Association";
+        document.title = "Members Directory | TamilNadu Flyash Product Manufacturer Association";
         
         // Add or update meta description dynamically
         const metaDesc = document.querySelector('meta[name="description"]');
@@ -77,7 +77,7 @@ export const Members = () => {
                     <span className="members-hero-badge">Verified Manufacturers</span>
                     <h1>Association Members Directory</h1>
                     <p className="members-hero-text">
-                        Connecting you with certified high-quality Fly Ash Bricks and Paver Block manufacturers in Mettur Zone, Tamil Nadu. Filter by district or search for specific members below.
+                        Connecting you with certified high-quality Fly Ash Bricks manufacturers across Tamil Nadu. Filter by district or search for specific members below.
                     </p>
                 </div>
             </div>

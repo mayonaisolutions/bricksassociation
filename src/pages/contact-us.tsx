@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 export const Contactus = () => {
     useEffect(() => {
-        document.title = "Contact Us | Tamilnadu Fly Ash Bricks Association";
+        document.title = "Contact Us | TamilNadu Flyash Product Manufacturer Association";
     }, []);
 
     const [formData, setFormData] = useState({
@@ -11,7 +11,7 @@ export const Contactus = () => {
         email: '',
         phone: '',
         location: '',
-        paverType: 'Heavy-Duty Industrial Pavers',
+        brickType: 'High-Strength Structural Bricks (Class 10/15)',
         message: ''
     });
 
@@ -25,13 +25,13 @@ export const Contactus = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        alert(`Thank you ${formData.name}! Your enquiry about ${formData.paverType} has been received. Our team will get back to you shortly.`);
+        alert(`Thank you ${formData.name}! Your enquiry about ${formData.brickType} has been received. Our team will get back to you shortly.`);
         setFormData({
             name: '',
             email: '',
             phone: '',
             location: '',
-            paverType: 'Heavy-Duty Industrial Pavers',
+            brickType: 'High-Strength Structural Bricks (Class 10/15)',
             message: ''
         });
     };
@@ -45,7 +45,7 @@ export const Contactus = () => {
                         <span className="contact-badge">Get In Touch</span>
                         <h1>We'd Love to Hear From You</h1>
                         <p className="contact-info-desc">
-                            Have questions about concrete paver block specifications, compressive strength grades, layout designs, or delivery logistics across Tamil Nadu? Reach out to our team directly.
+                            Have questions about fly ash brick specifications, compressive strength grades, thermal properties, or delivery logistics across Tamil Nadu? Reach out to our team directly.
                         </p>
 
                         <div className="contact-details-list">
@@ -101,6 +101,23 @@ export const Contactus = () => {
                                 <div className="contact-detail-content">
                                     <h3>Business Hours</h3>
                                     <p>Monday – Saturday: 9:00 AM – 6:00 PM<br />Sunday: Closed</p>
+                                </div>
+                            </div>
+
+                            {/* X (Twitter) */}
+                            <div className="contact-detail-item">
+                                <div className="contact-detail-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style={{ display: 'block', margin: 'auto' }}>
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </div>
+                                <div className="contact-detail-content">
+                                    <h3>Follow Us on X</h3>
+                                    <p>
+                                        <a href="https://x.com/TamilNadu22365" target="_blank" rel="noopener noreferrer" style={{ color: '#0d8a72', fontWeight: 600, textDecoration: 'none' }}>
+                                            @TamilNadu22365
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -163,18 +180,18 @@ export const Contactus = () => {
                                 </div>
                             </div>
 
-                            <div className="form-group">
-                                <label htmlFor="paverType">Required Paver Block Type</label>
+                             <div className="form-group">
+                                <label htmlFor="brickType">Required Fly Ash Brick Type/Grade</label>
                                 <select
-                                    id="paverType"
-                                    name="paverType"
-                                    value={formData.paverType}
+                                    id="brickType"
+                                    name="brickType"
+                                    value={formData.brickType}
                                     onChange={handleChange}
                                 >
-                                    <option value="Heavy-Duty Industrial Pavers">Heavy-Duty Industrial Pavers (M40/M50)</option>
-                                    <option value="Commercial Plazas & Walkways">Commercial Plazas & Walkways (M30/M40)</option>
-                                    <option value="Decorative Residential Pavers">Decorative Residential Pavers (M30)</option>
-                                    <option value="Eco-Permeable Drainage Pavers">Eco-Permeable Drainage Pavers</option>
+                                    <option value="High-Strength Structural Bricks (Class 10/15)">High-Strength Structural Bricks (Class 10/15)</option>
+                                    <option value="Standard Masonry Bricks (Class 7.5)">Standard Masonry Bricks (Class 7.5)</option>
+                                    <option value="Eco-Friendly Lightweight Blocks">Eco-Friendly Lightweight Blocks</option>
+                                    <option value="Custom Specification Bricks">Custom Specification Bricks</option>
                                     <option value="Other / General Enquiry">Other / General Enquiry</option>
                                 </select>
                             </div>
@@ -185,7 +202,7 @@ export const Contactus = () => {
                                     id="message"
                                     name="message"
                                     required
-                                    placeholder="Describe your requirement (quantity, area size, pattern preference)..."
+                                    placeholder="Describe your requirement (quantity, brick grade, compressive strength, delivery location)..."
                                     value={formData.message}
                                     onChange={handleChange}
                                 ></textarea>
