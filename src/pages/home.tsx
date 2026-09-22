@@ -181,129 +181,177 @@ export const Home = () => {
                         {/* Coimbatore District */}
                         <div className="home-zone-card" id="coimbatore-district">
                             <div className="zone-card-image-wrapper">
-                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
-                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
-                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
-                                </svg>
+                                <img src="coimbatore_district.png" alt="Coimbatore District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">56 Members</span>
                             </div>
-                            <h3 className="zone-card-title">COIMBATORE</h3>
-                            <div className="zone-card-divider"></div>
-                            <p className="zone-card-desc">
-                                Home to 56 certified Fly Ash Bricks manufacturers supplying high-strength building products across the Coimbatore region.
-                            </p>
-                            <Link to="/members?zone=coimbatore" className="zone-card-btn">Member Details</Link>
+                            <div className="zone-card-body">
+                                <h3 className="zone-card-title">COIMBATORE</h3>
+                                <div className="zone-card-divider"></div>
+                                <p className="zone-card-desc">
+                                    Home to 56 certified Fly Ash Bricks manufacturers supplying high-strength building products across the Coimbatore region.
+                                </p>
+                                <Link to="/members?zone=coimbatore" className="zone-card-btn">
+                                    <span>Member Details</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </Link>
+                            </div>
                         </div>
 
                         {/* Erode District */}
                         <div className="home-zone-card" id="erode-district">
                             <div className="zone-card-image-wrapper">
-                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
-                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
-                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
-                                </svg>
+                                <img src="erode_district.png" alt="Erode District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">36 Members</span>
                             </div>
-                            <h3 className="zone-card-title">ERODE</h3>
-                            <div className="zone-card-divider"></div>
-                            <p className="zone-card-desc">
-                                Featuring 36 verified manufacturers producing premium sustainable fly ash bricks in the Erode manufacturing hub.
-                            </p>
-                            <Link to="/members?zone=erode" className="zone-card-btn">Member Details</Link>
+                            <div className="zone-card-body">
+                                <h3 className="zone-card-title">ERODE</h3>
+                                <div className="zone-card-divider"></div>
+                                <p className="zone-card-desc">
+                                    Featuring 36 verified manufacturers producing premium sustainable fly ash bricks in the Erode manufacturing hub.
+                                </p>
+                                <Link to="/members?zone=erode" className="zone-card-btn">
+                                    <span>Member Details</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </Link>
+                            </div>
                         </div>
 
                         {/* Tirupur District */}
                         <div className="home-zone-card" id="tirupur-district">
                             <div className="zone-card-image-wrapper">
-                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
-                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
-                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
-                                </svg>
+                                <img src="tirupur_district.png" alt="Tirupur District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">33 Members</span>
                             </div>
-                            <h3 className="zone-card-title">TIRUPUR</h3>
-                            <div className="zone-card-divider"></div>
-                            <p className="zone-card-desc">
-                                A major cluster with 33 association members delivering eco-friendly masonry bricks throughout the Tirupur zone.
-                            </p>
-                            <Link to="/members?zone=tirupur" className="zone-card-btn">Member Details</Link>
+                            <div className="zone-card-body">
+                                <h3 className="zone-card-title">TIRUPUR</h3>
+                                <div className="zone-card-divider"></div>
+                                <p className="zone-card-desc">
+                                    A major cluster with 33 association members delivering eco-friendly masonry bricks throughout the Tirupur zone.
+                                </p>
+                                <Link to="/members?zone=tirupur" className="zone-card-btn">
+                                    <span>Member Details</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </Link>
+                            </div>
                         </div>
 
                         {/* Salem District */}
                         <div className="home-zone-card" id="salem-district">
                             <div className="zone-card-image-wrapper">
-                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
-                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
-                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
-                                </svg>
+                                <img src="salem_district.png" alt="Salem District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">22 Members</span>
                             </div>
-                            <h3 className="zone-card-title">SALEM</h3>
-                            <div className="zone-card-divider"></div>
-                            <p className="zone-card-desc">
-                                Consists of 22 certified manufacturers offering durable structural fly ash blocks and bricks in the Salem area.
-                            </p>
-                            <Link to="/members?zone=salem" className="zone-card-btn">Member Details</Link>
+                            <div className="zone-card-body">
+                                <h3 className="zone-card-title">SALEM</h3>
+                                <div className="zone-card-divider"></div>
+                                <p className="zone-card-desc">
+                                    Consists of 22 certified manufacturers offering durable structural fly ash blocks and bricks in the Salem area.
+                                </p>
+                                <Link to="/members?zone=salem" className="zone-card-btn">
+                                    <span>Member Details</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </Link>
+                            </div>
                         </div>
 
                         {/* Namakkal District */}
                         <div className="home-zone-card" id="namakkal-district">
                             <div className="zone-card-image-wrapper">
-                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
-                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
-                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
-                                </svg>
+                                <img src="namakkal_district.png" alt="Namakkal District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">20 Members</span>
                             </div>
-                            <h3 className="zone-card-title">NAMAKKAL</h3>
-                            <div className="zone-card-divider"></div>
-                            <p className="zone-card-desc">
-                                Connecting you with 20 leading fly ash brick factories and manufacturers in the Namakkal district.
-                            </p>
-                            <Link to="/members?zone=namakkal" className="zone-card-btn">Member Details</Link>
+                            <div className="zone-card-body">
+                                <h3 className="zone-card-title">NAMAKKAL</h3>
+                                <div className="zone-card-divider"></div>
+                                <p className="zone-card-desc">
+                                    Connecting you with 20 leading fly ash brick factories and manufacturers in the Namakkal district.
+                                </p>
+                                <Link to="/members?zone=namakkal" className="zone-card-btn">
+                                    <span>Member Details</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </Link>
+                            </div>
                         </div>
 
                         {/* Karur District */}
                         <div className="home-zone-card" id="karur-district">
                             <div className="zone-card-image-wrapper">
-                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
-                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
-                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
-                                </svg>
+                                <img src="karur_district.png" alt="Karur District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">13 Members</span>
                             </div>
-                            <h3 className="zone-card-title">KARUR</h3>
-                            <div className="zone-card-divider"></div>
-                            <p className="zone-card-desc">
-                                Hosting 13 active manufacturing units specialized in high-performance eco-friendly fly ash brick solutions for the Karur industrial belt.
-                            </p>
-                            <Link to="/members?zone=karur" className="zone-card-btn">Member Details</Link>
+                            <div className="zone-card-body">
+                                <h3 className="zone-card-title">KARUR</h3>
+                                <div className="zone-card-divider"></div>
+                                <p className="zone-card-desc">
+                                    Hosting 13 active manufacturing units specialized in high-performance eco-friendly fly ash brick solutions for Karur.
+                                </p>
+                                <Link to="/members?zone=karur" className="zone-card-btn">
+                                    <span>Member Details</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </Link>
+                            </div>
                         </div>
 
                         {/* Dindigul District */}
                         <div className="home-zone-card" id="dindigul-district">
                             <div className="zone-card-image-wrapper">
-                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
-                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
-                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
-                                </svg>
+                                <img src="dindigul_district.png" alt="Dindigul District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">3 Members</span>
                             </div>
-                            <h3 className="zone-card-title">DINDIGUL</h3>
-                            <div className="zone-card-divider"></div>
-                            <p className="zone-card-desc">
-                                Represented by 3 verified manufacturers delivering structural fly ash bricks in the Dindigul district.
-                            </p>
-                            <Link to="/members?zone=dindigul" className="zone-card-btn">Member Details</Link>
+                            <div className="zone-card-body">
+                                <h3 className="zone-card-title">DINDIGUL</h3>
+                                <div className="zone-card-divider"></div>
+                                <p className="zone-card-desc">
+                                    Represented by 3 verified manufacturers delivering structural fly ash bricks in the Dindigul district.
+                                </p>
+                                <Link to="/members?zone=dindigul" className="zone-card-btn">
+                                    <span>Member Details</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </Link>
+                            </div>
                         </div>
 
                         {/* Dharmapuri District */}
                         <div className="home-zone-card" id="dharmapuri-district">
                             <div className="zone-card-image-wrapper">
-                                <svg viewBox="0 0 100 100" className="zone-card-svg-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
-                                    <circle cx="50" cy="50" r="45" fill="#e6f4f1" stroke="#bfe3db" strokeWidth="1" />
-                                    <path d="M50 22c-12.7 0-23 10.3-23 23 0 17.2 23 41.4 23 41.4s23-24.2 23-41.4c0-12.7-10.3-23-23-23zm0 32.2c-5.1 0-9.2-4.1-9.2-9.2s4.1-9.2 9.2-9.2 9.2 4.1 9.2 9.2-4.1 9.2-9.2 9.2z" fill="#0d8a72" />
-                                </svg>
+                                <img src="dharmapuri_district.png" alt="Dharmapuri District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">Active Zone</span>
                             </div>
-                            <h3 className="zone-card-title">DHARMAPURI</h3>
-                            <div className="zone-card-divider"></div>
-                            <p className="zone-card-desc">
-                                Featuring verified fly ash block manufacturing supply and local delivery options in the Dharmapuri region.
-                            </p>
-                            <Link to="/members?zone=dharmapuri" className="zone-card-btn">Member Details</Link>
+                            <div className="zone-card-body">
+                                <h3 className="zone-card-title">DHARMAPURI</h3>
+                                <div className="zone-card-divider"></div>
+                                <p className="zone-card-desc">
+                                    Featuring verified fly ash block manufacturing supply and local delivery options in the Dharmapuri region.
+                                </p>
+                                <Link to="/members?zone=dharmapuri" className="zone-card-btn">
+                                    <span>Member Details</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
