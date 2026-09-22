@@ -182,9 +182,9 @@ export const Home = () => {
                         <div className="home-zone-card" id="coimbatore-district">
                             <div className="zone-card-image-wrapper">
                                 <img src={`${process.env.PUBLIC_URL}/coimbatore_district.png`} alt="Coimbatore District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">56 Members</span>
                             </div>
                             <div className="zone-card-body">
-                                <span className="zone-card-badge">56 Members</span>
                                 <h3 className="zone-card-title">COIMBATORE</h3>
                                 <div className="zone-card-divider"></div>
                                 <p className="zone-card-desc">
@@ -204,9 +204,9 @@ export const Home = () => {
                         <div className="home-zone-card" id="erode-district">
                             <div className="zone-card-image-wrapper">
                                 <img src={`${process.env.PUBLIC_URL}/erode_district.png`} alt="Erode District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">36 Members</span>
                             </div>
                             <div className="zone-card-body">
-                                <span className="zone-card-badge">36 Members</span>
                                 <h3 className="zone-card-title">ERODE</h3>
                                 <div className="zone-card-divider"></div>
                                 <p className="zone-card-desc">
@@ -226,9 +226,9 @@ export const Home = () => {
                         <div className="home-zone-card" id="tirupur-district">
                             <div className="zone-card-image-wrapper">
                                 <img src={`${process.env.PUBLIC_URL}/tirupur_district.png`} alt="Tirupur District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">33 Members</span>
                             </div>
                             <div className="zone-card-body">
-                                <span className="zone-card-badge">33 Members</span>
                                 <h3 className="zone-card-title">TIRUPUR</h3>
                                 <div className="zone-card-divider"></div>
                                 <p className="zone-card-desc">
@@ -248,9 +248,9 @@ export const Home = () => {
                         <div className="home-zone-card" id="salem-district">
                             <div className="zone-card-image-wrapper">
                                 <img src={`${process.env.PUBLIC_URL}/salem_district.png`} alt="Salem District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">22 Members</span>
                             </div>
                             <div className="zone-card-body">
-                                <span className="zone-card-badge">22 Members</span>
                                 <h3 className="zone-card-title">SALEM</h3>
                                 <div className="zone-card-divider"></div>
                                 <p className="zone-card-desc">
@@ -270,9 +270,9 @@ export const Home = () => {
                         <div className="home-zone-card" id="namakkal-district">
                             <div className="zone-card-image-wrapper">
                                 <img src={`${process.env.PUBLIC_URL}/namakkal_district.png`} alt="Namakkal District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">20 Members</span>
                             </div>
                             <div className="zone-card-body">
-                                <span className="zone-card-badge">20 Members</span>
                                 <h3 className="zone-card-title">NAMAKKAL</h3>
                                 <div className="zone-card-divider"></div>
                                 <p className="zone-card-desc">
@@ -292,9 +292,9 @@ export const Home = () => {
                         <div className="home-zone-card" id="karur-district">
                             <div className="zone-card-image-wrapper">
                                 <img src={`${process.env.PUBLIC_URL}/karur_district.png`} alt="Karur District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">13 Members</span>
                             </div>
                             <div className="zone-card-body">
-                                <span className="zone-card-badge">13 Members</span>
                                 <h3 className="zone-card-title">KARUR</h3>
                                 <div className="zone-card-divider"></div>
                                 <p className="zone-card-desc">
@@ -314,9 +314,9 @@ export const Home = () => {
                         <div className="home-zone-card" id="dindigul-district">
                             <div className="zone-card-image-wrapper">
                                 <img src={`${process.env.PUBLIC_URL}/dindigul_district.png`} alt="Dindigul District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">3 Members</span>
                             </div>
                             <div className="zone-card-body">
-                                <span className="zone-card-badge">3 Members</span>
                                 <h3 className="zone-card-title">DINDIGUL</h3>
                                 <div className="zone-card-divider"></div>
                                 <p className="zone-card-desc">
@@ -336,9 +336,9 @@ export const Home = () => {
                         <div className="home-zone-card" id="dharmapuri-district">
                             <div className="zone-card-image-wrapper">
                                 <img src={`${process.env.PUBLIC_URL}/dharmapuri_district.png`} alt="Dharmapuri District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">Active Zone</span>
                             </div>
                             <div className="zone-card-body">
-                                <span className="zone-card-badge">Active Zone</span>
                                 <h3 className="zone-card-title">DHARMAPURI</h3>
                                 <div className="zone-card-divider"></div>
                                 <p className="zone-card-desc">
