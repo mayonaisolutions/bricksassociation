@@ -419,13 +419,11 @@
 
 .home-zone-card {
   background: #ffffff;
-  border: 1.5px solid #0d8a72;
+  border: 1px solid #e5e7eb;
   border-radius: 16px;
-  padding: 30px 20px 24px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   box-sizing: border-box;
   height: 100%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -434,27 +432,16 @@
 
 .home-zone-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(13, 138, 114, 0.18);
-  border-color: #059669;
+  box-shadow: 0 20px 40px rgba(13, 138, 114, 0.15);
+  border-color: #0d8a72;
 }
 
 .zone-card-image-wrapper {
   position: relative;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 100%;
+  height: 180px;
   overflow: hidden;
-  background: #f4fbf9;
-  border: 3px solid #0d8a72;
-  box-shadow: 0 8px 24px rgba(13, 138, 114, 0.18);
-  margin: 0 auto 20px auto;
-  flex-shrink: 0;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-
-.home-zone-card:hover .zone-card-image-wrapper {
-  transform: scale(1.06);
-  box-shadow: 0 12px 28px rgba(13, 138, 114, 0.28);
+  background: #0f172a;
 }
 
 .zone-card-img {
@@ -462,32 +449,40 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.5s ease;
 }
 
-.zone-card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  flex-grow: 1;
-  width: 100%;
+.home-zone-card:hover .zone-card-img {
+  transform: scale(1.08);
 }
 
 .zone-card-badge {
-  display: inline-block;
-  background: #e6f4f1;
-  color: #0d8a72;
-  border: 1px solid #bfe3db;
-  font-size: 12px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(6, 25, 20, 0.82);
+  backdrop-filter: blur(10px);
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.04em;
-  padding: 4px 14px;
+  letter-spacing: 0.05em;
+  padding: 5px 12px;
   border-radius: 100px;
-  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.zone-card-body {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: center;
+  align-items: center;
 }
 
 .zone-card-title {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 800;
   color: #111827;
   margin: 0 0 10px 0;
@@ -526,7 +521,7 @@
   padding: 11px 20px;
   border-radius: 8px;
   text-decoration: none;
-  background: #ffffff;
+  background: #f4fbf9;
   transition: all 0.25s ease;
   box-sizing: border-box;
   flex-shrink: 0;
