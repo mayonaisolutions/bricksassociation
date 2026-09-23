@@ -74,6 +74,8 @@ export const Footer: React.FC = () => {
             <ul className="footer-links-list">
               <li><Link to="/" className="footer-link" onClick={scrollToTop}>Home</Link></li>
               <li><Link to="/aboutus" className="footer-link" onClick={scrollToTop}>About Us</Link></li>
+              <li><Link to="/members" className="footer-link" onClick={scrollToTop}>Members Directory</Link></li>
+              <li><Link to="/gallery" className="footer-link" onClick={scrollToTop}>Gallery</Link></li>
               <li><Link to="/contact-us" className="footer-link" onClick={scrollToTop}>Contact Us</Link></li>
             </ul>
           </div>
