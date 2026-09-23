@@ -1,10 +1,75 @@
 /* Contact page styling */
 
+.contact-main-container {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.contact-hero {
+  position: relative;
+  width: 100%;
+  padding: 130px 0 90px 0;
+  margin-bottom: 40px;
+  background-image: linear-gradient(135deg, rgba(6, 40, 30, 0.82) 0%, rgba(6, 25, 20, 0.88) 100%), url('../hero_contact_bg.png');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.contact-hero-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-hero-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  color: #34d399;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin: 0 auto 20px;
+  max-width: 850px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.contact-hero-text {
+  font-size: 18px;
+  line-height: 1.65;
+  color: #e5e7eb;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
 .contact-page-wrapper {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 24px 100px;
+  padding: 20px 24px 100px;
   box-sizing: border-box;
   animation: fadeIn 0.8s ease-out;
 }

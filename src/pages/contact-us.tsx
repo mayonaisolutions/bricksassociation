@@ -37,7 +37,18 @@ export const Contactus = () => {
     };
 
     return (
-        <>
+        <div className="contact-main-container">
+            {/* Hero Section */}
+            <div className="contact-hero">
+                <div className="contact-hero-inner">
+                    <span className="contact-hero-badge">Get In Touch</span>
+                    <h1>We'd Love to Hear From You</h1>
+                    <p className="contact-hero-text">
+                        Have questions about fly ash brick specifications, compressive strength grades, thermal properties, or delivery logistics across Tamil Nadu? Reach out to our association team directly.
+                    </p>
+                </div>
+            </div>
+
             <div className="contact-page-wrapper">
                 <div className="contact-grid">
                     {/* Left Side: Contact Information */}
@@ -227,6 +238,6 @@ export const Contactus = () => {
                     loading="lazy"
                 ></iframe>
             </div>
-        </>
+        </div>
     );
 };
