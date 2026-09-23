@@ -40,15 +40,18 @@ const getDirectImageUrl = (urlOrItem: string | { url?: string; driveUrl?: string
     return `${process.env.PUBLIC_URL}/${urlOrName}`;
 };
 
+const BATCH_SIZE = 36;
+
 export const Gallery: React.FC = () => {
     const [activeImage, setActiveImage] = useState<string | null>(null);
+    const [visibleCount, setVisibleCount] = useState<number>(BATCH_SIZE);
 
     useEffect(() => {
         document.title = "Gallery | TamilNadu Flyash Product Manufacturer Association";
         
         const metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc) {
-            metaDesc.setAttribute("content", "Explore our gallery of fly ash brick products and regional manufacturing unit images.");
+            metaDesc.setAttribute("content", "Explore our full gallery of fly ash brick products and regional manufacturing unit images.");
         }
     }, []);
 
@@ -71,13 +74,14 @@ export const Gallery: React.FC = () => {
             : (Array.isArray(config.images) ? config.images : []);
 
     const folderUrl = !Array.isArray(config) ? config.folderUrl : undefined;
+    const visibleImages = imagesList.slice(0, visibleCount);
 
     return (
         <div className="gallery-page-wrapper">
             {/* Gallery Hero Header */}
             <div className="gallery-hero">
                 <div className="gallery-hero-inner">
-                    <span className="gallery-hero-badge">Visual Showcase</span>
+                    <span className="gallery-hero-badge">Visual Showcase ({imagesList.length} Photos)</span>
                     <h1>Our Gallery</h1>
                     {folderUrl && (
                         <a 
@@ -99,7 +103,7 @@ export const Gallery: React.FC = () => {
             <div className="gallery-content-container">
                 {/* Clean Image Grid */}
                 <div className="gallery-grid">
-                    {imagesList.map((item, index) => {
+                    {visibleImages.map((item, index) => {
                         const imgUrl = getDirectImageUrl(item);
                         return (
                             <div 
@@ -138,6 +142,19 @@ export const Gallery: React.FC = () => {
                         );
                     })}
                 </div>
+
+                {/* Load More Button */}
+                {visibleCount < imagesList.length && (
+                    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+                        <button 
+                            className="btn-primary" 
+                            onClick={() => setVisibleCount(prev => prev + BATCH_SIZE)}
+                            style={{ padding: '14px 36px', fontSize: '15px' }}
+                        >
+                            Load More Photos ({imagesList.length - visibleCount} remaining)
+                        </button>
+                    </div>
+                )}
             </div>
 
             {/* Lightbox Modal */}
