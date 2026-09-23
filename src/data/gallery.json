@@ -1,14 +1,18 @@
-[
-  "https://drive.google.com/file/d/17HiHEQ2K4e60Ia2eAYUAIYlQnHeWXecE/view?usp=sharing",
-  "coimbatore_district.png",
-  "erode_district.png",
-  "tirupur_district.png",
-  "salem_district.png",
-  "namakkal_district.png",
-  "karur_district.png",
-  "dindigul_district.png",
-  "dharmapuri_district.png",
-  "eco_building.png",
-  "fly_ash_bricks_about.png",
-  "paver_blocks.png"
-]
+{
+  "folderUrl": "https://drive.google.com/drive/folders/1MxRgrX9LvvPZFeF87MnSmXNKOTqtl4SL?usp=sharing",
+  "folderId": "1MxRgrX9LvvPZFeF87MnSmXNKOTqtl4SL",
+  "images": [
+    "https://drive.google.com/file/d/17HiHEQ2K4e60Ia2eAYUAIYlQnHeWXecE/view",
+    "https://drive.google.com/file/d/1cLLHBJ8HODuAgoIrOSJXxRRRpAksMrhO/view",
+    "https://drive.google.com/file/d/1a7d_-DIlU8Uf2ecaKCXWILF8PPVdX4Y6/view",
+    "https://drive.google.com/file/d/1oJ3WOo2JMNrxUTqdXfpDTzkBZd7dgt_0/view",
+    "coimbatore_district.png",
+    "erode_district.png",
+    "tirupur_district.png",
+    "salem_district.png",
+    "namakkal_district.png",
+    "karur_district.png",
+    "dindigul_district.png",
+    "dharmapuri_district.png"
+  ]
+}

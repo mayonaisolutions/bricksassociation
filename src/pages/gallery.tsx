@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import rawGalleryData from '../data/gallery.json';
 
-// Utility to convert Google Drive sharing links, direct URLs, or local assets into displayable image URLs
+interface GalleryConfig {
+    folderUrl?: string;
+    folderId?: string;
+    images?: (string | { url?: string; driveUrl?: string; imageName?: string })[];
+}
+
+// Utility to convert Google Drive file sharing links, direct URLs, or local assets into displayable image URLs
 const getDirectImageUrl = (urlOrItem: string | { url?: string; driveUrl?: string; imageName?: string }): string => {
     let urlOrName = '';
     
@@ -15,7 +21,7 @@ const getDirectImageUrl = (urlOrItem: string | { url?: string; driveUrl?: string
 
     // Check if it's a Google Drive URL
     if (urlOrName.includes('drive.google.com')) {
-        const fileIdMatch = urlOrName.match(/\/file\/d\/([^\/\?]+)/);
+        const fileIdMatch = urlOrName.match(/\/file\/d\/([^/?]+)/);
         if (fileIdMatch && fileIdMatch[1]) {
             return `https://lh3.googleusercontent.com/d/${fileIdMatch[1]}`;
         }
@@ -57,8 +63,14 @@ export const Gallery: React.FC = () => {
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, []);
 
-    // Load gallery image items array from gallery.json
-    const imagesList: (string | { url?: string; driveUrl?: string; imageName?: string })[] = rawGalleryData;
+    // Extract images list and optional folderUrl from gallery.json configuration
+    const config: GalleryConfig = rawGalleryData as any;
+    const imagesList: (string | { url?: string; driveUrl?: string; imageName?: string })[] = 
+        Array.isArray(config) 
+            ? config 
+            : (Array.isArray(config.images) ? config.images : []);
+
+    const folderUrl = !Array.isArray(config) ? config.folderUrl : undefined;
 
     return (
         <div className="gallery-page-wrapper">
@@ -67,6 +79,20 @@ export const Gallery: React.FC = () => {
                 <div className="gallery-hero-inner">
                     <span className="gallery-hero-badge">Visual Showcase</span>
                     <h1>Our Gallery</h1>
+                    {folderUrl && (
+                        <a 
+                            href={folderUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="btn-secondary" 
+                            style={{ marginTop: '16px', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
+                        >
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            View Google Drive Folder
+                        </a>
+                    )}
                 </div>
             </div>
 
