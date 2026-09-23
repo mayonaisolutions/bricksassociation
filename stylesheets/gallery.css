@@ -10,8 +10,13 @@
 .gallery-hero {
   position: relative;
   width: 100%;
-  padding: 130px 0 90px 0;
-  margin-bottom: 60px;
+  padding: 140px 0;
+  margin-bottom: 80px;
+  min-height: 420px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: linear-gradient(135deg, rgba(6, 40, 30, 0.82) 0%, rgba(13, 138, 114, 0.85) 100%), url('../hero_gallery_bg.png');
   background-size: cover;
   background-position: center;
@@ -139,9 +144,26 @@
 .gallery-card-image-wrapper {
   position: relative;
   width: 100%;
-  height: 240px;
+  height: 280px;
   overflow: hidden;
   background: #0f172a;
+}
+
+.image-only-modal {
+  max-width: 950px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.image-only-modal .lightbox-image-wrapper {
+  max-height: 80vh;
+  border-radius: 16px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+
+.image-only-modal .lightbox-img {
+  max-height: 80vh;
+  border-radius: 16px;
 }
 
 .gallery-card-img {
@@ -375,7 +397,8 @@
     gap: 24px;
   }
   .gallery-hero {
-    padding: 100px 0 60px 0;
+    padding: 100px 0;
+    min-height: 360px;
   }
   .gallery-hero h1 {
     font-size: 30px;
