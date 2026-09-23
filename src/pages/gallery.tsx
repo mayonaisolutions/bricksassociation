@@ -113,6 +113,15 @@ export const Gallery: React.FC = () => {
                                         alt={`Gallery showcase ${index + 1}`} 
                                         className="gallery-card-img" 
                                         loading="lazy"
+                                        onError={(e) => {
+                                            const target = e.currentTarget;
+                                            if (target.src.includes('lh3.googleusercontent.com/d/')) {
+                                                const fileId = target.src.split('/d/')[1];
+                                                if (fileId) {
+                                                    target.src = `https://drive.google.com/uc?export=view&id=${fileId}`;
+                                                }
+                                            }
+                                        }}
                                     />
                                     <div className="gallery-card-overlay">
                                         <div className="overlay-zoom-icon">
