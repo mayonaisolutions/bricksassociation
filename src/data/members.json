@@ -6,7 +6,6 @@
         "owner": "SENTHIL",
         "address": "NO.5/707 A. Ichipatti, Karanampettai to Somanur Road,Tirupur, Tamilnadu- 641668",
         "mobile": "9443193388"
-        
     },
     {
         "s_no": 2,
@@ -15,7 +14,6 @@
         "owner": "DEVI",
         "address": "9/585-B,Periyar Nagar,Perumpalayam, VasaviCollege,Erode.",
         "mobile": "9842933199"
-        
     },
     {
         "s_no": 3,
@@ -24,7 +22,6 @@
         "owner": "DINEH KUMAR",
         "address": "VIVE FARMS, SAMANAYAKKANPALAYAM, ATHIPALAYAM, VELLAMADI COIMBATORE - 641019",
         "mobile": "9344837399"
-        
     },
     {
         "s_no": 4,
@@ -33,7 +30,6 @@
         "owner": "SHANMUGA PRIYA",
         "address": "18/4,J.P NAGAR,PEELAMEDU GRAMAM,ERODE - 638009",
         "mobile": "9443401592"
-        
     },
     {
         "s_no": 5,
@@ -42,7 +38,6 @@
         "owner": "KARTHICK",
         "address": "S.F No.647/1A3B2,SRT INDUSTRIAL PARK, MALLUMICHAMPATTY,C OIMBATORE-641 050",
         "mobile": "9715029982"
-        
     },
     {
         "s_no": 6,
@@ -51,7 +46,6 @@
         "owner": "SRIDEVI / SUKUAR",
         "address": "NO.22, SALEM ROAD, T- NEIKARAPATTY,TIRUCHENGODE- 637209",
         "mobile": "9443220555"
-        
     },
     {
         "s_no": 7,
@@ -60,7 +54,6 @@
         "owner": "YUVARAJ",
         "address": "SF.No396/2, 397/1, SOMYAMPALAYAM,COIMBATURE",
         "mobile": "9842238122"
-        
     },
     {
         "s_no": 8,
@@ -69,7 +62,6 @@
         "owner": "SHASHIDHAR",
         "address": "S.F.NO.517/A D.NO.1/425THENNAMP ALAYAM ROAD SERAYAMPALAYAM EAST, VELLANAI PATTI",
         "mobile": "9842259966"
-        
     },
     {
         "s_no": 9,
@@ -78,7 +70,6 @@
         "owner": "VEL KUMAR",
         "address": "3/278,IYYANKADU,THNADAGOUNDAN PUDUR, PERUMANALLUR PO TIRRUPUR 641666",
         "mobile": "9344413388"
-        
     },
     {
         "s_no": 10,
@@ -87,7 +78,6 @@
         "owner": "SIVASANKAR",
         "address": "NO:15/6 THUMBICHIPALAYAM, KALLIMANDAYAM, ODDANCHATRAM, DINDIGUL",
         "mobile": "9843461200"
-        
     },
     {
         "s_no": 11,
@@ -208,7 +198,6 @@
         "owner": "VINGNESH",
         "address": "66/6 PONMUDI POST,VIJAYMANGALAM,PERUNDURAI- (TK),ERODE 638056",
         "mobile": "979099942"
-        
     },
     {
         "s_no": 26,
@@ -217,7 +206,6 @@
         "owner": "RAMAIYA ANBALAGAN",
         "address": "MRF TYERS SALES OFFICE,34/3B4,VALLIPURAM VILLAGE,PERIYAPATTI,NAM AKKAL,637001",
         "mobile": "9047053339"
-        
     },
     {
         "s_no": 27,
@@ -1482,5 +1470,69 @@
         "owner": "KAVITHA IRUSAPPAN",
         "address": "12/43-1, KENNADY STREET VELLALORE, COIMBATORE-641111",
         "mobile": "9600204333"
+    },
+    {
+        "s_no": 185,
+        "company": "DHANALAKSHMI BRICKS",
+        "district": "SALEM",
+        "owner": "YOKESHWARAN",
+        "address": "",
+        "mobile": "9003378300"
+    },
+    {
+        "s_no": 186,
+        "company": "SK BRICKS AND PAVERS",
+        "district": "ERODE",
+        "owner": "SENTHILKUMAR",
+        "address": "S.F: NO362/9 PERUNDURAI, KOVILPALAYAM, MUKASIPIDARIYUR, ERODE-638051",
+        "mobile": "9585552988"
+    },
+    {
+        "s_no": 187,
+        "company": "THAMBI FLY ASH AND HOLLOW BLOCKS",
+        "district": "NAMAKKAL",
+        "owner": "MANOJKUMAR",
+        "address": "3/319AB AVINASIKADU, KARUVEEPPAMPATTY POST, THIRUCHENGODE NAMAKKAL - 637304",
+        "mobile": "9715145556"
+    },
+    {
+        "s_no": 188,
+        "company": "SRI KURINJI INTERLOCK BRICKS",
+        "district": "KARUR",
+        "owner": "SARAVANAN",
+        "address": "4/151/269, MOCHAKOTTAM PALAYAM, ANDANKOIL WEST KARUR 639002",
+        "mobile": "7904507150"
+    },
+    {
+        "s_no": 189,
+        "company": "NPR BRICKS",
+        "district": "KARUR",
+        "owner": "PRABAKARAN",
+        "address": "3/27 A1, VANGAL ROAD, PANCHAMA DEVI,KARUR 63900",
+        "mobile": "7010108314"
+    },
+    {
+        "s_no": 190,
+        "company": "SARASHWATHI CHAMBERS",
+        "district": "ERODE",
+        "owner": "SAKTHIVEL",
+        "address": "RSKF:NO 256/2 VAAKKAI PALAYAM , MULLUKADU THOTTAM ,CHINNIYAMPALAYAM ,THOTTIPALAYAM [PO], BHAVANI , ERODE -638312",
+        "mobile": "9965537709"
+    },
+    {
+        "s_no": 191,
+        "company": "RADHA MADHAN MOHAN BRICKS",
+        "district": "SALEM",
+        "owner": "NAGARAJAN",
+        "address": "51/4 ,M G PUDUR, KATTUVALAVU ,PANNAPATTY , OMALLUR SALEM636305",
+        "mobile": "9952781924"
+    },
+    {
+        "s_no": 192,
+        "company": "VELAR  CONCRETE PRODUCTS",
+        "district": "COIMBATORE",
+        "owner": "BALAJI",
+        "address": "4/2-2A5 KKG COMPLEX  MTP ROAD , KOUNDANPALAYAM   ,COIMBATORE -641030",
+        "mobile": "9865165556"
     }
 ]
