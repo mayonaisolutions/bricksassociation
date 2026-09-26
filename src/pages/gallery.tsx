@@ -73,7 +73,6 @@ export const Gallery: React.FC = () => {
             ? config 
             : (Array.isArray(config.images) ? config.images : []);
 
-    const folderUrl = !Array.isArray(config) ? config.folderUrl : undefined;
     const visibleImages = imagesList.slice(0, visibleCount);
 
     return (
@@ -83,20 +82,6 @@ export const Gallery: React.FC = () => {
                 <div className="gallery-hero-inner">
                     <span className="gallery-hero-badge">Visual Showcase ({imagesList.length} Photos)</span>
                     <h1>Our Gallery</h1>
-                    {folderUrl && (
-                        <a 
-                            href={folderUrl} 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
-                            className="btn-secondary" 
-                            style={{ marginTop: '16px', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
-                        >
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                            </svg>
-                            View Google Drive Folder
-                        </a>
-                    )}
                 </div>
             </div>
 
