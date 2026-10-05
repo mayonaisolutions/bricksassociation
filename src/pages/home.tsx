@@ -178,17 +178,83 @@ export const Home = () => {
                     </div>
 
                     <div className="home-zones-grid">
+                        {/* Chennai District */}
+                        <div className="home-zone-card" id="chennai-district">
+                            <div className="zone-card-image-wrapper">
+                                <img src={`${process.env.PUBLIC_URL}/chennai_pin.png`} alt="Chennai District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">38 Members</span>
+                            </div>
+                            <div className="zone-card-body">
+                                <h3 className="zone-card-title">CHENNAI</h3>
+                                <div className="zone-card-divider"></div>
+                                <p className="zone-card-desc">
+                                    Featuring 38 verified Fly Ash Bricks manufacturers serving the Chennai and metropolitan capital region.
+                                </p>
+                                <Link to="/members?zone=chennai" className="zone-card-btn">
+                                    <span>Member Details</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Tutukudi District */}
+                        <div className="home-zone-card" id="tutukudi-district">
+                            <div className="zone-card-image-wrapper">
+                                <img src={`${process.env.PUBLIC_URL}/tuticorin_pin.png`} alt="Tutukudi District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">68 Members</span>
+                            </div>
+                            <div className="zone-card-body">
+                                <h3 className="zone-card-title">TUTUKUDI</h3>
+                                <div className="zone-card-divider"></div>
+                                <p className="zone-card-desc">
+                                    A vibrant hub with 68 association members supplying eco-friendly building blocks across Tutukudi & southern Tamil Nadu.
+                                </p>
+                                <Link to="/members?zone=tutukudi" className="zone-card-btn">
+                                    <span>Member Details</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Neyveli District */}
+                        <div className="home-zone-card" id="neyveli-district">
+                            <div className="zone-card-image-wrapper">
+                                <img src={`${process.env.PUBLIC_URL}/neyveli_pin.png`} alt="Neyveli District Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">35 Members</span>
+                            </div>
+                            <div className="zone-card-body">
+                                <h3 className="zone-card-title">NEYVELI</h3>
+                                <div className="zone-card-divider"></div>
+                                <p className="zone-card-desc">
+                                    Representing 35 certified fly ash brick manufacturing units delivering quality construction products across the Neyveli zone.
+                                </p>
+                                <Link to="/members?zone=neyveli" className="zone-card-btn">
+                                    <span>Member Details</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </Link>
+                            </div>
+                        </div>
+
                         {/* Coimbatore District */}
                         <div className="home-zone-card" id="coimbatore-district">
                             <div className="zone-card-image-wrapper">
                                 <img src={`${process.env.PUBLIC_URL}/coimbatore_district.png`} alt="Coimbatore District Fly Ash Brick Manufacturers" className="zone-card-img" />
-                                <span className="zone-card-badge">56 Members</span>
+                                <span className="zone-card-badge">57 Members</span>
                             </div>
                             <div className="zone-card-body">
                                 <h3 className="zone-card-title">COIMBATORE</h3>
                                 <div className="zone-card-divider"></div>
                                 <p className="zone-card-desc">
-                                    Home to 56 certified Fly Ash Bricks manufacturers supplying high-strength building products across the Coimbatore region.
+                                    Home to 57 certified Fly Ash Bricks manufacturers supplying high-strength building products across the Coimbatore region.
                                 </p>
                                 <Link to="/members?zone=coimbatore" className="zone-card-btn">
                                     <span>Member Details</span>
@@ -204,13 +270,13 @@ export const Home = () => {
                         <div className="home-zone-card" id="erode-district">
                             <div className="zone-card-image-wrapper">
                                 <img src={`${process.env.PUBLIC_URL}/erode_district.png`} alt="Erode District Fly Ash Brick Manufacturers" className="zone-card-img" />
-                                <span className="zone-card-badge">36 Members</span>
+                                <span className="zone-card-badge">38 Members</span>
                             </div>
                             <div className="zone-card-body">
                                 <h3 className="zone-card-title">ERODE</h3>
                                 <div className="zone-card-divider"></div>
                                 <p className="zone-card-desc">
-                                    Featuring 36 verified manufacturers producing premium sustainable fly ash bricks in the Erode manufacturing hub.
+                                    Featuring 38 verified manufacturers producing premium sustainable fly ash bricks in the Erode manufacturing hub.
                                 </p>
                                 <Link to="/members?zone=erode" className="zone-card-btn">
                                     <span>Member Details</span>
@@ -248,13 +314,13 @@ export const Home = () => {
                         <div className="home-zone-card" id="salem-district">
                             <div className="zone-card-image-wrapper">
                                 <img src={`${process.env.PUBLIC_URL}/salem_district.png`} alt="Salem District Fly Ash Brick Manufacturers" className="zone-card-img" />
-                                <span className="zone-card-badge">22 Members</span>
+                                <span className="zone-card-badge">24 Members</span>
                             </div>
                             <div className="zone-card-body">
                                 <h3 className="zone-card-title">SALEM</h3>
                                 <div className="zone-card-divider"></div>
                                 <p className="zone-card-desc">
-                                    Consists of 22 certified manufacturers offering durable structural fly ash blocks and bricks in the Salem area.
+                                    Consists of 24 certified manufacturers offering durable structural fly ash blocks and bricks in the Salem area.
                                 </p>
                                 <Link to="/members?zone=salem" className="zone-card-btn">
                                     <span>Member Details</span>
@@ -270,13 +336,13 @@ export const Home = () => {
                         <div className="home-zone-card" id="namakkal-district">
                             <div className="zone-card-image-wrapper">
                                 <img src={`${process.env.PUBLIC_URL}/namakkal_district.png`} alt="Namakkal District Fly Ash Brick Manufacturers" className="zone-card-img" />
-                                <span className="zone-card-badge">20 Members</span>
+                                <span className="zone-card-badge">21 Members</span>
                             </div>
                             <div className="zone-card-body">
                                 <h3 className="zone-card-title">NAMAKKAL</h3>
                                 <div className="zone-card-divider"></div>
                                 <p className="zone-card-desc">
-                                    Connecting you with 20 leading fly ash brick factories and manufacturers in the Namakkal district.
+                                    Connecting you with 21 leading fly ash brick factories and manufacturers in the Namakkal district.
                                 </p>
                                 <Link to="/members?zone=namakkal" className="zone-card-btn">
                                     <span>Member Details</span>
@@ -292,13 +358,13 @@ export const Home = () => {
                         <div className="home-zone-card" id="karur-district">
                             <div className="zone-card-image-wrapper">
                                 <img src={`${process.env.PUBLIC_URL}/karur_district.png`} alt="Karur District Fly Ash Brick Manufacturers" className="zone-card-img" />
-                                <span className="zone-card-badge">13 Members</span>
+                                <span className="zone-card-badge">15 Members</span>
                             </div>
                             <div className="zone-card-body">
                                 <h3 className="zone-card-title">KARUR</h3>
                                 <div className="zone-card-divider"></div>
                                 <p className="zone-card-desc">
-                                    Hosting 13 active manufacturing units specialized in high-performance eco-friendly fly ash brick solutions for Karur.
+                                    Hosting 15 active manufacturing units specialized in high-performance eco-friendly fly ash brick solutions for Karur.
                                 </p>
                                 <Link to="/members?zone=karur" className="zone-card-btn">
                                     <span>Member Details</span>

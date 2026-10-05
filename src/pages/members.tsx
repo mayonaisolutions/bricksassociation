@@ -26,8 +26,12 @@ export const Members = () => {
         const zoneParam = params.get('zone');
         if (zoneParam) {
             const upperZone = zoneParam.toUpperCase();
-            if (['COIMBATORE', 'ERODE', 'TIRUPUR', 'NAMAKKAL', 'KARUR', 'SALEM', 'DINDUGUL', 'DHARMAPURI'].includes(upperZone)) {
-                setSelectedDistrict(upperZone);
+            let targetZone = upperZone;
+            if (upperZone === 'TUTICORIN' || upperZone === 'THOOTHUKUDI') targetZone = 'TUTUKUDI';
+            if (upperZone === 'DINDIGUL') targetZone = 'DINDUGUL';
+
+            if (['CHENNAI', 'COIMBATORE', 'ERODE', 'TIRUPUR', 'NEYVELI', 'TUTUKUDI', 'NAMAKKAL', 'KARUR', 'SALEM', 'DINDUGUL', 'DHARMAPURI'].includes(targetZone)) {
+                setSelectedDistrict(targetZone);
             } else if (upperZone === 'METTUR' || upperZone === 'ALL') {
                 setSelectedDistrict('ALL');
             }
@@ -67,7 +71,7 @@ export const Members = () => {
     }, [searchTerm, selectedDistrict]);
 
     // Distinct list of districts from members data for tab categories
-    const districts = ['ALL', 'COIMBATORE', 'ERODE', 'TIRUPUR', 'NAMAKKAL', 'KARUR', 'SALEM', 'DINDUGUL', 'DHARMAPURI'];
+    const districts = ['ALL', 'CHENNAI', 'COIMBATORE', 'ERODE', 'TIRUPUR', 'NEYVELI', 'TUTUKUDI', 'SALEM', 'NAMAKKAL', 'KARUR', 'DINDUGUL', 'DHARMAPURI'];
 
     return (
         <div className="members-page-wrapper">

@@ -340,7 +340,7 @@
         "company": "ERO FLY ASH BRICKS",
         "district": "ERODE",
         "owner": "SENTHIL KUMAR",
-        "address": " S/F No. 180/2, BHRATHI NAGAR, CHINNIYAMPALAYAM (P.O.)ERODE - 638 104",
+        "address": "S/F No. 180/2, BHRATHI NAGAR, CHINNIYAMPALAYAM (P.O.)ERODE - 638 104",
         "mobile": "9843922666"
     },
     {
@@ -524,7 +524,7 @@
         "company": "MAHA HI-TECH BRICKS",
         "district": "SALEM",
         "owner": "PRIYA",
-        "address": " 9/1A1,SAMINAIKKANPATTI OPP-GOVT ENGINEERING COLLEGE,OMALUR(TK),SALEM-636011",
+        "address": "9/1A1,SAMINAIKKANPATTI OPP-GOVT ENGINEERING COLLEGE,OMALUR(TK),SALEM-636011",
         "mobile": "9843822233"
     },
     {
@@ -579,7 +579,7 @@
         "s_no": 73,
         "company": "NAVALADIYAN FLY ASH BRICKS",
         "district": "NAMAKKAL",
-        "owner": "GANESAN ",
+        "owner": "GANESAN",
         "address": "80/1C RASAMPALAYAM, KEERAMBUR [PO],NAMAKKAL- 637207",
         "mobile": "9443385955"
     },
@@ -1450,7 +1450,7 @@
     {
         "s_no": 182,
         "company": "SRI PERIYAKANNDI AMMAN FLYASH BRICKS",
-        "district": "NAMMAKAL",
+        "district": "NAMAKKAL",
         "owner": "SARAVANAN",
         "address": "7/374/A3, NH-381 B,KAATTU PUTHUR ROAD, NEAR TOLLGATE ELUR PATTI, THOTTIYAM-TIRCHY 621215",
         "mobile": "8220566011"
@@ -1529,10 +1529,1138 @@
     },
     {
         "s_no": 192,
-        "company": "VELAR  CONCRETE PRODUCTS",
+        "company": "VELAR CONCRETE PRODUCTS",
         "district": "COIMBATORE",
         "owner": "BALAJI",
-        "address": "4/2-2A5 KKG COMPLEX  MTP ROAD , KOUNDANPALAYAM   ,COIMBATORE -641030",
+        "address": "4/2-2A5 KKG COMPLEX MTP ROAD , KOUNDANPALAYAM ,COIMBATORE -641030",
         "mobile": "9865165556"
+    },
+    {
+        "s_no": 193,
+        "company": "A1 BRICKS",
+        "district": "CHENNAI",
+        "owner": "RAGURAM PUSHPARAJ",
+        "address": "SF NO 297/2A ,SENGUNDRAM VILLAGE ,SINGAPERUMAL KOIL ,CHENGALPATTU ,603204.",
+        "mobile": "73588 67966"
+    },
+    {
+        "s_no": 194,
+        "company": "AJ BLOCKS",
+        "district": "CHENNAI",
+        "owner": "B.ANTHONISAMY",
+        "address": "1,THENYERI MADUTHAM ROAD,OTTANTHANGAL,KANCHIPURAM -631 604.",
+        "mobile": "91763 96457,90809 35818"
+    },
+    {
+        "s_no": 195,
+        "company": "AVN FLYASH BRICKS",
+        "district": "CHENNAI",
+        "owner": "V.MAHALAKSHMI",
+        "address": "NO243/7,VICHANTHANGAL,KIL PARAMALLAN ROAD,WALAJA,KANCHIPURAM - 631 502.",
+        "mobile": "98424 89050,94434 84050"
+    },
+    {
+        "s_no": 196,
+        "company": "EMS ENTERPRISESS",
+        "district": "CHENNAI",
+        "owner": "S.EZHUMALAI",
+        "address": "No.7, 4th street, AKR Nagar, Sri devi kuppum, valasarawakkam, Chennai 600087.",
+        "mobile": "9444452957"
+    },
+    {
+        "s_no": 197,
+        "company": "ESS ENTERPRISES",
+        "district": "CHENNAI",
+        "owner": "E.GOPALA KRISHNAN",
+        "address": "SR.NO.655/2A,PALLAVARAM ROAD,NEAR ROSHAN CRICKET GROUND,GERUGAMBAKKAM,CHENNAI - 600 128.",
+        "mobile": "9962004040"
+    },
+    {
+        "s_no": 198,
+        "company": "J.K.M INDUSTRIES",
+        "district": "CHENNAI",
+        "owner": "K.JEYAPRAKASH",
+        "address": "5,ALAPAKKAM MAIN ROAD,CHENNAI - 606 116.",
+        "mobile": "98410 44635"
+    },
+    {
+        "s_no": 199,
+        "company": "JS FLYASH BRICKS",
+        "district": "CHENNAI",
+        "owner": "K.SURESHBABU",
+        "address": "372/2, GANGA NAGAR, Palangamoor, Arani, Tiruvannamalai, Tamil Nadu, 632317.",
+        "mobile": "96006 66600"
+    },
+    {
+        "s_no": 200,
+        "company": "KEERTHANA BRICKS AND BLOCKS",
+        "district": "CHENNAI",
+        "owner": "I.TAMIL SELVAN",
+        "address": "No.32,ELLAIYAMMAN KOVIL STREET,ABIRAMAPURAM, KATTUR,MINJUR VIA,TIRUVALLUR - 601 203.",
+        "mobile": "91762 72324"
+    },
+    {
+        "s_no": 201,
+        "company": "LOTUS HOLLOW BLOCKS",
+        "district": "CHENNAI",
+        "owner": "S.DIVAKAR",
+        "address": "S.No.231/2A,VIRAPURAM POST, OLAKOOR UNION,DINDIVANAM TALUK,VILLUPURAM DIST.PIN NO.604 207. 9444369805",
+        "mobile": "9444369805,  044-26213687"
+    },
+    {
+        "s_no": 202,
+        "company": "MS ENTERPRISES",
+        "district": "CHENNAI",
+        "owner": "K.GNANAGURU",
+        "address": "SURVEY No.#118,METTUPALAYAM VILLAGE,VIA ECHUR,SRIPERUMBUDUR TALUK,KANCHIPURAM DIST-602 105.",
+        "mobile": "95973 16638,\n97889 39486"
+    },
+    {
+        "s_no": 203,
+        "company": "OM MURUGA INDUSTRIES",
+        "district": "CHENNAI",
+        "owner": "K.SANKAR",
+        "address": "NO.68,ERIKARA MAIN ROAD,KOLLACHERI,KUNDRATHUR,CHENNAI - 600 069.",
+        "mobile": "97893 80148"
+    },
+    {
+        "s_no": 204,
+        "company": "SREE VARSHA ENTERPRISESS",
+        "district": "CHENNAI",
+        "owner": "G.LOGANATHAN",
+        "address": "PADAPPAI(VIA),SRIPERUMPUDU No.158,KUNNAVAKKAM VILLAGE, PANRUTI POST,THENNERI VIA,KANCHIPURAM DIST-631 604.",
+        "mobile": "73389 41136, 94434 40454"
+    },
+    {
+        "s_no": 205,
+        "company": "SRI DEVI CONCRETE BRICKS",
+        "district": "CHENNAI",
+        "owner": "P.MURUGAN",
+        "address": "No.227,PONNERI HIGH ROAD,VELLIVOYAL CHAVADI,CHENNAI-600 103.",
+        "mobile": "9444368676"
+    },
+    {
+        "s_no": 206,
+        "company": "AADHINI SAI FLYASH BRICKS & BLOCKS",
+        "district": "CHENNAI",
+        "owner": "A.SARANYA",
+        "address": "S.F.NO.1049,MELENDAI STREET,KUNDRATHUR,CHENNAI - 600 069.",
+        "mobile": "72007 22800"
+    },
+    {
+        "s_no": 207,
+        "company": "AMMA FLYASH BRICKS",
+        "district": "CHENNAI",
+        "owner": "P.MURALI",
+        "address": "SURVEY NO 69/2B 1B,BY PASS ROAD(NEAR RTO CHECK POST),GUMMIDIPOONDI-601201",
+        "mobile": "9965225333"
+    },
+    {
+        "s_no": 208,
+        "company": "BLUE STAR HALLOW BLOCKS",
+        "district": "CHENNAI",
+        "owner": "D.NIRMAL KUMAR",
+        "address": "NO.185/1,ERIKARAI ROAD,KOLLACHERRY VILLAGE,KUNDRATHUR,KANCHIPURAM.",
+        "mobile": ""
+    },
+    {
+        "s_no": 209,
+        "company": "CEMIX FLYASH BRICKS",
+        "district": "CHENNAI",
+        "owner": "NAVEEN",
+        "address": "NO.153,MPM STREET,VYASAPADI,CHENNAI - 600 039.",
+        "mobile": "80560 07620"
+    },
+    {
+        "s_no": 210,
+        "company": "CHANDRU ENTERPRISES",
+        "district": "CHENNAI",
+        "owner": "RAKESH C",
+        "address": "ERUMAIUR,KUNDRATHUR,NO.194,KANCHEEPURAM,CHENNAI - 600 132.",
+        "mobile": ""
+    },
+    {
+        "s_no": 211,
+        "company": "KARUMARIYAMMAN AGENCIES",
+        "district": "CHENNAI",
+        "owner": "C.KUMAR",
+        "address": "No-1,MAHAKAVI BHARATHI NAGAR,THIRUMUDIVAKKAM,CHENNAI-600 044.",
+        "mobile": "94446 81621"
+    },
+    {
+        "s_no": 212,
+        "company": "KIRUBA ENTERPRISES",
+        "district": "CHENNAI",
+        "owner": "M.VIJAYAKUMAR",
+        "address": "599,PONNIYAMMAN KOVIL STREET, THIRUMANGALAM-602106.",
+        "mobile": "9894413495"
+    },
+    {
+        "s_no": 213,
+        "company": "KSN BRICK INDUSTRIES",
+        "district": "CHENNAI",
+        "owner": "",
+        "address": "",
+        "mobile": ""
+    },
+    {
+        "s_no": 214,
+        "company": "KVS ENGINEERING",
+        "district": "CHENNAI",
+        "owner": "E.BABU",
+        "address": "11/5, 11/5, KANAGA DURGAI AMMAN KOIL STREET ANKANDIGAI, ARAKKONAM TK,",
+        "mobile": "94867 89205"
+    },
+    {
+        "s_no": 215,
+        "company": "LITE ROOF HOUSING PRIVATE LTD",
+        "district": "CHENNAI",
+        "owner": "M.MOHAMMED ANSARI",
+        "address": "Chettipuniyam Village,Chengalpattu,Chennai-603204.",
+        "mobile": "9840468441"
+    },
+    {
+        "s_no": 216,
+        "company": "MAYIL INDUSTRIES",
+        "district": "CHENNAI",
+        "owner": "M.MUTHU",
+        "address": "No.41 PILAYAR KOIL STREET,KUNNAVAKKAM VILLAGE & POST,(VIA)NATHAM, CHENGALPATTU,KANCHEEPURAM DT-603 002.",
+        "mobile": "9444298819"
+    },
+    {
+        "s_no": 217,
+        "company": "MITHU PAVERS",
+        "district": "CHENNAI",
+        "owner": "B.BOOPALEN",
+        "address": "No.1321/1 Kaverapettai- Pulicut Road, Medur village, Ponneri taluk, Thiruvallur District Pin:601204",
+        "mobile": "98846 60066"
+    },
+    {
+        "s_no": 218,
+        "company": "NR ENTERPRISES",
+        "district": "CHENNAI",
+        "owner": "P.NARENDRA KANKARIA",
+        "address": "NO: 48, CENTER POINT, 56/1, SADULLA STREET, T.NAGAR,CHENNAI-600017.",
+        "mobile": "9383027650"
+    },
+    {
+        "s_no": 219,
+        "company": "PM FLYASH BRICKS & CO",
+        "district": "CHENNAI",
+        "owner": "T.PRAKASH",
+        "address": "SURVEY NO 69/2B 1B,BY PASS ROAD(NEAR RTO CHECK POST),GUMMIDIPOONDI-601201",
+        "mobile": "9976331666, 9965224333,  9965225333"
+    },
+    {
+        "s_no": 220,
+        "company": "RPN HALLOW BLOCKS",
+        "district": "CHENNAI",
+        "owner": "R.RATHINAM",
+        "address": "NO.72,UDAYAR STREET,THIRUMANI,KANCHIPURAM - 603 111.",
+        "mobile": "99656 26538"
+    },
+    {
+        "s_no": 221,
+        "company": "RR FALG BRICKS INDUSTRIES",
+        "district": "CHENNAI",
+        "owner": "R.RAVI",
+        "address": "SFNO131/4, KULANKACHERI, NEAR PERINJAMPAKKAM (VILLAGE), GUNDUPERUMEDU(P.O)",
+        "mobile": "9094046703, 9841070400, 9094370400"
+    },
+    {
+        "s_no": 222,
+        "company": "SREE FLYASH BRICKS & PAVING BLOCKS",
+        "district": "CHENNAI",
+        "owner": "A.RAJESH",
+        "address": "BLOCK203/2,KILIKODI VILLAGE, KAVARAIPETTAI POST,PONNERI TK THIRUVALLUR DIST -601 206,",
+        "mobile": "9841031373"
+    },
+    {
+        "s_no": 223,
+        "company": "SM FLYASH CONCRETE BRICKS WORKS",
+        "district": "CHENNAI",
+        "owner": "C.Manoharan",
+        "address": "No.63, Mambakkam Main road, Kolathur Village, Chennai 600127.",
+        "mobile": "9444796159"
+    },
+    {
+        "s_no": 224,
+        "company": "SREE LAKSHMI FLYASH BRICKS",
+        "district": "CHENNAI",
+        "owner": "T.N.KUMAR",
+        "address": "NO.154/2C,THENDALEM MAIN ROAD,UTHUKOTTAI,THIRUVALLUR - 6011 102.",
+        "mobile": "98943 61113"
+    },
+    {
+        "s_no": 225,
+        "company": "SRI KAMESHWARAN FLY ASH BRICKS",
+        "district": "CHENNAI",
+        "owner": "KRISHNA KUMAR",
+        "address": "631, KRISHNAMOORTHY STREET, T V PURAM PONNERI, Tamil Nadu, 601204.",
+        "mobile": ""
+    },
+    {
+        "s_no": 226,
+        "company": "SRI SAI SARANYA ENTERPRISES",
+        "district": "CHENNAI",
+        "owner": "T.V.SARAVANAN",
+        "address": "No.27/2,2ND CROSS STREET,KUNDRATHUR, CHENNAI -600 069.",
+        "mobile": "9600090786"
+    },
+    {
+        "s_no": 227,
+        "company": "STEP UP PAVERS PRIVATE LIMITED",
+        "district": "CHENNAI",
+        "owner": "",
+        "address": "Survey No : 121,Uthiramerur Taluk, Kunnavakkam Village, Chengalpattu - 603107.",
+        "mobile": "9840533337"
+    },
+    {
+        "s_no": 228,
+        "company": "SUN ROCK INDUSTRY",
+        "district": "CHENNAI",
+        "owner": "T.DURGA PRASAD",
+        "address": "No.121/1,T.H ROAD, KARANI VILLAGE,THIRUVALLUR DIST-600 052.(300 2B,THER VAI KANDIGAI VILLAGE, GUMMIDIPOONDI, THRUVALLUR, TAMIL NADU,601 202.)",
+        "mobile": "95000 29239"
+    },
+    {
+        "s_no": 229,
+        "company": "YOGA PAVER BLOCKS",
+        "district": "CHENNAI",
+        "owner": "R.SABARIVASAN",
+        "address": "No.9,RAJIV GANDHI STREET, PANDUR VILLAGE,KANNIVAKKAM POST,NELLIKUPPAM ROAD,GUDUVANCHERY-603 202.",
+        "mobile": "97899 55413, 98406 19989"
+    },
+    {
+        "s_no": 230,
+        "company": "ZIPCONN BLOCKS",
+        "district": "CHENNAI",
+        "owner": "SUJATHA",
+        "address": "Plot No.1058/18BF,Kollimetu, Manthangal Village,Chennasamuthiram post, Kalavai Ranipet,Tamil Nadu: 632506.",
+        "mobile": "98416 97445"
+    },
+    {
+        "s_no": 231,
+        "company": "A.R.N.TILES",
+        "district": "NEYVELI",
+        "owner": "S.ARUL VALAVAN",
+        "address": "19,10TH CROSS WEST EXTENSION THILLAI NAGAR,TRICHY-18",
+        "mobile": "9842162969"
+    },
+    {
+        "s_no": 232,
+        "company": "AMR FLYASH BRICKS",
+        "district": "NEYVELI",
+        "owner": "BENASIR ABDHAHIR",
+        "address": "203/5B,UNNAMEDROAD,PANAMPATTI,PUDUKOTTAI-622101.",
+        "mobile": "82489 47880"
+    },
+    {
+        "s_no": 233,
+        "company": "ANANDA FLYASHASH BRICKS",
+        "district": "NEYVELI",
+        "owner": "P.VIVEKANANDA",
+        "address": "NO16,VANNI VINAYAKAR STLIC COLONY ANAND NAGARTRICHY- 620021",
+        "mobile": "9942002849"
+    },
+    {
+        "s_no": 234,
+        "company": "ASHCHEM BLOCKS AND CONSTRUCTIONS PVT LTD",
+        "district": "NEYVELI",
+        "owner": "V.SIVAKUMAR",
+        "address": "W-168, WOMEN INDUSTRIAL EASTATE, VALAVANTHANKOTTAI,TRICHY-620015.",
+        "mobile": "9940778386"
+    },
+    {
+        "s_no": 235,
+        "company": "AYYAS FLYASH BRICKS",
+        "district": "NEYVELI",
+        "owner": "M.SADASIVAM",
+        "address": "1050,KUMULOORVILLAGE, THATCHANKURICHI LALKUDI TRICHY- 621 712.",
+        "mobile": "9443399367"
+    },
+    {
+        "s_no": 236,
+        "company": "CHITRA CEMENT WORKS",
+        "district": "NEYVELI",
+        "owner": "S.SARANYA",
+        "address": "Building no Flat no: ts-24-25& TS-48 Road/Street TN SIDCO INDUSTRIES Estate Palayapatti",
+        "mobile": "9363208656"
+    },
+    {
+        "s_no": 237,
+        "company": "DELRICK BUILDING CELL MANUFACTURA LLP",
+        "district": "NEYVELI",
+        "owner": "M.SANTHI",
+        "address": "83/2-A,THITTAI MAIN ROAD, THITTAI(PO),THANJAVUR-613003",
+        "mobile": "9095872065"
+    },
+    {
+        "s_no": 238,
+        "company": "J.V FLYASH BRICKS",
+        "district": "NEYVELI",
+        "owner": "J.VIJAYAKUMAR",
+        "address": "MELLUR VILLAGE NO 181/C,KULATHU ANNAVASAL,PUTHUKOTTAI-622101",
+        "mobile": "9750970805"
+    },
+    {
+        "s_no": 239,
+        "company": "JAYAM FLYASH BRICKS",
+        "district": "NEYVELI",
+        "owner": "SUNDARI",
+        "address": "NO,666,SENDRAI MAIN ROAD, NEAR DALMIYA CEMENT THAMARAIKULAM, ARIYALUR - 621705",
+        "mobile": "70101 79735"
+    },
+    {
+        "s_no": 240,
+        "company": "KL FLYASH BRICKS",
+        "district": "NEYVELI",
+        "owner": "M.KAMALANATHAN",
+        "address": "PANDIYAPURAM ANNA NAGAR THURAIYUR, MANACHANALLUR(TK) TRICHY (TD) PIN-621213",
+        "mobile": "9865622579"
+    },
+    {
+        "s_no": 241,
+        "company": "KRISHNASWAMY FLYASH BRICKS AJD PAVORS",
+        "district": "NEYVELI",
+        "owner": "KRISHNAKUMAR .M",
+        "address": "NO. 481/2A, PERAMBALUR MAIN ROAD, ALATHUR, ELANDALAPATTI, PERAMBALUR - 621 114.",
+        "mobile": "95859 49400"
+    },
+    {
+        "s_no": 242,
+        "company": "MBM BRICKS AND BLOCKS",
+        "district": "NEYVELI",
+        "owner": "MAHESH.R",
+        "address": "Building No./Flat No.: 41/56 Road/Street: ESWARI NAGAR City/Town/Village: Viralimalai District: Pudukkottai State: Tamil Nadu PIN Code - 621316",
+        "mobile": "97877 32146"
+    },
+    {
+        "s_no": 243,
+        "company": "MS CEMENT WORK",
+        "district": "NEYVELI",
+        "owner": "K.SARAVANAN",
+        "address": "APPASHPURAM,KOTTAMPATTI MAIN ROAD,NATHAM,DINDUGAL -",
+        "mobile": "9787601121"
+    },
+    {
+        "s_no": 244,
+        "company": "MSV FLYASH BRICKS",
+        "district": "NEYVELI",
+        "owner": "RAVIKUMAR",
+        "address": "NO.19, NORTH STREET, MANAKOLLAI, IRULAKURUCHI POST, VIRUTHACHALM TK, CUDDALORE",
+        "mobile": "77082 72867"
+    },
+    {
+        "s_no": 245,
+        "company": "NISWIN FLYASH BRICKS",
+        "district": "NEYVELI",
+        "owner": "M.RAVICHANDRAN",
+        "address": "NO.3/338C THIRUVILLAKURICHI ROAD, IRULUR, PADALUR POST, PERAMBALUR DT -621109.",
+        "mobile": "9751297856"
+    },
+    {
+        "s_no": 246,
+        "company": "OM SAKTHI FLYASH - PATTUKOTTAI",
+        "district": "NEYVELI",
+        "owner": "MASILAMANI .G",
+        "address": "TRICHY MAIN ROAD, KATTATHI BRANCH, OORANIPURAM",
+        "mobile": "90808 02742"
+    },
+    {
+        "s_no": 247,
+        "company": "RMK FLYASH BRICKS & PAVER BLOCK",
+        "district": "NEYVELI",
+        "owner": "RMK.KARTHICK RAJA",
+        "address": "281/5A ARIYALUR MAIN ROAD, KAULPALAYAM TAMIL NADU-621220",
+        "mobile": "9952068848"
+    },
+    {
+        "s_no": 248,
+        "company": "RRS FLYASH BRICKS & BLOCKS",
+        "district": "NEYVELI",
+        "owner": "C.ELANGO CINNUSAMY",
+        "address": "162/2, SAMAYAPURAM VILLEGE, MANACHANNALUR BLOCKTRICHY- 621112",
+        "mobile": "9884972039"
+    },
+    {
+        "s_no": 249,
+        "company": "RS BRICKS KARAIKAL",
+        "district": "NEYVELI",
+        "owner": "S.RAJAGOPAL",
+        "address": "123/2,ALATHUR ROAD, VIZHITHIYUR,KARAIKAL-609607",
+        "mobile": "98424 68280"
+    },
+    {
+        "s_no": 250,
+        "company": "RS FLYASH BRICKS",
+        "district": "NEYVELI",
+        "owner": "SUBBARAYALU",
+        "address": "258/4, Agarakottalam Road, Near to Govt Medical College, Siruvangur, Kallakurichi - 605 202.",
+        "mobile": "94423 89954"
+    },
+    {
+        "s_no": 251,
+        "company": "SKR RAKANIYA MANUFACTURING UNIT",
+        "district": "NEYVELI",
+        "owner": "RAJA .K",
+        "address": "NO. 98, SF NO 243/1D2, 243/1E1, MAHALIPATTI,THOGAIMALAI, KALUGUR VILLAGE, KULITHALAI TALUK, KARUR DISTRICT - 639 120.",
+        "mobile": "99765 62973"
+    },
+    {
+        "s_no": 252,
+        "company": "SREE THIRUMALAI FLYASH BRICKS",
+        "district": "NEYVELI",
+        "owner": "G.RAMADOSS",
+        "address": "KARIYAMANIKAM ROAD SAMAYAPURAM PUDUR,TRICHY-621112",
+        "mobile": "9442620261"
+    },
+    {
+        "s_no": 253,
+        "company": "SRI AMBAL BRICKS",
+        "district": "NEYVELI",
+        "owner": "K.MATHIYARASU",
+        "address": "E-19,PHASE - 2,SIDCO,VALAVANTHAN KOTTAI,THUVAKUDI,TRICHY - 620 015",
+        "mobile": "8667306582"
+    },
+    {
+        "s_no": 254,
+        "company": "SRI GANESH MURUGAN FLYASH BRICKS&PAVER BLOCKS",
+        "district": "NEYVELI",
+        "owner": "K.DEEPAN",
+        "address": "NO 359/1 AYYA THOPPU MELAPACHCHAKUDI,TENNILAIPATTI PUDHUKOTTAI,TAMILNADU-621316",
+        "mobile": "8248959848"
+    },
+    {
+        "s_no": 255,
+        "company": "SRI TIRUPPATHI FLYASH BRICKS",
+        "district": "NEYVELI",
+        "owner": "N.SATHYASEELAN",
+        "address": "M/s.SRI THIRUPATHI FLYASH BRICKS 3/328C ANJANEYAR HILL BACKSIDE,ALATHUR IRUR,PERAMBALUR -621109",
+        "mobile": "8122266474"
+    },
+    {
+        "s_no": 256,
+        "company": "TRICHY CERAMICS(P)LTD",
+        "district": "NEYVELI",
+        "owner": "R.SWARNAMANI",
+        "address": "212, B, CHENNAI MAIN ROAD SIRUGANUR, TRICHY(DT) PINCODE-620021",
+        "mobile": "9942945807"
+    },
+    {
+        "s_no": 257,
+        "company": "VALLALAR ECO BRICKS",
+        "district": "NEYVELI",
+        "owner": "BASKAR",
+        "address": "NO.121/1 ERAIYUR ROAD, PERALI (VILLAGE), KUNNAM TK, PERAMBALUR -621708.",
+        "mobile": "9842433287"
+    },
+    {
+        "s_no": 258,
+        "company": "VETRI VINAYAGA FLYASH BRICKS",
+        "district": "NEYVELI",
+        "owner": "B.AKASH",
+        "address": "Shop No:9,A3 Complex,First Main road,woraiyur ramalinga nagar,trichy - 620 003.",
+        "mobile": "8883792850"
+    },
+    {
+        "s_no": 259,
+        "company": "VIGNESH BRICKS",
+        "district": "NEYVELI",
+        "owner": "V. ANANTHAN",
+        "address": "SF.NO.311/6,TRICHY MAIN ROAD,KALIPATTI,THURAIUR,TRICHY - 621 010.",
+        "mobile": "97877 34100"
+    },
+    {
+        "s_no": 260,
+        "company": "VIGNESH FLYASH BRICKS",
+        "district": "NEYVELI",
+        "owner": "T.PRASATH",
+        "address": "2/393B,THURAIYUR MAIN ROAD,PALAYAM(PO)PERAMBALUR(DT) PIN-621107",
+        "mobile": "9944549461"
+    },
+    {
+        "s_no": 261,
+        "company": "VM ASSOCIATE",
+        "district": "NEYVELI",
+        "owner": "IJOSSEPH",
+        "address": "NO 14/4A,THIRUMALAIPATTI ROAD KALAPPANAKKANPATTI,SENTHAMANGALAM NAMAKKAL TAMILNADU-637404",
+        "mobile": "9843271051"
+    },
+    {
+        "s_no": 262,
+        "company": "VM BRICKS AND BLOCKS",
+        "district": "NEYVELI",
+        "owner": "P.SOOSAI SARPRASATHAM",
+        "address": "40/8,KOTTAPATTU,AVOOR,TRICHY - 622515.",
+        "mobile": "9786194441"
+    },
+    {
+        "s_no": 263,
+        "company": "VM FLY ASH BRICKS",
+        "district": "NEYVELI",
+        "owner": "I.JOSSEPH",
+        "address": "131/9,JEEYAPURAM MAIN ROAD,SUBBHAYAPURAM,MEKKUDI,TRICHY-639 101.",
+        "mobile": "9786194471"
+    },
+    {
+        "s_no": 264,
+        "company": "VSV FLYASHBRICKS",
+        "district": "NEYVELI",
+        "owner": "R.SARAVANAN",
+        "address": "5/175L,POONAMPALAYAM(PO) MANACHANALLUR (TK) TRICHY 621112",
+        "mobile": "9750393795"
+    },
+    {
+        "s_no": 265,
+        "company": "JJM BRICKS AND TRANSPORT PVT LTD",
+        "district": "NEYVELI",
+        "owner": "J.JOANS",
+        "address": "5/107,HOLLY CROSS CONVENT ROAD,MATTAPARAPATTI,MANIKANDAM,TRICHY - 620 012.",
+        "mobile": "97902 29927"
+    },
+    {
+        "s_no": 266,
+        "company": "AA Bricks & Construction",
+        "district": "TUTUKUDI",
+        "owner": "Boominathan P",
+        "address": "2-96B north street Narippaiyur post kadaladi tk - 623135 Ramanathapuram District",
+        "mobile": "8072533523"
+    },
+    {
+        "s_no": 267,
+        "company": "APM Bricks and Pavers",
+        "district": "TUTUKUDI",
+        "owner": "B.Bhuvaneswari",
+        "address": "Mettur colony,Thottanuthu post Dindigul 624005.",
+        "mobile": "9659424766"
+    },
+    {
+        "s_no": 268,
+        "company": "ARS INDUSTRIES",
+        "district": "TUTUKUDI",
+        "owner": "D.VASUKI",
+        "address": "S.f.no;191,Kooda Kovil Mainr oad,Maikudi,thirumangalam,madurai-625706",
+        "mobile": "8248305993              9500752732"
+    },
+    {
+        "s_no": 269,
+        "company": "B Mahalakshmi bricks",
+        "district": "TUTUKUDI",
+        "owner": "P. Balamurugan",
+        "address": "SOUTH THITTANKULAM ,KOVILPATTI,THOOTHUKUDI DISTRICT",
+        "mobile": "9042424453"
+    },
+    {
+        "s_no": 270,
+        "company": "Eden bricks",
+        "district": "TUTUKUDI",
+        "owner": "Arputharaj Baskar",
+        "address": "8/162/29Mainroad,Packyas Garden Kootampuli,Thoothukudi 628103",
+        "mobile": "9787438443"
+    },
+    {
+        "s_no": 271,
+        "company": "Gayathri Bricks",
+        "district": "TUTUKUDI",
+        "owner": "S.Ganesan",
+        "address": "11/296 Tenkasi road,Mannarkovil, Ambasamudram taluka, Tirunelveli -627401",
+        "mobile": "9003448310"
+    },
+    {
+        "s_no": 272,
+        "company": "JSG Flyash bricks",
+        "district": "TUTUKUDI",
+        "owner": "Jaisankar.c",
+        "address": "1/87F,Mankammal salai,Vagaikulam ,Thoothukudi 628102",
+        "mobile": "9486494237"
+    },
+    {
+        "s_no": 273,
+        "company": "K.MURUGAN FLYASH BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "K.Murugan",
+        "address": "3/87 East Street ,Nelkattumseval,Tenkasi-627758",
+        "mobile": "7010143486"
+    },
+    {
+        "s_no": 274,
+        "company": "Kalai Bricks",
+        "district": "TUTUKUDI",
+        "owner": "U.SUGANDURAI",
+        "address": "78/7, PUTHUKULAM ROAD,REDDIYARPATTI,TIRUNELVELI DISTRICT",
+        "mobile": "7708175032"
+    },
+    {
+        "s_no": 275,
+        "company": "KJ Traders",
+        "district": "TUTUKUDI",
+        "owner": "JASMIN TAJ",
+        "address": "9/39-10, TRICHY MAIN ROAD,DEVIPATTINAM - 623514,RAMANATHAPURAM DISTRICT",
+        "mobile": "9994521838"
+    },
+    {
+        "s_no": 276,
+        "company": "KPK Subi Cement Works",
+        "district": "TUTUKUDI",
+        "owner": "SELVAKUMARI",
+        "address": "77,VEMBAR ROAD,VILATHIKULAM - 628907,THOOTHUKUDI DISTRICT",
+        "mobile": "9843426436"
+    },
+    {
+        "s_no": 277,
+        "company": "Madhumila Ash bricks",
+        "district": "TUTUKUDI",
+        "owner": "S.ASHOKKUMAR",
+        "address": "192/4, KUMARAPURAM ROAD,MELA ARASARADI - 628002,THOOTHUKUDI DISTRICT",
+        "mobile": "9597840160"
+    },
+    {
+        "s_no": 278,
+        "company": "PM hollow block and solitaire bricks",
+        "district": "TUTUKUDI",
+        "owner": "MURUGESAN",
+        "address": "3/213-E, THALAVAIPURAMMAIN ROAD,NAKKANERI - 626142,VIRUDHUNAGAR DISTRICT",
+        "mobile": "9788683183"
+    },
+    {
+        "s_no": 279,
+        "company": "R.R. Blue metals",
+        "district": "TUTUKUDI",
+        "owner": "",
+        "address": "",
+        "mobile": "9994544566"
+    },
+    {
+        "s_no": 280,
+        "company": "RV Bricks",
+        "district": "TUTUKUDI",
+        "owner": "P.RAMESH",
+        "address": "1/249, YATHAVAR NORTH STREET,SOKKANATHAN PUTHUR - 626121,VIRUDHUNAGAR DISTRICT",
+        "mobile": "9688308180"
+    },
+    {
+        "s_no": 281,
+        "company": "Sri Meenakshi bricks",
+        "district": "TUTUKUDI",
+        "owner": "K.MURUGAN",
+        "address": "63/3A, THIRALI VILLAGE,THIRUMANGALAM,MADURAI",
+        "mobile": "9047692053"
+    },
+    {
+        "s_no": 282,
+        "company": "SSK FLYASH BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "S.MUTHULAKSHMI",
+        "address": "1/87, LAKSHMAPURAM,KEELAKOTTAI,THIRUMANGALAM - 625706,MADURAI DISTRICT",
+        "mobile": "9894984542"
+    },
+    {
+        "s_no": 283,
+        "company": "STK bricks Industries",
+        "district": "TUTUKUDI",
+        "owner": "T.KUMARESAN",
+        "address": "14/1285, AVUDAYANOOR ROAD,PAVOORCHATRAM - 627808,TENKASI DISTRICT",
+        "mobile": "8668182873"
+    },
+    {
+        "s_no": 284,
+        "company": "Thangam bricks",
+        "district": "TUTUKUDI",
+        "owner": "Karvendhan",
+        "address": "1/177/2A1, kulasekarapattinam,Thoothukudi 628206",
+        "mobile": "6383268587"
+    },
+    {
+        "s_no": 285,
+        "company": "Thavasi Flyash Bricks",
+        "district": "TUTUKUDI",
+        "owner": "S.ARUNTHABASU",
+        "address": "4/421 b, KANDITHAMKULAM ROAD.PANNAKUDI.TIRUNELVELI DISTRICT",
+        "mobile": "9366722003"
+    },
+    {
+        "s_no": 286,
+        "company": "The Raj Bricks",
+        "district": "TUTUKUDI",
+        "owner": "THANARAJ SELLATHURAI",
+        "address": "PATTAM VILLAGE,(NEAR KLN ENGINEERING COLLEGE),THIRUPUVANAM TALUK,SIVAGANGAI - 630611",
+        "mobile": "9360091399"
+    },
+    {
+        "s_no": 287,
+        "company": "UNIECON B & B",
+        "district": "TUTUKUDI",
+        "owner": "UTHIRESAN KAMALAM",
+        "address": "12/5, NAGA GARDEN,ALAGARPATTINAM,KALLAMPATTI EB SS REAR,SATHIRAPATTI TO ALAGAR KOVIL ROAD,MADURAI 625301",
+        "mobile": "9443674760"
+    },
+    {
+        "s_no": 288,
+        "company": "Vimal Cement products",
+        "district": "TUTUKUDI",
+        "owner": "KARTHIKEYAN",
+        "address": "3/162/Q2, Naranapuram Road, Sengamalapatti, Sivakasi 626130",
+        "mobile": "8124055666"
+    },
+    {
+        "s_no": 289,
+        "company": "A. MAHALINGAM INTERLOCK & FLYASH BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "A.MAHALINGAM",
+        "address": "4/516, THOOTHUKUDI - MADURAI BYPASS, KARIAPATTI, VIRUDHUNAGAR DISTRICT",
+        "mobile": "9047806867"
+    },
+    {
+        "s_no": 290,
+        "company": "Ageetha bricks",
+        "district": "TUTUKUDI",
+        "owner": "I.THAMOTHARAN",
+        "address": "45,Melaratha Street,Vellaikottai,Aruppukottai - 626 101.",
+        "mobile": "9942977859"
+    },
+    {
+        "s_no": 291,
+        "company": "Annam Flyash bricks",
+        "district": "TUTUKUDI",
+        "owner": "Sudhagar T",
+        "address": "60/1 RC Church Street, Alangulam - 627851,District: Tenkasi",
+        "mobile": "9443370502"
+    },
+    {
+        "s_no": 292,
+        "company": "AQWAH FLYASH BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "A.MOHAMED LATHIF",
+        "address": "95, MAIN ROAD, KAYATHAR -628952 THOOTHUKUDI DISTRICT",
+        "mobile": "9943733002"
+    },
+    {
+        "s_no": 293,
+        "company": "AR Flyash bricks",
+        "district": "TUTUKUDI",
+        "owner": "R.Antony Raj",
+        "address": "6/2592,Theri road ,Servaikaranmadam ,Toothukudi 628008",
+        "mobile": "9080118689"
+    },
+    {
+        "s_no": 294,
+        "company": "ARS Paver Blocks",
+        "district": "TUTUKUDI",
+        "owner": "A.Pitchaimuthu",
+        "address": "39/8A,MaikkudiNedunkulam,Thirumangalam,Madurai625706.",
+        "mobile": "9940974756"
+    },
+    {
+        "s_no": 295,
+        "company": "Arun Traders",
+        "district": "TUTUKUDI",
+        "owner": "M.PANDIARAJAN",
+        "address": "1024/1,KUMANTHAPURAM, SUNDARESAPURAM ROAD KRISHNAPURAM,KADAYANALLUR, TENKASI - 627759.",
+        "mobile": "9942980934"
+    },
+    {
+        "s_no": 296,
+        "company": "Babu Building products",
+        "district": "TUTUKUDI",
+        "owner": "S.MURUGESAN",
+        "address": "120/2, PERIYAKULAM DINDIGUL MAIN ROAD,DHARMALINGAPURAM,SILVARPATTI - 626502",
+        "mobile": "9487217829"
+    },
+    {
+        "s_no": 297,
+        "company": "Diamond Bricks",
+        "district": "TUTUKUDI",
+        "owner": "N. Prathiksha",
+        "address": "102C/7, Millgate, Murambu, Rajapalayam- 626139 District: Virudhunagar",
+        "mobile": "8838609506"
+    },
+    {
+        "s_no": 298,
+        "company": "E.S FLYASH BRICKS& PAVERS",
+        "district": "TUTUKUDI",
+        "owner": "S.RAJI",
+        "address": "472/2 West kalavasal street,Bommaya goundan patty,Theni.625531",
+        "mobile": "9865261002"
+    },
+    {
+        "s_no": 299,
+        "company": "Eswari flyash bricks",
+        "district": "TUTUKUDI",
+        "owner": "G.SARAVANAKUMAR",
+        "address": "26/6, WEST STREET,THIRUCHULI ROAD,KULASEKARANALLUR - 626105,VIRUDHUNAGAR DISTRICT",
+        "mobile": "9597050777"
+    },
+    {
+        "s_no": 300,
+        "company": "Everest bricks",
+        "district": "TUTUKUDI",
+        "owner": "P.Kalimuthu",
+        "address": "6/424-1A, shivanandam Nagar, satyapuram, Sivakasi- 626130,Virudhunagar District",
+        "mobile": "9865481750"
+    },
+    {
+        "s_no": 301,
+        "company": "GANGA BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "V .Anburaj",
+        "address": "7/169-1,Kamarajar Nagar,Theri Road,Sakkamalpuram,Pudukottai- 628103",
+        "mobile": "9442294774"
+    },
+    {
+        "s_no": 302,
+        "company": "Jay Jay Bricks",
+        "district": "TUTUKUDI",
+        "owner": "P.Jefferson Samuelraj",
+        "address": "3/432-6, Theri road,Pudukottai - 628103,Thoothukudi District",
+        "mobile": "9443248721"
+    },
+    {
+        "s_no": 303,
+        "company": "JOTHI FLYASH BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "S.SHARMA",
+        "address": "PARIPATTI CHECKANURANI MADURAI",
+        "mobile": "8248554882"
+    },
+    {
+        "s_no": 304,
+        "company": "K2 Flyash bricks",
+        "district": "TUTUKUDI",
+        "owner": "M.MAHENDRAN",
+        "address": "214-4, MERCHANT STREET,NAZARETH - 628617,THOOTHUKUDI DISTRICT",
+        "mobile": "8015508895"
+    },
+    {
+        "s_no": 305,
+        "company": "KBM flyash bricks",
+        "district": "TUTUKUDI",
+        "owner": "B.MATHANKUMAR",
+        "address": "5/9, SURVEY NO 59/3B,NORTH STREET, KALLIKUDI,MARUTHANGUDI, MADURAI - 625701",
+        "mobile": "9894399994"
+    },
+    {
+        "s_no": 306,
+        "company": "KIRUBAI CEMENT & FLYASH BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "M.KANAGA",
+        "address": "1/96, IDAYANKULAM ,NANGUNERI - 627502,TIRUNELVELI DISTRICT",
+        "mobile": "6383949446"
+    },
+    {
+        "s_no": 307,
+        "company": "KKM hollow block",
+        "district": "TUTUKUDI",
+        "owner": "Murugesan .K",
+        "address": "1/67A, NETTUR ROAD, ALANGULAM, TENKASI - 627851",
+        "mobile": "9994491868"
+    },
+    {
+        "s_no": 308,
+        "company": "LAKSHMI FLYASH BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "E.THANGAPARVATHI",
+        "address": "5/64/2, M.SAVERIYARPURAM,MULLAKADU - 628005,THOOTHUKUDI DISTRICT",
+        "mobile": "8778708448"
+    },
+    {
+        "s_no": 309,
+        "company": "MM Enterprises",
+        "district": "TUTUKUDI",
+        "owner": "R.Muthuraj",
+        "address": "6/62/10,MUKKANI MAIN ROAD,ERAL - 628801,THOOTHUKUDI DISTRICT",
+        "mobile": "9894282483"
+    },
+    {
+        "s_no": 310,
+        "company": "Nivethika Bricks",
+        "district": "TUTUKUDI",
+        "owner": "K. Chithambara Selvi",
+        "address": "5/6 Nettur Road,Kuruvankottai 627853,Alangulam Tk,Tenkasi District",
+        "mobile": "94430 52680"
+    },
+    {
+        "s_no": 311,
+        "company": "PALANIKUMARESAN FLYASH BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "P.CHANDRASEKAR",
+        "address": "325/1, KARUMATHUR VILLAGE,USILAMPATTI TALUK,MADURAI - 625514",
+        "mobile": "9894270520"
+    },
+    {
+        "s_no": 312,
+        "company": "Poongavanathamman flyash Bricks",
+        "district": "TUTUKUDI",
+        "owner": "M.RAVICHANDRAN",
+        "address": "2/290, KALKURICHI BYPASS ROAD,THONUGAL - 626104,VIRUDHUNAGAR DISTRICT",
+        "mobile": "9965773384"
+    },
+    {
+        "s_no": 313,
+        "company": "PR Bricks Gringotts mines",
+        "district": "TUTUKUDI",
+        "owner": "SRIDHAR",
+        "address": "3/81A, ANIYAPARANALLUR,SRIVAIKUNDAM - 628851,THOOTHUKUDI DISTRICT",
+        "mobile": "9551696465"
+    },
+    {
+        "s_no": 314,
+        "company": "Raaj Flyash bricks",
+        "district": "TUTUKUDI",
+        "owner": "JEGAN P",
+        "address": "PLOT NO - 1, PATIENCE NAGAR EXTENSION, THOPPUR, MADURAI- 625008.",
+        "mobile": "9487651001"
+    },
+    {
+        "s_no": 315,
+        "company": "RVPP bricks",
+        "district": "TUTUKUDI",
+        "owner": "P.MUTHUSAMY",
+        "address": "2/141-1, MUNIAYSAMY KOVIL BUS STOP,MALATTARU KADALADI ROAD,KADUGUSANTHAI - 623703,KADALADI TALUK,RAMANATHAPURAM DISTRICT",
+        "mobile": "9442046090"
+    },
+    {
+        "s_no": 316,
+        "company": "S.M BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "M.MUTHUKATHIRVEL",
+        "address": "1/66-9-3, SAYALKUDI MAIN ROAD,MANDAPASALAI (PO),ARUPPUKOTTAI - 626118,VIRUDHUNAGAR DISTRICT",
+        "mobile": "9943414118"
+    },
+    {
+        "s_no": 317,
+        "company": "SK Brick Factory",
+        "district": "TUTUKUDI",
+        "owner": "M.MANIKANDAN",
+        "address": "6/21A KARSERI MAIN ROAD, UDANGUNDU SAKKIMANGALAM ,MADURAI -625020.",
+        "mobile": "9282555555"
+    },
+    {
+        "s_no": 318,
+        "company": "Sri Amman Hollow block & Power bricks",
+        "district": "TUTUKUDI",
+        "owner": "D.GUNASEKARAN",
+        "address": "1/38A, SAVVASPURAM,SAYALGUDI ROAD,RAMASAMY NAGAR,ARUPPUKOTTAI - 626159,VIRUDHUNAGAR",
+        "mobile": "9715055503"
+    },
+    {
+        "s_no": 319,
+        "company": "Sri Krishna Industries",
+        "district": "TUTUKUDI",
+        "owner": "Maheshwari Rengaswamy",
+        "address": "2/364,Highway Road,Edaiseval-Sattirapatti,Tuticorin District.Pin: 628716",
+        "mobile": "8778558598"
+    },
+    {
+        "s_no": 320,
+        "company": "Sri Maruthi precon",
+        "district": "TUTUKUDI",
+        "owner": "M.Prabakar",
+        "address": "12/79, Pallabachery, Thennamanalloor roadKallikudi,Madurai District,PINCODE: 625701",
+        "mobile": "9080207517"
+    },
+    {
+        "s_no": 321,
+        "company": "Sri Pechiyamman bricks",
+        "district": "TUTUKUDI",
+        "owner": "K. DURAI MURUGAN",
+        "address": "NO.66/1A, KEELAVELLUR, AMMALATHADI POST, THIRUPUVANAM, SIVAGANGAI-630606",
+        "mobile": "9940866610"
+    },
+    {
+        "s_no": 322,
+        "company": "SRI SARAVANA PAVER BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "K.PAPPA",
+        "address": "1 /145, Zamin Kollankondaan-626142.Rajapalayam Tk. Virudhunagar Distirict.",
+        "mobile": "9842414044"
+    },
+    {
+        "s_no": 323,
+        "company": "Sri Sastha Flyash bricks",
+        "district": "TUTUKUDI",
+        "owner": "S.Sastha",
+        "address": "kannarpatti, Near kcms godown, Thiruchuli road,kamuthi -623603,Ramanathapuram District",
+        "mobile": "8248023608"
+    },
+    {
+        "s_no": 324,
+        "company": "TAMILAN BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "Gomupauldurai",
+        "address": "Poovani main road ,Deiva seyalpuram ,Thoothukudi 628851",
+        "mobile": "9962189556"
+    },
+    {
+        "s_no": 325,
+        "company": "THENAGAM FLYASH BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "C.Karthikeyan",
+        "address": "12/140-2, melamadam.Puthiamputhur ,Thoothukudi District",
+        "mobile": "9345599153"
+    },
+    {
+        "s_no": 326,
+        "company": "TTV Brick works",
+        "district": "TUTUKUDI",
+        "owner": "T.PREKUMAR",
+        "address": "4/127,4/149,Puliyankudi road,Vadakkuputhur ,Sankarankovil 626756,Tenkasi District",
+        "mobile": "9842125236"
+    },
+    {
+        "s_no": 327,
+        "company": "Varaahar bricks",
+        "district": "TUTUKUDI",
+        "owner": "A D Suryakumari",
+        "address": "438/1A1B, Karadikkal Road, Astinpatty, Madurai - 625 008",
+        "mobile": "9894034103"
+    },
+    {
+        "s_no": 328,
+        "company": "VELAVAN FLYASH BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "P.MARIAPPAN",
+        "address": "3/2R, A.KAILASAPURAM,KORAMPALLAM PO,THOOTHUKUDI - 628101",
+        "mobile": "9894114237"
+    },
+    {
+        "s_no": 329,
+        "company": "VETRIVEL MODERN BRICKS",
+        "district": "TUTUKUDI",
+        "owner": "G.Kathiravan",
+        "address": "137A/1, North Illupaiyurani,Kovilpatti - 628501.Thoothukudi District",
+        "mobile": "9360202011"
+    },
+    {
+        "s_no": 330,
+        "company": "Vijayalakshmi bricks",
+        "district": "TUTUKUDI",
+        "owner": "C. Velkani chinnadurai",
+        "address": "2/71A, Tiruchundur, Adikkalapuram road ,Veerapandiapattinam 628202,District:Thoothukudi",
+        "mobile": "9095835047"
+    },
+    {
+        "s_no": 331,
+        "company": "Vijayalakshmi cement works",
+        "district": "TUTUKUDI",
+        "owner": "M. Sudalaimani",
+        "address": "58/2 Adikkalapuram road, Arumuganeri- 628202, District:Thoothukudi",
+        "mobile": "9788132828"
+    },
+    {
+        "s_no": 332,
+        "company": "Vijayalakshmi Industries",
+        "district": "TUTUKUDI",
+        "owner": "M.Shanmugam",
+        "address": "3/347 Maria mathelasan street ,veerapandipattinam ,Thoothukudi",
+        "mobile": "9788132828"
+    },
+    {
+        "s_no": 333,
+        "company": "Visakan Construction",
+        "district": "TUTUKUDI",
+        "owner": "S. PalPandi",
+        "address": "154 1B sivarakottai to sengapaddai road karisalkalampatti, Thirumangalam - 625706,Madurai District",
+        "mobile": "8989934141"
     }
 ]
