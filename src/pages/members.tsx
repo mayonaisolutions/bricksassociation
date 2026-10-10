@@ -188,7 +188,23 @@ export const Members = () => {
                         {/* Optional District Sub-filter when Mettur Zone is selected */}
                         {selectedZone === 'METTUR' && (
                             <div className="sub-district-wrapper">
-                                <span className="sub-district-title">Filter by District in Mettur Zone:</span>
+                                <div className="sub-district-header">
+                                    <div className="sub-district-title-group">
+                                        <svg className="sub-district-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                                        </svg>
+                                        <span className="sub-district-title">Filter by District in Mettur Zone:</span>
+                                    </div>
+                                    {selectedDistrict !== 'ALL' && (
+                                        <button 
+                                            type="button" 
+                                            className="sub-district-clear-btn"
+                                            onClick={() => setSelectedDistrict('ALL')}
+                                        >
+                                            Show All Mettur Districts
+                                        </button>
+                                    )}
+                                </div>
                                 <div className="sub-district-pills">
                                     {metturDistricts.map(dist => {
                                         const count = dist === 'ALL' 
@@ -197,10 +213,14 @@ export const Members = () => {
                                         return (
                                             <button
                                                 key={dist}
+                                                type="button"
                                                 className={`sub-district-btn ${selectedDistrict === dist ? 'active' : ''}`}
                                                 onClick={() => setSelectedDistrict(dist)}
                                             >
-                                                {dist === 'ALL' ? 'All Mettur Districts' : dist} ({count})
+                                                <span className="sub-district-name">
+                                                    {dist === 'ALL' ? 'All Mettur Districts' : dist}
+                                                </span>
+                                                <span className="sub-district-count">{count}</span>
                                             </button>
                                         );
                                     })}
