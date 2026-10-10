@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
+const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID || '';
+const EMAILJS_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || '';
+const EMAILJS_PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY || '';
 
 export const Contactus = () => {
     useEffect(() => {
@@ -14,6 +18,9 @@ export const Contactus = () => {
         brickType: 'High-Strength Structural Bricks (Class 10/15)',
         message: ''
     });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
+    const [statusMessage, setStatusMessage] = useState('');
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -23,17 +30,57 @@ export const Contactus = () => {
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        alert(`Thank you ${formData.name}! Your enquiry about ${formData.brickType} has been received. Our team will get back to you shortly.`);
-        setFormData({
-            name: '',
-            email: '',
-            phone: '',
-            location: '',
-            brickType: 'High-Strength Structural Bricks (Class 10/15)',
-            message: ''
-        });
+        setIsSubmitting(true);
+        setSubmitStatus(null);
+        setStatusMessage('');
+
+        if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
+            console.error('EmailJS credentials are missing. Please check your .env configuration.');
+            setSubmitStatus('error');
+            setStatusMessage('Email service is temporarily unavailable. Please call (+91) 88831 44777 directly.');
+            setIsSubmitting(false);
+            return;
+        }
+
+        const templateParams = {
+            name: formData.name,
+            phone: formData.phone,
+            email: formData.email || 'Not provided',
+            location: formData.location,
+            brick_type: formData.brickType,
+            message: formData.message,
+            from_name: formData.name,
+            from_email: formData.email || '',
+            reply_to: formData.email || ''
+        };
+
+        try {
+            await emailjs.send(
+                EMAILJS_SERVICE_ID,
+                EMAILJS_TEMPLATE_ID,
+                templateParams,
+                EMAILJS_PUBLIC_KEY
+            );
+
+            setSubmitStatus('success');
+            setStatusMessage(`Thank you, ${formData.name}! Your enquiry has been received. Our association team will get back to you shortly.`);
+            setFormData({
+                name: '',
+                email: '',
+                phone: '',
+                location: '',
+                brickType: 'High-Strength Structural Bricks (Class 10/15)',
+                message: ''
+            });
+        } catch (error) {
+            console.error('EmailJS Error:', error);
+            setSubmitStatus('error');
+            setStatusMessage('Failed to deliver your enquiry. Please verify your internet connection or call (+91) 88831 44777 directly.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -137,6 +184,28 @@ export const Contactus = () => {
                     {/* Right Side: Contact Form Card */}
                     <div className="contact-form-card">
                         <h2>Send Us a Message</h2>
+
+                        {submitStatus === 'success' && (
+                            <div className="contact-status-banner success">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                                <span>{statusMessage}</span>
+                            </div>
+                        )}
+
+                        {submitStatus === 'error' && (
+                            <div className="contact-status-banner error">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <line x1="12" y1="8" x2="12" y2="12" />
+                                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                                </svg>
+                                <span>{statusMessage}</span>
+                            </div>
+                        )}
+
                         <form onSubmit={handleSubmit}>
                             <div className="form-grid-2">
                                 <div className="form-group">
@@ -149,6 +218,7 @@ export const Contactus = () => {
                                         placeholder="Enter your name"
                                         value={formData.name}
                                         onChange={handleChange}
+                                        disabled={isSubmitting}
                                     />
                                 </div>
                                 <div className="form-group">
@@ -161,6 +231,7 @@ export const Contactus = () => {
                                         placeholder="Enter phone number"
                                         value={formData.phone}
                                         onChange={handleChange}
+                                        disabled={isSubmitting}
                                     />
                                 </div>
                             </div>
@@ -175,6 +246,7 @@ export const Contactus = () => {
                                         placeholder="Enter email address"
                                         value={formData.email}
                                         onChange={handleChange}
+                                        disabled={isSubmitting}
                                     />
                                 </div>
                                 <div className="form-group">
@@ -187,6 +259,7 @@ export const Contactus = () => {
                                         placeholder="e.g. Chennai, Madurai"
                                         value={formData.location}
                                         onChange={handleChange}
+                                        disabled={isSubmitting}
                                     />
                                 </div>
                             </div>
@@ -198,6 +271,7 @@ export const Contactus = () => {
                                     name="brickType"
                                     value={formData.brickType}
                                     onChange={handleChange}
+                                    disabled={isSubmitting}
                                 >
                                     <option value="High-Strength Structural Bricks (Class 10/15)">High-Strength Structural Bricks (Class 10/15)</option>
                                     <option value="Standard Masonry Bricks (Class 7.5)">Standard Masonry Bricks (Class 7.5)</option>
@@ -216,15 +290,27 @@ export const Contactus = () => {
                                     placeholder="Describe your requirement (quantity, brick grade, compressive strength, delivery location)..."
                                     value={formData.message}
                                     onChange={handleChange}
+                                    disabled={isSubmitting}
                                 ></textarea>
                             </div>
 
-                            <button type="submit" className="btn-form-submit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '4px' }}>
-                                    <line x1="22" y1="2" x2="11" y2="13" />
-                                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                                </svg>
-                                Submit Enquiry
+                            <button type="submit" className="btn-form-submit" disabled={isSubmitting}>
+                                {isSubmitting ? (
+                                    <>
+                                        <svg className="btn-spinner" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                                            <circle cx="12" cy="12" r="10" strokeDasharray="32" strokeDashoffset="12" />
+                                        </svg>
+                                        Sending Enquiry...
+                                    </>
+                                ) : (
+                                    <>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '4px' }}>
+                                            <line x1="22" y1="2" x2="11" y2="13" />
+                                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                                        </svg>
+                                        Submit Enquiry
+                                    </>
+                                )}
                             </button>
                         </form>
                     </div>
