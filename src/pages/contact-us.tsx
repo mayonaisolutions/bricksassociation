@@ -278,7 +278,7 @@ export const Contactus = () => {
                                 >
                                     <option value="High-Strength Structural Bricks (Class 10/15)">High-Strength Structural Bricks (Class 10/15)</option>
                                     <option value="Standard Masonry Bricks (Class 7.5)">Standard Masonry Bricks (Class 7.5)</option>
-                                    <option value="Eco-Friendly Lightweight Blocks">Eco-Friendly Lightweight Blocks</option>
+                                    <option value="Eco-Friendly Lightweight Bricks">Eco-Friendly Lightweight Bricks</option>
                                     <option value="Custom Specification Bricks">Custom Specification Bricks</option>
                                     <option value="Other / General Enquiry">Other / General Enquiry</option>
                                 </select>

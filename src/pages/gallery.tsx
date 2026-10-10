@@ -43,7 +43,7 @@ const getDirectImageUrl = (urlOrItem: string | { url?: string; driveUrl?: string
 const BATCH_SIZE = 48;
 
 export const Gallery: React.FC = () => {
-    const [activeImage, setActiveImage] = useState<string | null>(null);
+    const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
     const [visibleCount, setVisibleCount] = useState<number>(BATCH_SIZE);
 
     useEffect(() => {
@@ -55,17 +55,6 @@ export const Gallery: React.FC = () => {
         }
     }, []);
 
-    // Close lightbox on Escape key press
-    useEffect(() => {
-        const handleKeyDown = (e: KeyboardEvent) => {
-            if (e.key === 'Escape') {
-                setActiveImage(null);
-            }
-        };
-        window.addEventListener('keydown', handleKeyDown);
-        return () => window.removeEventListener('keydown', handleKeyDown);
-    }, []);
-
     // Extract images list and optional folderUrl from gallery.json configuration
     const config: GalleryConfig = rawGalleryData as any;
     const imagesList: (string | { url?: string; driveUrl?: string; imageName?: string })[] = 
@@ -74,6 +63,50 @@ export const Gallery: React.FC = () => {
             : (Array.isArray(config.images) ? config.images : []);
 
     const visibleImages = imagesList.slice(0, visibleCount);
+
+    const handlePrev = (e?: React.MouseEvent) => {
+        e?.stopPropagation();
+        if (selectedIndex === null || imagesList.length === 0) return;
+        setSelectedIndex((prev) => (prev !== null ? (prev - 1 + imagesList.length) % imagesList.length : null));
+    };
+
+    const handleNext = (e?: React.MouseEvent) => {
+        e?.stopPropagation();
+        if (selectedIndex === null || imagesList.length === 0) return;
+        const nextIdx = (selectedIndex + 1) % imagesList.length;
+        if (nextIdx >= visibleCount) {
+            setVisibleCount(prev => Math.min(imagesList.length, prev + BATCH_SIZE));
+        }
+        setSelectedIndex(nextIdx);
+    };
+
+    // Keyboard navigation (Escape, ArrowLeft, ArrowRight)
+    useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (selectedIndex === null) return;
+            if (e.key === 'Escape') {
+                setSelectedIndex(null);
+            } else if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                setSelectedIndex((prev) => {
+                    if (prev === null) return null;
+                    const next = (prev + 1) % imagesList.length;
+                    if (next >= visibleCount) {
+                        setVisibleCount(v => Math.min(imagesList.length, v + BATCH_SIZE));
+                    }
+                    return next;
+                });
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                setSelectedIndex((prev) => {
+                    if (prev === null) return null;
+                    return (prev - 1 + imagesList.length) % imagesList.length;
+                });
+            }
+        };
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [selectedIndex, imagesList.length, visibleCount]);
 
     return (
         <div className="gallery-page-wrapper">
@@ -94,7 +127,7 @@ export const Gallery: React.FC = () => {
                             <div 
                                 key={index} 
                                 className="gallery-card"
-                                onClick={() => setActiveImage(imgUrl)}
+                                onClick={() => setSelectedIndex(index)}
                             >
                                 <div className="gallery-card-image-wrapper">
                                     <img 
@@ -103,7 +136,7 @@ export const Gallery: React.FC = () => {
                                         className="gallery-card-img" 
                                         loading="lazy"
                                         onError={(e) => {
-                                            const target = e.currentTarget;
+                                             const target = e.currentTarget;
                                             if (target.src.includes('lh3.googleusercontent.com/d/')) {
                                                 const fileId = target.src.split('/d/')[1];
                                                 if (fileId) {
@@ -142,13 +175,42 @@ export const Gallery: React.FC = () => {
                 )}
             </div>
 
-            {/* Lightbox Modal */}
-            {activeImage && (
-                <div className="lightbox-backdrop" onClick={() => setActiveImage(null)}>
+            {/* Lightbox Modal with Arrow Key Navigation */}
+            {selectedIndex !== null && (
+                <div className="lightbox-backdrop" onClick={() => setSelectedIndex(null)}>
+                    {/* Previous Button */}
+                    <button 
+                        className="lightbox-nav-btn prev" 
+                        onClick={handlePrev}
+                        aria-label="Previous Image"
+                        title="Previous Image (Left Arrow)"
+                    >
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+
+                    {/* Next Button */}
+                    <button 
+                        className="lightbox-nav-btn next" 
+                        onClick={handleNext}
+                        aria-label="Next Image"
+                        title="Next Image (Right Arrow)"
+                    >
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+
+                    {/* Counter Indicator */}
+                    <div className="lightbox-counter">
+                        {selectedIndex + 1} / {imagesList.length}
+                    </div>
+
                     <div className="lightbox-content image-only-modal" onClick={(e) => e.stopPropagation()}>
                         <button 
                             className="lightbox-close-btn" 
-                            onClick={() => setActiveImage(null)}
+                            onClick={() => setSelectedIndex(null)}
                             aria-label="Close Preview"
                         >
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -158,8 +220,8 @@ export const Gallery: React.FC = () => {
                         </button>
                         <div className="lightbox-image-wrapper">
                             <img 
-                                src={activeImage} 
-                                alt="Gallery preview full view" 
+                                src={getDirectImageUrl(imagesList[selectedIndex])} 
+                                alt={`Gallery showcase ${selectedIndex + 1}`} 
                                 className="lightbox-img" 
                             />
                         </div>
