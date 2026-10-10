@@ -140,10 +140,22 @@
   transition: all 0.3s ease;
 }
 
+/* Hide mobile cta in desktop menu list by default */
+.mobile-only-cta {
+  display: none;
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
   .navbar-header {
     height: 70px;
+    width: 100%;
+  }
+
+  .navbar-container {
+    padding: 0 16px;
+    position: relative;
+    width: 100%;
   }
 
   .navbar-logo-img {
@@ -153,10 +165,11 @@
   .navbar-mobile-toggle {
     display: flex;
     margin-left: auto;
+    z-index: 10010;
   }
 
   .navbar-container nav {
-    position: absolute;
+    position: static;
   }
 
   .navbar-cta-wrapper {
@@ -176,36 +189,75 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  /* Off-canvas sliding drawer that never squishes or expands the page */
   .navbar-menu {
     position: fixed;
-    top: 0;
-    right: -100%;
+    top: 70px;
+    right: 0;
     width: 280px;
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
+    max-width: 82vw;
+    height: calc(100vh - 70px);
+    height: calc(100dvh - 70px);
+    background: #ffffff;
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.08);
+    border-left: 1px solid rgba(229, 231, 235, 0.8);
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 40px;
-    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    z-index: 1005;
+    padding: 36px 20px 40px;
+    gap: 26px;
+    transform: translateX(110%);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s ease;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 10005;
+    overflow-y: auto;
+    box-sizing: border-box;
   }
 
   .navbar-menu.open {
-    right: 0;
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .navbar-link {
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 6px 0;
   }
 
   .mobile-only-cta {
-    display: block; /* Show in mobile navigation tray */
+    display: flex; /* Show in mobile navigation tray */
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .mobile-only-cta .navbar-cta {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 220px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 12px 24px;
+    font-size: 15px;
+    margin: 0 auto;
   }
 }
 
-/* Hide mobile cta in desktop menu list */
-.mobile-only-cta {
-  display: none;
+/* Lightbox backdrop for mobile menu */
+.navbar-backdrop {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 10000;
+  animation: fadeIn 0.25s ease;
 }

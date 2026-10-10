@@ -78,6 +78,10 @@
 }
 
 .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
   background: linear-gradient(135deg, #10B981 0%, #059669 100%);
   color: white;
   padding: 14px 28px;
@@ -98,6 +102,10 @@
 }
 
 .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -612,13 +620,22 @@
     font-size: 32px;
   }
   .home-hero-ctas {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    max-width: 320px;
+    max-width: 280px;
+    margin: 0 auto;
+    gap: 12px;
   }
-  .btn-primary, .btn-secondary {
+  .home-hero-ctas .btn-primary, 
+  .home-hero-ctas .btn-secondary {
     width: 100%;
+    box-sizing: border-box;
     text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   .expertise-card {
     padding: 30px;
@@ -626,10 +643,40 @@
     gap: 16px;
   }
   .home-cta-banner {
-    padding: 40px 20px;
+    padding: 36px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 40px;
   }
   .home-cta-banner h3 {
     font-size: 22px;
+    text-align: center;
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+  .home-cta-banner p {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto 24px auto;
+    width: 100%;
+    max-width: 100%;
+    line-height: 1.6;
+  }
+  .home-cta-banner .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    min-width: 200px;
+    max-width: 280px;
+    padding: 14px 28px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
   }
   .intro-title {
     font-size: 28px;

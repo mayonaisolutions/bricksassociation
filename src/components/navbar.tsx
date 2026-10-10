@@ -15,6 +15,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <header className="navbar-header">
+      {isOpen && <div className="navbar-backdrop" onClick={closeMenu}></div>}
       <div className="navbar-container">
         {/* Logo and Brand */}
         <Link to="/" className="navbar-logo-link" onClick={closeMenu}>
