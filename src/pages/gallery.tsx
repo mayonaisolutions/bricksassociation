@@ -80,7 +80,7 @@ export const Gallery: React.FC = () => {
             {/* Gallery Hero Header */}
             <div className="gallery-hero">
                 <div className="gallery-hero-inner">
-                    <span className="gallery-hero-badge">Visual Showcase ({imagesList.length} Photos)</span>
+                    <span className="gallery-hero-badge">Visual Showcase</span>
                     <h1>Our Gallery</h1>
                 </div>
             </div>
