@@ -119,7 +119,7 @@ export const Footer: React.FC = () => {
                     <polyline points="22,6 12,13 2,6" />
                   </svg>
                 </div>
-                <p>smtflyashbricks@gmail.com</p>
+                <p>tnfapmfga@gmail.com</p>
               </div>
             </div>
           </div>
