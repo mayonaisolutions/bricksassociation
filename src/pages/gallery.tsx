@@ -40,7 +40,7 @@ const getDirectImageUrl = (urlOrItem: string | { url?: string; driveUrl?: string
     return `${process.env.PUBLIC_URL}/${urlOrName}`;
 };
 
-const BATCH_SIZE = 36;
+const BATCH_SIZE = 48;
 
 export const Gallery: React.FC = () => {
     const [activeImage, setActiveImage] = useState<string | null>(null);
