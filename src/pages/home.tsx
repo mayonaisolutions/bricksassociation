@@ -199,6 +199,28 @@ export const Home = () => {
                                 </Link>
                             </div>
                         </div>
+                        
+                        {/* TUTICORIN Zone */}
+                        <div className="home-zone-card" id="TUTICORIN-zone">
+                            <div className="zone-card-image-wrapper">
+                                <img src={`${process.env.PUBLIC_URL}/tuticorin_pin.png`} alt="TUTICORIN Zone Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <span className="zone-card-badge">68 Members</span>
+                            </div>
+                            <div className="zone-card-body">
+                                <h3 className="zone-card-title">TUTICORIN</h3>
+                                <div className="zone-card-divider"></div>
+                                <p className="zone-card-desc">
+                                    A vibrant hub with 68 association members supplying eco-friendly building blocks across TUTICORIN & southern Tamil Nadu.
+                                </p>
+                                <Link to="/members?zone=TUTICORIN" className="zone-card-btn">
+                                    <span>Member Details</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </Link>
+                            </div>
+                        </div>
 
                         {/* Neyveli Zone */}
                         <div className="home-zone-card" id="neyveli-zone">
@@ -244,27 +266,7 @@ export const Home = () => {
                             </div>
                         </div>
 
-                        {/* TUTICORIN Zone */}
-                        <div className="home-zone-card" id="TUTICORIN-zone">
-                            <div className="zone-card-image-wrapper">
-                                <img src={`${process.env.PUBLIC_URL}/tuticorin_pin.png`} alt="TUTICORIN Zone Fly Ash Brick Manufacturers" className="zone-card-img" />
-                                <span className="zone-card-badge">68 Members</span>
-                            </div>
-                            <div className="zone-card-body">
-                                <h3 className="zone-card-title">TUTICORIN</h3>
-                                <div className="zone-card-divider"></div>
-                                <p className="zone-card-desc">
-                                    A vibrant hub with 68 association members supplying eco-friendly building blocks across TUTICORIN & southern Tamil Nadu.
-                                </p>
-                                <Link to="/members?zone=TUTICORIN" className="zone-card-btn">
-                                    <span>Member Details</span>
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </Link>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
 
