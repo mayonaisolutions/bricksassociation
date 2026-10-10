@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bricksassociation/static/css/main.b95a4744.css",
-    "main.js": "/bricksassociation/static/js/main.ab199fa4.js",
-    "static/js/453.ce9c8acf.chunk.js": "/bricksassociation/static/js/453.ce9c8acf.chunk.js",
-    "index.html": "/bricksassociation/index.html",
-    "main.b95a4744.css.map": "/bricksassociation/static/css/main.b95a4744.css.map",
-    "main.ab199fa4.js.map": "/bricksassociation/static/js/main.ab199fa4.js.map",
-    "453.ce9c8acf.chunk.js.map": "/bricksassociation/static/js/453.ce9c8acf.chunk.js.map"
+    "main.css": "/static/css/main.b95a4744.css",
+    "main.js": "/static/js/main.1e9b9666.js",
+    "static/js/453.ce9c8acf.chunk.js": "/static/js/453.ce9c8acf.chunk.js",
+    "index.html": "/index.html",
+    "main.b95a4744.css.map": "/static/css/main.b95a4744.css.map",
+    "main.1e9b9666.js.map": "/static/js/main.1e9b9666.js.map",
+    "453.ce9c8acf.chunk.js.map": "/static/js/453.ce9c8acf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b95a4744.css",
-    "static/js/main.ab199fa4.js"
+    "static/js/main.1e9b9666.js"
   ]
 }
