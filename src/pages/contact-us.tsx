@@ -45,11 +45,14 @@ export const Contactus = () => {
         }
 
         const templateParams = {
+            title: `New Fly Ash Brick Enquiry - ${formData.name}`,
+            subject: `New Fly Ash Brick Enquiry - ${formData.name}`,
             name: formData.name,
             phone: formData.phone,
             email: formData.email || 'Not provided',
             location: formData.location,
             brick_type: formData.brickType,
+            enquiry_type: formData.brickType,
             message: formData.message,
             from_name: formData.name,
             from_email: formData.email || '',
