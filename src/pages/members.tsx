@@ -20,7 +20,7 @@ const getMemberZone = (district?: string, explicitZone?: string): string => {
     const d = (district || '').toUpperCase().trim();
     if (d === 'CHENNAI') return 'CHENNAI';
     if (d === 'NEYVELI') return 'NEYVELI';
-    if (d === 'TUTUKUDI' || d === 'THOOTHUKUDI' || d === 'TUTICORIN') return 'TUTUKUDI';
+    if (d === 'TUTICORIN' || d === 'THOOTHUKUDI' || d === 'TUTICORIN') return 'TUTICORIN';
     return 'METTUR';
 };
 
@@ -37,7 +37,7 @@ export const Members = () => {
         { id: 'METTUR', label: 'Mettur Zone' },
         { id: 'NEYVELI', label: 'Neyveli Zone' },
         { id: 'CHENNAI', label: 'Chennai Zone' },
-        { id: 'TUTUKUDI', label: 'Tutukudi Zone' }
+        { id: 'TUTICORIN', label: 'Tuticorin Zone' }
     ];
 
     // Districts covered within Mettur Zone
@@ -60,7 +60,7 @@ export const Members = () => {
         METTUR: membersList.filter(m => getMemberZone(m.district, m.zone) === 'METTUR').length,
         NEYVELI: membersList.filter(m => getMemberZone(m.district, m.zone) === 'NEYVELI').length,
         CHENNAI: membersList.filter(m => getMemberZone(m.district, m.zone) === 'CHENNAI').length,
-        TUTUKUDI: membersList.filter(m => getMemberZone(m.district, m.zone) === 'TUTUKUDI').length
+        TUTICORIN: membersList.filter(m => getMemberZone(m.district, m.zone) === 'TUTICORIN').length
     };
 
     // Sync state with URL query parameters for deep linking categories
@@ -78,8 +78,8 @@ export const Members = () => {
             } else if (upper === 'CHENNAI') {
                 setSelectedZone('CHENNAI');
                 setSelectedDistrict('ALL');
-            } else if (upper === 'TUTUKUDI' || upper === 'TUTICORIN' || upper === 'THOOTHUKUDI') {
-                setSelectedZone('TUTUKUDI');
+            } else if (upper === 'TUTICORIN' || upper === 'TUTICORIN' || upper === 'THOOTHUKUDI') {
+                setSelectedZone('TUTICORIN');
                 setSelectedDistrict('ALL');
             } else if (['COIMBATORE', 'ERODE', 'TIRUPUR', 'SALEM', 'NAMAKKAL', 'KARUR', 'DINDUGUL', 'DINDIGUL', 'DHARMAPURI'].includes(upper)) {
                 setSelectedZone('METTUR');
@@ -93,11 +93,11 @@ export const Members = () => {
 
     useEffect(() => {
         document.title = "Members Directory | TamilNadu Flyash Product Manufacturer Association";
-        
+
         // Add or update meta description dynamically
         const metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc) {
-            metaDesc.setAttribute("content", "Browse verified fly ash bricks manufacturers and association members across Tamil Nadu zone-wise: Mettur, Neyveli, Chennai, and Tutukudi.");
+            metaDesc.setAttribute("content", "Browse verified fly ash bricks manufacturers and association members across Tamil Nadu zone-wise: Mettur, Neyveli, Chennai, and TUTICORIN.");
         }
     }, []);
 
@@ -118,8 +118,8 @@ export const Members = () => {
         // 3. Filter by Search Term
         if (searchTerm.trim() !== '') {
             const query = searchTerm.toLowerCase();
-            results = results.filter(m => 
-                (m.company && m.company.toLowerCase().includes(query)) || 
+            results = results.filter(m =>
+                (m.company && m.company.toLowerCase().includes(query)) ||
                 (m.owner && m.owner.toLowerCase().includes(query)) ||
                 (m.district && m.district.toLowerCase().includes(query)) ||
                 (m.address && m.address.toLowerCase().includes(query)) ||
@@ -143,7 +143,7 @@ export const Members = () => {
                     <span className="members-hero-badge">Verified Manufacturers</span>
                     <h1>Association Members Directory</h1>
                     <p className="members-hero-text">
-                        Connecting you with certified high-quality Fly Ash Bricks manufacturers across Tamil Nadu. Filter by zone (Mettur, Neyveli, Chennai, Tutukudi) or search for specific members below.
+                        Connecting you with certified high-quality Fly Ash Bricks manufacturers across Tamil Nadu. Filter by zone (Mettur, Neyveli, Chennai, TUTICORIN) or search for specific members below.
                     </p>
                 </div>
             </div>
@@ -157,9 +157,9 @@ export const Members = () => {
                             <circle cx="11" cy="11" r="8" />
                             <line x1="21" y1="21" x2="16.65" y2="16.65" />
                         </svg>
-                        <input 
-                            type="text" 
-                            placeholder="Search by company, owner name, district, or location..." 
+                        <input
+                            type="text"
+                            placeholder="Search by company, owner name, district, or location..."
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                             className="search-input"
@@ -196,8 +196,8 @@ export const Members = () => {
                                         <span className="sub-district-title">Filter by District in Mettur Zone:</span>
                                     </div>
                                     {selectedDistrict !== 'ALL' && (
-                                        <button 
-                                            type="button" 
+                                        <button
+                                            type="button"
                                             className="sub-district-clear-btn"
                                             onClick={() => setSelectedDistrict('ALL')}
                                         >
@@ -207,8 +207,8 @@ export const Members = () => {
                                 </div>
                                 <div className="sub-district-pills">
                                     {metturDistricts.map(dist => {
-                                        const count = dist === 'ALL' 
-                                            ? zoneCounts.METTUR 
+                                        const count = dist === 'ALL'
+                                            ? zoneCounts.METTUR
                                             : membersList.filter(m => getMemberZone(m.district, m.zone) === 'METTUR' && m.district?.toUpperCase() === dist).length;
                                         return (
                                             <button
@@ -233,8 +233,8 @@ export const Members = () => {
                 {/* Directory Results Header */}
                 <div className="results-header-info">
                     <h2>
-                        {selectedZone === 'ALL' 
-                            ? 'All Association Zones' 
+                        {selectedZone === 'ALL'
+                            ? 'All Association Zones'
                             : `${selectedZone} Zone${selectedDistrict !== 'ALL' ? ` — ${selectedDistrict}` : ''}`}
                         <span className="results-count-badge">{filteredMembers.length} Members</span>
                     </h2>
@@ -250,7 +250,7 @@ export const Members = () => {
                     <div className="members-grid-container">
                         {filteredMembers.map(member => (
                             <div key={member.s_no} className="member-grid-card-item">
-                                <MemberCard 
+                                <MemberCard
                                     name={member.owner || "MEMBER"}
                                     zone={`${member.zone || getMemberZone(member.district)} ZONE`}
                                     company={member.company}

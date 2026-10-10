@@ -65,13 +65,13 @@ export const Home = () => {
                                     <circle cx="50" cy="50" r="45" fill="#ffffff" />
                                     <circle cx="50" cy="50" r="42" fill="#10b981" />
                                     <circle cx="50" cy="50" r="33" fill="#ffffff" />
-                                    
+
                                     <text fill="#ffffff" fontSize="6.2" fontWeight="bold" letterSpacing="0.6">
                                         <textPath href="#badgeTextPath" startOffset="50%" textAnchor="middle">
                                             ENVIRONMENTALLY FRIENDLY •
                                         </textPath>
                                     </text>
-                                    
+
                                     <g transform="translate(50, 48) scale(0.9)">
                                         <text x="0" y="-3" fontFamily="Plus Jakarta Sans, sans-serif" fontSize="8.5" fontWeight="900" fill="#047857" textAnchor="middle">FLY ASH</text>
                                         <text x="0" y="7" fontFamily="Plus Jakarta Sans, sans-serif" fontSize="8.5" fontWeight="900" fill="#047857" textAnchor="middle">BRICKS</text>
@@ -244,19 +244,19 @@ export const Home = () => {
                             </div>
                         </div>
 
-                        {/* Tutukudi Zone */}
-                        <div className="home-zone-card" id="tutukudi-zone">
+                        {/* TUTICORIN Zone */}
+                        <div className="home-zone-card" id="TUTICORIN-zone">
                             <div className="zone-card-image-wrapper">
-                                <img src={`${process.env.PUBLIC_URL}/tuticorin_pin.png`} alt="Tutukudi Zone Fly Ash Brick Manufacturers" className="zone-card-img" />
+                                <img src={`${process.env.PUBLIC_URL}/tuticorin_pin.png`} alt="TUTICORIN Zone Fly Ash Brick Manufacturers" className="zone-card-img" />
                                 <span className="zone-card-badge">68 Members</span>
                             </div>
                             <div className="zone-card-body">
-                                <h3 className="zone-card-title">TUTUKUDI</h3>
+                                <h3 className="zone-card-title">TUTICORIN</h3>
                                 <div className="zone-card-divider"></div>
                                 <p className="zone-card-desc">
-                                    A vibrant hub with 68 association members supplying eco-friendly building blocks across Tutukudi & southern Tamil Nadu.
+                                    A vibrant hub with 68 association members supplying eco-friendly building blocks across TUTICORIN & southern Tamil Nadu.
                                 </p>
-                                <Link to="/members?zone=tutukudi" className="zone-card-btn">
+                                <Link to="/members?zone=TUTICORIN" className="zone-card-btn">
                                     <span>Member Details</span>
                                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                                         <line x1="5" y1="12" x2="19" y2="12"></line>
