@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bricksassociation/static/css/main.1b2cfec7.css",
-    "main.js": "/bricksassociation/static/js/main.025ba9a3.js",
+    "main.js": "/bricksassociation/static/js/main.71b428ef.js",
     "static/js/453.ce9c8acf.chunk.js": "/bricksassociation/static/js/453.ce9c8acf.chunk.js",
     "index.html": "/bricksassociation/index.html",
     "main.1b2cfec7.css.map": "/bricksassociation/static/css/main.1b2cfec7.css.map",
-    "main.025ba9a3.js.map": "/bricksassociation/static/js/main.025ba9a3.js.map",
+    "main.71b428ef.js.map": "/bricksassociation/static/js/main.71b428ef.js.map",
     "453.ce9c8acf.chunk.js.map": "/bricksassociation/static/js/453.ce9c8acf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1b2cfec7.css",
-    "static/js/main.025ba9a3.js"
+    "static/js/main.71b428ef.js"
   ]
 }
