@@ -6,33 +6,86 @@ import membersData from '../data/members.json';
 interface Member {
     s_no: number;
     company: string;
+    zone: string;
     district: string;
     owner: string;
     address: string;
     mobile: string;
-    aadhar: string;
-    gst: string;
+    aadhar?: string;
+    gst?: string;
 }
+
+const getMemberZone = (district?: string, explicitZone?: string): string => {
+    if (explicitZone) return explicitZone.toUpperCase();
+    const d = (district || '').toUpperCase().trim();
+    if (d === 'CHENNAI') return 'CHENNAI';
+    if (d === 'NEYVELI') return 'NEYVELI';
+    if (d === 'TUTUKUDI' || d === 'THOOTHUKUDI' || d === 'TUTICORIN') return 'TUTUKUDI';
+    return 'METTUR';
+};
 
 export const Members = () => {
     const [searchTerm, setSearchTerm] = useState('');
+    const [selectedZone, setSelectedZone] = useState('ALL');
     const [selectedDistrict, setSelectedDistrict] = useState('ALL');
     const [filteredMembers, setFilteredMembers] = useState<Member[]>([]);
     const location = useLocation();
+
+    // 4 Association Zones
+    const zones = [
+        { id: 'ALL', label: 'All Zones' },
+        { id: 'METTUR', label: 'Mettur Zone' },
+        { id: 'NEYVELI', label: 'Neyveli Zone' },
+        { id: 'CHENNAI', label: 'Chennai Zone' },
+        { id: 'TUTUKUDI', label: 'Tutukudi Zone' }
+    ];
+
+    // Districts covered within Mettur Zone
+    const metturDistricts = [
+        'ALL',
+        'COIMBATORE',
+        'ERODE',
+        'TIRUPUR',
+        'SALEM',
+        'NAMAKKAL',
+        'KARUR',
+        'DINDUGUL',
+        'DHARMAPURI'
+    ];
+
+    // Calculate zone counts
+    const membersList = membersData as Member[];
+    const zoneCounts: Record<string, number> = {
+        ALL: membersList.length,
+        METTUR: membersList.filter(m => getMemberZone(m.district, m.zone) === 'METTUR').length,
+        NEYVELI: membersList.filter(m => getMemberZone(m.district, m.zone) === 'NEYVELI').length,
+        CHENNAI: membersList.filter(m => getMemberZone(m.district, m.zone) === 'CHENNAI').length,
+        TUTUKUDI: membersList.filter(m => getMemberZone(m.district, m.zone) === 'TUTUKUDI').length
+    };
 
     // Sync state with URL query parameters for deep linking categories
     useEffect(() => {
         const params = new URLSearchParams(location.search);
         const zoneParam = params.get('zone');
         if (zoneParam) {
-            const upperZone = zoneParam.toUpperCase();
-            let targetZone = upperZone;
-            if (upperZone === 'TUTICORIN' || upperZone === 'THOOTHUKUDI') targetZone = 'TUTUKUDI';
-            if (upperZone === 'DINDIGUL') targetZone = 'DINDUGUL';
-
-            if (['CHENNAI', 'COIMBATORE', 'ERODE', 'TIRUPUR', 'NEYVELI', 'TUTUKUDI', 'NAMAKKAL', 'KARUR', 'SALEM', 'DINDUGUL', 'DHARMAPURI'].includes(targetZone)) {
-                setSelectedDistrict(targetZone);
-            } else if (upperZone === 'METTUR' || upperZone === 'ALL') {
+            const upper = zoneParam.toUpperCase();
+            if (upper === 'METTUR') {
+                setSelectedZone('METTUR');
+                setSelectedDistrict('ALL');
+            } else if (upper === 'NEYVELI') {
+                setSelectedZone('NEYVELI');
+                setSelectedDistrict('ALL');
+            } else if (upper === 'CHENNAI') {
+                setSelectedZone('CHENNAI');
+                setSelectedDistrict('ALL');
+            } else if (upper === 'TUTUKUDI' || upper === 'TUTICORIN' || upper === 'THOOTHUKUDI') {
+                setSelectedZone('TUTUKUDI');
+                setSelectedDistrict('ALL');
+            } else if (['COIMBATORE', 'ERODE', 'TIRUPUR', 'SALEM', 'NAMAKKAL', 'KARUR', 'DINDUGUL', 'DINDIGUL', 'DHARMAPURI'].includes(upper)) {
+                setSelectedZone('METTUR');
+                setSelectedDistrict(upper === 'DINDIGUL' ? 'DINDUGUL' : upper);
+            } else {
+                setSelectedZone('ALL');
                 setSelectedDistrict('ALL');
             }
         }
@@ -44,34 +97,43 @@ export const Members = () => {
         // Add or update meta description dynamically
         const metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc) {
-            metaDesc.setAttribute("content", "Browse verified fly ash bricks manufacturers and association members across Tamil Nadu zone-wise.");
+            metaDesc.setAttribute("content", "Browse verified fly ash bricks manufacturers and association members across Tamil Nadu zone-wise: Mettur, Neyveli, Chennai, and Tutukudi.");
         }
     }, []);
 
     // Filter and search logic
     useEffect(() => {
-        let results = membersData as Member[];
+        let results = membersList;
 
-        // 1. Filter by District (Zone)
-        if (selectedDistrict !== 'ALL') {
-            results = results.filter(m => m.district === selectedDistrict);
+        // 1. Filter by Zone
+        if (selectedZone !== 'ALL') {
+            results = results.filter(m => getMemberZone(m.district, m.zone) === selectedZone);
         }
 
-        // 2. Filter by Search Term
+        // 2. Filter by District (if in Mettur Zone sub-filter)
+        if (selectedZone === 'METTUR' && selectedDistrict !== 'ALL') {
+            results = results.filter(m => m.district?.toUpperCase() === selectedDistrict);
+        }
+
+        // 3. Filter by Search Term
         if (searchTerm.trim() !== '') {
             const query = searchTerm.toLowerCase();
             results = results.filter(m => 
-                m.company.toLowerCase().includes(query) || 
-                m.owner.toLowerCase().includes(query) ||
-                m.address.toLowerCase().includes(query)
+                (m.company && m.company.toLowerCase().includes(query)) || 
+                (m.owner && m.owner.toLowerCase().includes(query)) ||
+                (m.district && m.district.toLowerCase().includes(query)) ||
+                (m.address && m.address.toLowerCase().includes(query)) ||
+                (m.zone && m.zone.toLowerCase().includes(query))
             );
         }
 
         setFilteredMembers(results);
-    }, [searchTerm, selectedDistrict]);
+    }, [searchTerm, selectedZone, selectedDistrict, membersList]);
 
-    // Distinct list of districts from members data for tab categories
-    const districts = ['ALL', 'CHENNAI', 'COIMBATORE', 'ERODE', 'TIRUPUR', 'NEYVELI', 'TUTUKUDI', 'SALEM', 'NAMAKKAL', 'KARUR', 'DINDUGUL', 'DHARMAPURI'];
+    const handleZoneSelect = (zoneId: string) => {
+        setSelectedZone(zoneId);
+        setSelectedDistrict('ALL');
+    };
 
     return (
         <div className="members-page-wrapper">
@@ -81,7 +143,7 @@ export const Members = () => {
                     <span className="members-hero-badge">Verified Manufacturers</span>
                     <h1>Association Members Directory</h1>
                     <p className="members-hero-text">
-                        Connecting you with certified high-quality Fly Ash Bricks manufacturers across Tamil Nadu. Filter by district or search for specific members below.
+                        Connecting you with certified high-quality Fly Ash Bricks manufacturers across Tamil Nadu. Filter by zone (Mettur, Neyveli, Chennai, Tutukudi) or search for specific members below.
                     </p>
                 </div>
             </div>
@@ -97,7 +159,7 @@ export const Members = () => {
                         </svg>
                         <input 
                             type="text" 
-                            placeholder="Search by company, owner name, or location..." 
+                            placeholder="Search by company, owner name, district, or location..." 
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                             className="search-input"
@@ -109,26 +171,51 @@ export const Members = () => {
                         )}
                     </div>
 
-                    {/* Zone/District Selector Tabs */}
+                    {/* Zone Selector Tabs */}
                     <div className="district-tabs-wrapper">
                         <div className="district-tabs">
-                            {districts.map(dist => (
+                            {zones.map(z => (
                                 <button
-                                    key={dist}
-                                    className={`district-tab-btn ${selectedDistrict === dist ? 'active' : ''}`}
-                                    onClick={() => setSelectedDistrict(dist)}
+                                    key={z.id}
+                                    className={`district-tab-btn ${selectedZone === z.id ? 'active' : ''}`}
+                                    onClick={() => handleZoneSelect(z.id)}
                                 >
-                                    {dist === 'ALL' ? 'All Districts' : dist}
+                                    {z.label} ({zoneCounts[z.id]})
                                 </button>
                             ))}
                         </div>
+
+                        {/* Optional District Sub-filter when Mettur Zone is selected */}
+                        {selectedZone === 'METTUR' && (
+                            <div className="sub-district-wrapper">
+                                <span className="sub-district-title">Filter by District in Mettur Zone:</span>
+                                <div className="sub-district-pills">
+                                    {metturDistricts.map(dist => {
+                                        const count = dist === 'ALL' 
+                                            ? zoneCounts.METTUR 
+                                            : membersList.filter(m => getMemberZone(m.district, m.zone) === 'METTUR' && m.district?.toUpperCase() === dist).length;
+                                        return (
+                                            <button
+                                                key={dist}
+                                                className={`sub-district-btn ${selectedDistrict === dist ? 'active' : ''}`}
+                                                onClick={() => setSelectedDistrict(dist)}
+                                            >
+                                                {dist === 'ALL' ? 'All Mettur Districts' : dist} ({count})
+                                            </button>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
 
                 {/* Directory Results Header */}
                 <div className="results-header-info">
                     <h2>
-                        {selectedDistrict === 'ALL' ? 'All Districts' : `${selectedDistrict} Zone`}
+                        {selectedZone === 'ALL' 
+                            ? 'All Association Zones' 
+                            : `${selectedZone} Zone${selectedDistrict !== 'ALL' ? ` — ${selectedDistrict}` : ''}`}
                         <span className="results-count-badge">{filteredMembers.length} Members</span>
                     </h2>
                     {searchTerm && (
@@ -145,12 +232,16 @@ export const Members = () => {
                             <div key={member.s_no} className="member-grid-card-item">
                                 <MemberCard 
                                     name={member.owner || "MEMBER"}
-                                    // zone={`${member.district}`}
+                                    zone={`${member.zone || getMemberZone(member.district)} ZONE`}
                                     company={member.company}
                                     phone={member.mobile || "N/A"}
                                     location={member.district}
                                 />
                                 <div className="member-extra-details">
+                                    <div className="detail-row">
+                                        <span className="detail-label">District / Location:</span>
+                                        <span className="detail-value">{member.district || "N/A"}</span>
+                                    </div>
                                     <div className="detail-row">
                                         <span className="detail-label">Address:</span>
                                         <span className="detail-value">{member.address || "N/A"}</span>
@@ -166,8 +257,8 @@ export const Members = () => {
                             <line x1="8" y1="12" x2="16" y2="12" />
                         </svg>
                         <h3>No Members Found</h3>
-                        <p>We couldn't find any members matching your filter or search query. Try clearing your search text or selecting a different district.</p>
-                        <button className="reset-filters-btn" onClick={() => { setSearchTerm(''); setSelectedDistrict('ALL'); }}>
+                        <p>We couldn't find any members matching your filter or search query. Try clearing your search text or selecting a different zone.</p>
+                        <button className="reset-filters-btn" onClick={() => { setSearchTerm(''); setSelectedZone('ALL'); setSelectedDistrict('ALL'); }}>
                             Reset All Filters
                         </button>
                     </div>

@@ -80,21 +80,14 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Column 3: Zones & Districts */}
+          {/* Column 3: Regional Zones */}
           <div className="footer-col">
-            <h3>Zones & Districts</h3>
+            <h3>Regional Zones</h3>
             <ul className="footer-links-list">
-              <li><Link to="/members?zone=chennai" className="footer-link" onClick={scrollToTop}>Chennai</Link></li>
-              <li><Link to="/members?zone=coimbatore" className="footer-link" onClick={scrollToTop}>Coimbatore</Link></li>
-              <li><Link to="/members?zone=tutukudi" className="footer-link" onClick={scrollToTop}>Tutukudi</Link></li>
-              <li><Link to="/members?zone=neyveli" className="footer-link" onClick={scrollToTop}>Neyveli</Link></li>
-              <li><Link to="/members?zone=erode" className="footer-link" onClick={scrollToTop}>Erode</Link></li>
-              <li><Link to="/members?zone=tirupur" className="footer-link" onClick={scrollToTop}>Tirupur</Link></li>
-              <li><Link to="/members?zone=namakkal" className="footer-link" onClick={scrollToTop}>Namakkal</Link></li>
-              <li><Link to="/members?zone=karur" className="footer-link" onClick={scrollToTop}>Karur</Link></li>
-              <li><Link to="/members?zone=salem" className="footer-link" onClick={scrollToTop}>Salem</Link></li>
-              <li><Link to="/members?zone=dindigul" className="footer-link" onClick={scrollToTop}>Dindigul</Link></li>
-              <li><Link to="/members?zone=dharmapuri" className="footer-link" onClick={scrollToTop}>Dharmapuri</Link></li>
+              <li><Link to="/members?zone=mettur" className="footer-link" onClick={scrollToTop}>Mettur Zone</Link></li>
+              <li><Link to="/members?zone=neyveli" className="footer-link" onClick={scrollToTop}>Neyveli Zone</Link></li>
+              <li><Link to="/members?zone=chennai" className="footer-link" onClick={scrollToTop}>Chennai Zone</Link></li>
+              <li><Link to="/members?zone=tutukudi" className="footer-link" onClick={scrollToTop}>Tutukudi Zone</Link></li>
             </ul>
           </div>
 
