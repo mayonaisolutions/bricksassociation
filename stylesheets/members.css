@@ -191,6 +191,57 @@
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
 }
 
+/* Sub-district Pills Filter for Mettur Zone */
+.sub-district-wrapper {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px dashed #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sub-district-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #4b5563;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sub-district-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sub-district-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  color: #4b5563;
+  font-weight: 500;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.sub-district-btn:hover {
+  background-color: #f0fdf4;
+  border-color: #10b981;
+  color: #047857;
+}
+
+.sub-district-btn.active {
+  background-color: #0d8a72;
+  border-color: #0d8a72;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(13, 138, 114, 0.2);
+}
+
 /* Results Header */
 .results-header-info {
   display: flex;
