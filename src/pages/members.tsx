@@ -143,7 +143,7 @@ export const Members = () => {
                     <span className="members-hero-badge">Verified Manufacturers</span>
                     <h1>Association Members Directory</h1>
                     <p className="members-hero-text">
-                        Connecting you with certified high-quality Fly Ash Bricks manufacturers across Tamil Nadu. Filter by zone (Mettur, Neyveli, Chennai, TUTICORIN) or search for specific members below.
+                        Connecting you with certified high-quality Fly Ash Bricks manufacturers across Tamil Nadu. Filter by zone (Mettur, Neyveli, Chennai, Tuticorin) or search for specific members below.
                     </p>
                 </div>
             </div>

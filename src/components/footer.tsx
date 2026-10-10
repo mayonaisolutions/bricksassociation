@@ -87,7 +87,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/members?zone=mettur" className="footer-link" onClick={scrollToTop}>Mettur Zone</Link></li>
               <li><Link to="/members?zone=neyveli" className="footer-link" onClick={scrollToTop}>Neyveli Zone</Link></li>
               <li><Link to="/members?zone=chennai" className="footer-link" onClick={scrollToTop}>Chennai Zone</Link></li>
-              <li><Link to="/members?zone=TUTICORIN" className="footer-link" onClick={scrollToTop}>TUTICORIN Zone</Link></li>
+              <li><Link to="/members?zone=TUTICORIN" className="footer-link" onClick={scrollToTop}>Tuticorin Zone</Link></li>
             </ul>
           </div>
 
