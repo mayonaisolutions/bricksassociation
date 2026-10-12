@@ -147,7 +147,7 @@ export const Contactus = () => {
                                 </div>
                                 <div className="contact-detail-content">
                                     <h3>Email Address</h3>
-                                    <p>tnfapmfga@gmail.com</p>
+                                    <p>tnfapmfra@gmail.com</p>
                                 </div>
                             </div>
 
