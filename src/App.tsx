@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/home';
 import { Aboutus } from './pages/aboutus';
 import { Contactus } from './pages/contact-us';
@@ -12,7 +12,7 @@ import WhatsAppButton from './components/whatsAppButton';
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ function App() {
       </Routes>
       <Footer />
       <WhatsAppButton />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
