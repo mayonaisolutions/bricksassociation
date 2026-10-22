@@ -35,9 +35,13 @@ export const MemberCard: React.FC<MemberCardProps> = ({
         setHasError(true);
     };
 
-    // Premium SVG Silhouette Avatar matching the user's screenshot (gray background, gray outline)
     const renderDefaultAvatar = () => (
-        <svg viewBox="0 0 200 200" className="member-card-default-avatar" xmlns="http://www.w3.org/2000/svg">
+        <svg 
+            viewBox="0 0 200 200" 
+            preserveAspectRatio="xMidYMid slice" 
+            className="member-card-default-avatar" 
+            xmlns="http://www.w3.org/2000/svg"
+        >
             <defs>
                 <radialGradient id="avatarBackgroundGrad" cx="50%" cy="50%" r="50%">
                     <stop offset="0%" stopColor="#ffffff" />
@@ -59,13 +63,23 @@ export const MemberCard: React.FC<MemberCardProps> = ({
         <div className="member-card-wrapper">
             <div className="member-card-image-container">
                 {currentSrc && !hasError ? (
-                    <img 
-                        src={currentSrc} 
-                        alt={`${name} - ${company}`} 
-                        className="member-card-img" 
-                        loading="lazy"
-                        onError={handleImageError}
-                    />
+                    <>
+                        <img 
+                            src={currentSrc} 
+                            alt="" 
+                            className="member-card-bg-blur" 
+                            aria-hidden="true"
+                            referrerPolicy="no-referrer"
+                        />
+                        <img 
+                            src={currentSrc} 
+                            alt={`${name} - ${company}`} 
+                            className="member-card-img" 
+                            loading="lazy"
+                            referrerPolicy="no-referrer"
+                            onError={handleImageError}
+                        />
+                    </>
                 ) : (
                     renderDefaultAvatar()
                 )}
