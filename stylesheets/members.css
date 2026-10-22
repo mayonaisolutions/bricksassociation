@@ -402,7 +402,13 @@
 
 .member-grid-card-item .member-card-image-container {
   width: 100% !important;
-  height: 220px !important;
+  height: 250px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: #0f172a !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .member-grid-card-item .member-card-details {
