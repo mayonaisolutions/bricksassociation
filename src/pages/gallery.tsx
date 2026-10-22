@@ -1,44 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import rawGalleryData from '../data/gallery.json';
+import { getDirectImageUrl } from '../utils/imageUtils';
 
 interface GalleryConfig {
     folderUrl?: string;
     folderId?: string;
     images?: (string | { url?: string; driveUrl?: string; imageName?: string })[];
 }
-
-// Utility to convert Google Drive file sharing links, direct URLs, or local assets into displayable image URLs
-const getDirectImageUrl = (urlOrItem: string | { url?: string; driveUrl?: string; imageName?: string }): string => {
-    let urlOrName = '';
-    
-    if (typeof urlOrItem === 'string') {
-        urlOrName = urlOrItem;
-    } else if (urlOrItem && typeof urlOrItem === 'object') {
-        urlOrName = urlOrItem.driveUrl || urlOrItem.url || urlOrItem.imageName || '';
-    }
-
-    if (!urlOrName) return '';
-
-    // Check if it's a Google Drive URL
-    if (urlOrName.includes('drive.google.com')) {
-        const fileIdMatch = urlOrName.match(/\/file\/d\/([^/?]+)/);
-        if (fileIdMatch && fileIdMatch[1]) {
-            return `https://lh3.googleusercontent.com/d/${fileIdMatch[1]}`;
-        }
-        const idParamMatch = urlOrName.match(/[?&]id=([^&]+)/);
-        if (idParamMatch && idParamMatch[1]) {
-            return `https://lh3.googleusercontent.com/d/${idParamMatch[1]}`;
-        }
-    }
-
-    // Check if it is a full HTTP/HTTPS URL
-    if (urlOrName.startsWith('http://') || urlOrName.startsWith('https://')) {
-        return urlOrName;
-    }
-
-    // Fallback to local asset in public directory
-    return `${process.env.PUBLIC_URL}/${urlOrName}`;
-};
 
 const BATCH_SIZE = 48;
 

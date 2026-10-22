@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { MemberCardProps } from '../types/types';
+import { getDirectImageUrl, extractGoogleDriveFileId } from '../utils/imageUtils';
 
 export const MemberCard: React.FC<MemberCardProps> = ({
     name,
@@ -9,6 +10,31 @@ export const MemberCard: React.FC<MemberCardProps> = ({
     location,
     imageUrl
 }) => {
+    const directUrl = getDirectImageUrl(imageUrl);
+    const [currentSrc, setCurrentSrc] = useState<string>(directUrl);
+    const [hasError, setHasError] = useState<boolean>(!directUrl);
+    const [fallbackAttempted, setFallbackAttempted] = useState<boolean>(false);
+
+    // Sync when imageUrl prop changes
+    useEffect(() => {
+        const newUrl = getDirectImageUrl(imageUrl);
+        setCurrentSrc(newUrl);
+        setHasError(!newUrl);
+        setFallbackAttempted(false);
+    }, [imageUrl]);
+
+    const handleImageError = () => {
+        if (!fallbackAttempted && imageUrl) {
+            const fileId = extractGoogleDriveFileId(imageUrl);
+            if (fileId && !currentSrc.includes('drive.google.com/uc')) {
+                setFallbackAttempted(true);
+                setCurrentSrc(`https://drive.google.com/uc?export=view&id=${fileId}`);
+                return;
+            }
+        }
+        setHasError(true);
+    };
+
     // Premium SVG Silhouette Avatar matching the user's screenshot (gray background, gray outline)
     const renderDefaultAvatar = () => (
         <svg viewBox="0 0 200 200" className="member-card-default-avatar" xmlns="http://www.w3.org/2000/svg">
@@ -32,11 +58,13 @@ export const MemberCard: React.FC<MemberCardProps> = ({
     return (
         <div className="member-card-wrapper">
             <div className="member-card-image-container">
-                {imageUrl ? (
+                {currentSrc && !hasError ? (
                     <img 
-                        src={imageUrl} 
+                        src={currentSrc} 
                         alt={`${name} - ${company}`} 
                         className="member-card-img" 
+                        loading="lazy"
+                        onError={handleImageError}
                     />
                 ) : (
                     renderDefaultAvatar()

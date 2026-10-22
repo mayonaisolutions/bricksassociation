@@ -13,6 +13,11 @@ interface Member {
     mobile: string;
     aadhar?: string;
     gst?: string;
+    imageUrl?: string;
+    image?: string;
+    driveUrl?: string;
+    drive_link?: string;
+    photo?: string;
 }
 
 const getMemberZone = (district?: string, explicitZone?: string): string => {
@@ -256,6 +261,7 @@ export const Members = () => {
                                     company={member.company}
                                     phone={member.mobile || "N/A"}
                                     location={member.district}
+                                    imageUrl={member.imageUrl || member.image || member.driveUrl || member.drive_link || member.photo}
                                 />
                                 <div className="member-extra-details">
                                     <div className="detail-row">
