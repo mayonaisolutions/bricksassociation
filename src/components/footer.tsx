@@ -125,7 +125,7 @@ export const Footer: React.FC = () => {
             <p>© Copyrights TamilNadu Flyash Product Manufacturer Association.</p>
           </div>
           <div className="footer-bottom-right">
-            <p>Powered by <a href="https://mayonaisolutions.com" className="footer-brand-highlight" target="_blank" rel="noopener noreferrer">Mayon AI Solutions</a></p>
+            <p>Powered by <a href="https://mayonaisolutions.github.io/mayon_ai_website/" className="footer-brand-highlight" target="_blank" rel="noopener noreferrer">Mayon AI Solutions</a></p>
           </div>
         </div>
       </div>
